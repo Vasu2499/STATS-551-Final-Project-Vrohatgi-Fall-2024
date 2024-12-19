@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="final_main_quarto_presentation_files/libs/clipboard/clipboard.min.js"></script>
+<script src="final_main_quarto_presentation_files/libs/quarto-html/tabby.min.js"></script>
+<script src="final_main_quarto_presentation_files/libs/quarto-html/popper.min.js"></script>
+<script src="final_main_quarto_presentation_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="final_main_quarto_presentation_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="final_main_quarto_presentation_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="final_main_quarto_presentation_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="final_main_quarto_presentation_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.5.57">
+
+  <title>STATS 551 PROJECT</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="final_main_quarto_presentation_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="final_main_quarto_presentation_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="final_main_quarto_presentation_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="final_main_quarto_presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="final_main_quarto_presentation_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="final_main_quarto_presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="final_main_quarto_presentation_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-titled.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-titled) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-titled .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-titled .callout-title  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-titled.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-titled.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-title {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-title {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-title {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .callout.callout-titled .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-titled) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-title {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-title {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">STATS 551 PROJECT</h1>
+
+<div class="quarto-title-authors">
+</div>
+
+</section>
+<section class="slide level2">
+
+<h4 id="model-specification">Model Specification</h4>
+<p>We aim to use a Poisson regression model with Bayesian inference. The total cancer incidence counts are modeled as Poisson-distributed random variables, with the log rate parameter being a linear function of several predictors. The predictors include environmental (AQI) and temporal (year) factors.</p>
+<p>First, I wish to import the final, consolidated dataset which I have built out of several separate data sets. It requires some pre-processing, which we can do now, and before visualizing this data, we will visualize the state-wise and year-wise distributions of the incidence of cancer.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "States"                                  
+ [2] "avg_max_aqi"                             
+ [3] "avg_x90th_percentile_aqi"                
+ [4] "avg_median_aqi"                          
+ [5] "avg_days_with_aqi"                       
+ [6] "avg_good_days"                           
+ [7] "avg_moderate_days"                       
+ [8] "avg_unhealthy_for_sensitive_groups_days" 
+ [9] "avg_unhealthy_days"                      
+[10] "avg_very_unhealthy_days"                 
+[11] "avg_hazardous_days"                      
+[12] "avg_days_co"                             
+[13] "avg_days_no2"                            
+[14] "avg_days_ozone"                          
+[15] "avg_days_pm2_5"                          
+[16] "avg_days_pm10"                           
+[17] "year"                                    
+[18] "Total_Count"                             
+[19] "Total_Population"                        
+[20] "CharacteristicName"                      
+[21] "ResultMeasureValue"                      
+[22] "ResultMeasure.MeasureUnitCode"           
+[23] "ResultValueTypeName"                     
+[24] "PrecisionValue"                          
+[25] "DataQuality.BiasValue"                   
+[26] "ResultDepthHeightMeasure.MeasureValue"   
+[27] "ResultDepthHeightMeasure.MeasureUnitCode"</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>    States               year       avg_max_aqi     avg_x90th_percentile_aqi
+ Length:1128        Min.   :1999   Min.   : 58.25   Min.   : 30.50          
+ Class :character   1st Qu.:2004   1st Qu.:102.03   1st Qu.: 56.50          
+ Mode  :character   Median :2010   Median :120.12   Median : 62.78          
+                    Mean   :2010   Mean   :128.29   Mean   : 66.15          
+                    3rd Qu.:2016   3rd Qu.:144.96   3rd Qu.: 73.94          
+                    Max.   :2021   Max.   :466.53   Max.   :126.62          
+ avg_median_aqi  avg_days_with_aqi avg_good_days    avg_moderate_days
+ Min.   :15.25   Min.   :113.2     Min.   : 64.57   Min.   :  5.50   
+ 1st Qu.:35.72   1st Qu.:258.3     1st Qu.:161.11   1st Qu.: 64.38   
+ Median :40.90   Median :290.8     Median :198.34   Median : 85.60   
+ Mean   :40.27   Mean   :289.0     Mean   :196.17   Mean   : 85.28   
+ 3rd Qu.:44.85   3rd Qu.:329.4     3rd Qu.:228.71   3rd Qu.:105.00   
+ Max.   :57.67   Max.   :365.0     Max.   :356.25   Max.   :178.00   
+ avg_unhealthy_for_sensitive_groups_days avg_unhealthy_days
+ Min.   : 0.000                          Min.   : 0.00000  
+ 1st Qu.: 1.348                          1st Qu.: 0.05556  
+ Median : 3.690                          Median : 0.31415  
+ Mean   : 6.134                          Mean   : 1.22877  
+ 3rd Qu.: 8.912                          3rd Qu.: 1.27976  
+ Max.   :36.911                          Max.   :17.27778  
+ avg_very_unhealthy_days avg_hazardous_days  avg_days_co       avg_days_no2    
+ Min.   :0.00000         Min.   :0.0000     Min.   : 0.0000   Min.   : 0.0000  
+ 1st Qu.:0.00000         1st Qu.:0.0000     1st Qu.: 0.0000   1st Qu.: 0.6986  
+ Median :0.00000         Median :0.0000     Median : 0.1379   Median : 3.0217  
+ Mean   :0.14227         Mean   :0.0287     Mean   : 3.1678   Mean   : 8.0224  
+ 3rd Qu.:0.07404         3rd Qu.:0.0000     3rd Qu.: 1.7036   3rd Qu.: 9.1486  
+ Max.   :5.61538         Max.   :2.6429     Max.   :75.1333   Max.   :93.5000  
+ avg_days_ozone    avg_days_pm2_5    avg_days_pm10       Total_Count    
+ Min.   :  9.143   Min.   :  7.643   Min.   :  0.0000   Min.   :   0.0  
+ 1st Qu.:106.348   1st Qu.: 73.217   1st Qu.:  0.5977   1st Qu.:   0.0  
+ Median :151.043   Median :107.008   Median :  7.6667   Median :  79.0  
+ Mean   :142.626   Mean   :117.511   Mean   : 17.6592   Mean   : 280.7  
+ 3rd Qu.:181.139   3rd Qu.:152.022   3rd Qu.: 22.8737   3rd Qu.: 318.2  
+ Max.   :291.000   Max.   :346.000   Max.   :173.5000   Max.   :2475.0  
+ Total_Population  
+ Min.   :    7771  
+ 1st Qu.:  227788  
+ Median :  527199  
+ Mean   : 3122330  
+ 3rd Qu.: 2349836  
+ Max.   :39103209  </code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>gropd_df [1,128 × 19] (S3: grouped_df/tbl_df/tbl/data.frame)
+ $ States                                 : chr [1:1128] "Alabama" "Alabama" "Alabama" "Alabama" ...
+ $ year                                   : num [1:1128] 1999 2000 2001 2002 2003 ...
+ $ avg_max_aqi                            : num [1:1128] 146 151 137 144 133 ...
+ $ avg_x90th_percentile_aqi               : num [1:1128] 93.6 96.5 81.5 80.5 74.7 ...
+ $ avg_median_aqi                         : num [1:1128] 54.4 55.9 48.7 46.3 47.2 ...
+ $ avg_days_with_aqi                      : num [1:1128] 184 201 219 239 234 ...
+ $ avg_good_days                          : num [1:1128] 69.8 75.2 111.2 128.8 124.8 ...
+ $ avg_moderate_days                      : num [1:1128] 88.4 99.1 94.1 95 100.2 ...
+ $ avg_unhealthy_for_sensitive_groups_days: num [1:1128] 20 22.68 11.38 13.09 8.54 ...
+ $ avg_unhealthy_days                     : num [1:1128] 5.667 3.773 1.905 1.909 0.542 ...
+ $ avg_very_unhealthy_days                : num [1:1128] 0.4286 0.3182 0.381 0.0909 0 ...
+ $ avg_hazardous_days                     : num [1:1128] 0 0 0 0 0 0 0 0 0 0 ...
+ $ avg_days_co                            : num [1:1128] 2.24 1.77 3.05 2.27 1.62 ...
+ $ avg_days_no2                           : num [1:1128] 0 0.864 0.238 1.091 0.542 ...
+ $ avg_days_ozone                         : num [1:1128] 93.2 107.2 122.9 141.5 137.9 ...
+ $ avg_days_pm2_5                         : num [1:1128] 71.5 81.2 83.3 83.4 85 ...
+ $ avg_days_pm10                          : num [1:1128] 17.33 10.05 9.48 10.59 8.92 ...
+ $ Total_Count                            : num [1:1128] 41 51 79 34 53 54 74 66 112 162 ...
+ $ Total_Population                       : num [1:1128] 194723 220789 442183 378534 474259 ...
+ - attr(*, "groups")= tibble [50 × 2] (S3: tbl_df/tbl/data.frame)
+  ..$ States: chr [1:50] "Alabama" "Alaska" "Arizona" "Arkansas" ...
+  ..$ .rows : list&lt;int&gt; [1:50] 
+  .. ..$ : int [1:23] 1 2 3 4 5 6 7 8 9 10 ...
+  .. ..$ : int [1:23] 24 25 26 27 28 29 30 31 32 33 ...
+  .. ..$ : int [1:23] 47 48 49 50 51 52 53 54 55 56 ...
+  .. ..$ : int [1:22] 70 71 72 73 74 75 76 77 78 79 ...
+  .. ..$ : int [1:19] 92 93 94 95 96 97 98 99 100 101 ...
+  .. ..$ : int [1:23] 111 112 113 114 115 116 117 118 119 120 ...
+  .. ..$ : int [1:22] 134 135 136 137 138 139 140 141 142 143 ...
+  .. ..$ : int [1:22] 156 157 158 159 160 161 162 163 164 165 ...
+  .. ..$ : int [1:23] 178 179 180 181 182 183 184 185 186 187 ...
+  .. ..$ : int [1:23] 201 202 203 204 205 206 207 208 209 210 ...
+  .. ..$ : int [1:23] 224 225 226 227 228 229 230 231 232 233 ...
+  .. ..$ : int [1:23] 247 248 249 250 251 252 253 254 255 256 ...
+  .. ..$ : int [1:23] 270 271 272 273 274 275 276 277 278 279 ...
+  .. ..$ : int [1:21] 293 294 295 296 297 298 299 300 301 302 ...
+  .. ..$ : int [1:22] 314 315 316 317 318 319 320 321 322 323 ...
+  .. ..$ : int [1:23] 336 337 338 339 340 341 342 343 344 345 ...
+  .. ..$ : int [1:23] 359 360 361 362 363 364 365 366 367 368 ...
+  .. ..$ : int [1:21] 382 383 384 385 386 387 388 389 390 391 ...
+  .. ..$ : int [1:23] 403 404 405 406 407 408 409 410 411 412 ...
+  .. ..$ : int [1:23] 426 427 428 429 430 431 432 433 434 435 ...
+  .. ..$ : int [1:23] 449 450 451 452 453 454 455 456 457 458 ...
+  .. ..$ : int [1:23] 472 473 474 475 476 477 478 479 480 481 ...
+  .. ..$ : int [1:23] 495 496 497 498 499 500 501 502 503 504 ...
+  .. ..$ : int [1:18] 518 519 520 521 522 523 524 525 526 527 ...
+  .. ..$ : int [1:23] 536 537 538 539 540 541 542 543 544 545 ...
+  .. ..$ : int [1:23] 559 560 561 562 563 564 565 566 567 568 ...
+  .. ..$ : int [1:23] 582 583 584 585 586 587 588 589 590 591 ...
+  .. ..$ : int [1:23] 605 606 607 608 609 610 611 612 613 614 ...
+  .. ..$ : int [1:23] 628 629 630 631 632 633 634 635 636 637 ...
+  .. ..$ : int [1:23] 651 652 653 654 655 656 657 658 659 660 ...
+  .. ..$ : int [1:23] 674 675 676 677 678 679 680 681 682 683 ...
+  .. ..$ : int [1:23] 697 698 699 700 701 702 703 704 705 706 ...
+  .. ..$ : int [1:23] 720 721 722 723 724 725 726 727 728 729 ...
+  .. ..$ : int [1:23] 743 744 745 746 747 748 749 750 751 752 ...
+  .. ..$ : int [1:23] 766 767 768 769 770 771 772 773 774 775 ...
+  .. ..$ : int [1:23] 789 790 791 792 793 794 795 796 797 798 ...
+  .. ..$ : int [1:23] 812 813 814 815 816 817 818 819 820 821 ...
+  .. ..$ : int [1:23] 835 836 837 838 839 840 841 842 843 844 ...
+  .. ..$ : int [1:23] 858 859 860 861 862 863 864 865 866 867 ...
+  .. ..$ : int [1:23] 881 882 883 884 885 886 887 888 889 890 ...
+  .. ..$ : int [1:21] 904 905 906 907 908 909 910 911 912 913 ...
+  .. ..$ : int [1:23] 925 926 927 928 929 930 931 932 933 934 ...
+  .. ..$ : int [1:23] 948 949 950 951 952 953 954 955 956 957 ...
+  .. ..$ : int [1:20] 971 972 973 974 975 976 977 978 979 980 ...
+  .. ..$ : int [1:23] 991 992 993 994 995 996 997 998 999 1000 ...
+  .. ..$ : int [1:23] 1014 1015 1016 1017 1018 1019 1020 1021 1022 1023 ...
+  .. ..$ : int [1:23] 1037 1038 1039 1040 1041 1042 1043 1044 1045 1046 ...
+  .. ..$ : int [1:23] 1060 1061 1062 1063 1064 1065 1066 1067 1068 1069 ...
+  .. ..$ : int [1:23] 1083 1084 1085 1086 1087 1088 1089 1090 1091 1092 ...
+  .. ..$ : int [1:23] 1106 1107 1108 1109 1110 1111 1112 1113 1114 1115 ...
+  .. ..@ ptype: int(0) 
+  ..- attr(*, ".drop")= logi TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 50 × 55
+   States      year_mean year_median year_sd avg_max_aqi_mean avg_max_aqi_median
+   &lt;chr&gt;           &lt;dbl&gt;       &lt;dbl&gt;   &lt;dbl&gt;            &lt;dbl&gt;              &lt;dbl&gt;
+ 1 Alabama         2010        2010     6.78             117.              113. 
+ 2 Alaska          2010        2010     6.78             111.              102. 
+ 3 Arizona         2010        2010     6.78             184.              172. 
+ 4 Arkansas        2010.       2010.    6.76             100.               99.9
+ 5 California      2011.       2012     6.45             306.              283. 
+ 6 Colorado        2010        2010     6.78             115.              112. 
+ 7 Connecticut     2010.       2010.    6.65             170.              166. 
+ 8 Delaware        2010.       2010.    6.81             160.              164. 
+ 9 Florida         2010        2010     6.78             117.              117. 
+10 Georgia         2010        2010     6.78             130.              130. 
+# ℹ 40 more rows
+# ℹ 49 more variables: avg_max_aqi_sd &lt;dbl&gt;,
+#   avg_x90th_percentile_aqi_mean &lt;dbl&gt;, avg_x90th_percentile_aqi_median &lt;dbl&gt;,
+#   avg_x90th_percentile_aqi_sd &lt;dbl&gt;, avg_median_aqi_mean &lt;dbl&gt;,
+#   avg_median_aqi_median &lt;dbl&gt;, avg_median_aqi_sd &lt;dbl&gt;,
+#   avg_days_with_aqi_mean &lt;dbl&gt;, avg_days_with_aqi_median &lt;dbl&gt;,
+#   avg_days_with_aqi_sd &lt;dbl&gt;, avg_good_days_mean &lt;dbl&gt;, …</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="final_main_quarto_presentation_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="final_main_quarto_presentation_files/figure-revealjs/unnamed-chunk-5-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="final_main_quarto_presentation_files/figure-revealjs/unnamed-chunk-6-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="final_main_quarto_presentation_files/figure-revealjs/unnamed-chunk-7-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>png 
+  2 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="final_main_quarto_presentation_files/figure-revealjs/unnamed-chunk-9-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="final_main_quarto_presentation_files/figure-revealjs/unnamed-chunk-10-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>                                               year avg_max_aqi
+year                                     1.00000000 -0.20389224
+avg_max_aqi                             -0.20389224  1.00000000
+avg_x90th_percentile_aqi                -0.40458365  0.67505568
+avg_median_aqi                          -0.06242946  0.43023541
+avg_days_with_aqi                        0.51328732  0.18689323
+avg_good_days                            0.52834788 -0.21914710
+avg_moderate_days                        0.07778249  0.41799183
+avg_unhealthy_for_sensitive_groups_days -0.42288197  0.75389796
+avg_unhealthy_days                      -0.32409289  0.69982723
+avg_very_unhealthy_days                 -0.17403639  0.57327276
+avg_hazardous_days                       0.04684586  0.47092206
+avg_days_co                             -0.36038577  0.00597589
+avg_days_no2                            -0.34590792  0.16998642
+avg_days_ozone                           0.18421218  0.21403556
+avg_days_pm2_5                           0.39884828 -0.07461222
+avg_days_pm10                           -0.15157526 -0.02945708
+Total_Count                              0.07464031  0.38499016
+Total_Population                         0.05540930  0.42922529
+                                        avg_x90th_percentile_aqi avg_median_aqi
+year                                                 -0.40458365    -0.06242946
+avg_max_aqi                                           0.67505568     0.43023541
+avg_x90th_percentile_aqi                              1.00000000     0.76113660
+avg_median_aqi                                        0.76113660     1.00000000
+avg_days_with_aqi                                    -0.05852535     0.11039583
+avg_good_days                                        -0.59264756    -0.49633038
+avg_moderate_days                                     0.59505368     0.80730908
+avg_unhealthy_for_sensitive_groups_days               0.89350965     0.55827852
+avg_unhealthy_days                                    0.74726281     0.35560896
+avg_very_unhealthy_days                               0.51590631     0.21966128
+avg_hazardous_days                                    0.11984193     0.06503809
+avg_days_co                                          -0.02286648    -0.28936071
+avg_days_no2                                          0.22313611     0.00603191
+avg_days_ozone                                        0.17467285     0.32324580
+avg_days_pm2_5                                       -0.14944136    -0.01284501
+avg_days_pm10                                        -0.23351251    -0.39672124
+Total_Count                                           0.22642075     0.28137416
+Total_Population                                      0.21154761     0.24237940
+                                        avg_days_with_aqi avg_good_days
+year                                          0.513287323    0.52834788
+avg_max_aqi                                   0.186893225   -0.21914710
+avg_x90th_percentile_aqi                     -0.058525354   -0.59264756
+avg_median_aqi                                0.110395831   -0.49633038
+avg_days_with_aqi                             1.000000000    0.73257772
+avg_good_days                                 0.732577720    1.00000000
+avg_moderate_days                             0.394388796   -0.31929829
+avg_unhealthy_for_sensitive_groups_days       0.000625128   -0.45940877
+avg_unhealthy_days                            0.028316496   -0.28844662
+avg_very_unhealthy_days                       0.083733620   -0.13114912
+avg_hazardous_days                            0.093843201   -0.02179993
+avg_days_co                                  -0.235611637   -0.09603969
+avg_days_no2                                 -0.055856650   -0.07456027
+avg_days_ozone                                0.459928593    0.33271019
+avg_days_pm2_5                                0.439230933    0.25497011
+avg_days_pm10                                -0.136254178    0.06622098
+Total_Count                                   0.352872423    0.07688920
+Total_Population                              0.334413071    0.07869097
+                                        avg_moderate_days
+year                                           0.07778249
+avg_max_aqi                                    0.41799183
+avg_x90th_percentile_aqi                       0.59505368
+avg_median_aqi                                 0.80730908
+avg_days_with_aqi                              0.39438880
+avg_good_days                                 -0.31929829
+avg_moderate_days                              1.00000000
+avg_unhealthy_for_sensitive_groups_days        0.45018608
+avg_unhealthy_days                             0.24722668
+avg_very_unhealthy_days                        0.15510053
+avg_hazardous_days                             0.10821568
+avg_days_co                                   -0.23376351
+avg_days_no2                                  -0.05531032
+avg_days_ozone                                 0.13492094
+avg_days_pm2_5                                 0.33928718
+avg_days_pm10                                 -0.29800418
+Total_Count                                    0.34048722
+Total_Population                               0.30168383
+                                        avg_unhealthy_for_sensitive_groups_days
+year                                                               -0.422881975
+avg_max_aqi                                                         0.753897962
+avg_x90th_percentile_aqi                                            0.893509646
+avg_median_aqi                                                      0.558278521
+avg_days_with_aqi                                                   0.000625128
+avg_good_days                                                      -0.459408772
+avg_moderate_days                                                   0.450186081
+avg_unhealthy_for_sensitive_groups_days                             1.000000000
+avg_unhealthy_days                                                  0.805958249
+avg_very_unhealthy_days                                             0.534647716
+avg_hazardous_days                                                  0.227486772
+avg_days_co                                                         0.059916787
+avg_days_no2                                                        0.299907536
+avg_days_ozone                                                      0.218194126
+avg_days_pm2_5                                                     -0.240317292
+avg_days_pm10                                                      -0.059633416
+Total_Count                                                         0.302518082
+Total_Population                                                    0.322974733
+                                        avg_unhealthy_days
+year                                           -0.32409289
+avg_max_aqi                                     0.69982723
+avg_x90th_percentile_aqi                        0.74726281
+avg_median_aqi                                  0.35560896
+avg_days_with_aqi                               0.02831650
+avg_good_days                                  -0.28844662
+avg_moderate_days                               0.24722668
+avg_unhealthy_for_sensitive_groups_days         0.80595825
+avg_unhealthy_days                              1.00000000
+avg_very_unhealthy_days                         0.76964250
+avg_hazardous_days                              0.21921110
+avg_days_co                                     0.08807261
+avg_days_no2                                    0.29527107
+avg_days_ozone                                  0.11344716
+avg_days_pm2_5                                 -0.11371631
+avg_days_pm10                                  -0.09166169
+Total_Count                                     0.27606581
+Total_Population                                0.31169762
+                                        avg_very_unhealthy_days
+year                                                -0.17403639
+avg_max_aqi                                          0.57327276
+avg_x90th_percentile_aqi                             0.51590631
+avg_median_aqi                                       0.21966128
+avg_days_with_aqi                                    0.08373362
+avg_good_days                                       -0.13114912
+avg_moderate_days                                    0.15510053
+avg_unhealthy_for_sensitive_groups_days              0.53464772
+avg_unhealthy_days                                   0.76964250
+avg_very_unhealthy_days                              1.00000000
+avg_hazardous_days                                   0.29490230
+avg_days_co                                          0.06964201
+avg_days_no2                                         0.21232792
+avg_days_ozone                                       0.09863070
+avg_days_pm2_5                                      -0.08387798
+avg_days_pm10                                        0.01785630
+Total_Count                                          0.17874893
+Total_Population                                     0.20704068
+                                        avg_hazardous_days avg_days_co
+year                                            0.04684586 -0.36038577
+avg_max_aqi                                     0.47092206  0.00597589
+avg_x90th_percentile_aqi                        0.11984193 -0.02286648
+avg_median_aqi                                  0.06503809 -0.28936071
+avg_days_with_aqi                               0.09384320 -0.23561164
+avg_good_days                                  -0.02179993 -0.09603969
+avg_moderate_days                               0.10821568 -0.23376351
+avg_unhealthy_for_sensitive_groups_days         0.22748677  0.05991679
+avg_unhealthy_days                              0.21921110  0.08807261
+avg_very_unhealthy_days                         0.29490230  0.06964201
+avg_hazardous_days                              1.00000000 -0.02986652
+avg_days_co                                    -0.02986652  1.00000000
+avg_days_no2                                   -0.04849440  0.21806297
+avg_days_ozone                                  0.04093125 -0.25727199
+avg_days_pm2_5                                 -0.06949123 -0.21643031
+avg_days_pm10                                   0.28832028  0.24549284
+Total_Count                                     0.15173717 -0.04779091
+Total_Population                                0.18732776 -0.05119970
+                                        avg_days_no2 avg_days_ozone
+year                                     -0.34590792     0.18421218
+avg_max_aqi                               0.16998642     0.21403556
+avg_x90th_percentile_aqi                  0.22313611     0.17467285
+avg_median_aqi                            0.00603191     0.32324580
+avg_days_with_aqi                        -0.05585665     0.45992859
+avg_good_days                            -0.07456027     0.33271019
+avg_moderate_days                        -0.05531032     0.13492094
+avg_unhealthy_for_sensitive_groups_days   0.29990754     0.21819413
+avg_unhealthy_days                        0.29527107     0.11344716
+avg_very_unhealthy_days                   0.21232792     0.09863070
+avg_hazardous_days                       -0.04849440     0.04093125
+avg_days_co                               0.21806297    -0.25727199
+avg_days_no2                              1.00000000     0.05359207
+avg_days_ozone                            0.05359207     1.00000000
+avg_days_pm2_5                           -0.27828246    -0.47238543
+avg_days_pm10                            -0.09209680    -0.15857884
+Total_Count                               0.04576440     0.29381918
+Total_Population                          0.03387115     0.27599105
+                                        avg_days_pm2_5 avg_days_pm10
+year                                        0.39884828   -0.15157526
+avg_max_aqi                                -0.07461222   -0.02945708
+avg_x90th_percentile_aqi                   -0.14944136   -0.23351251
+avg_median_aqi                             -0.01284501   -0.39672124
+avg_days_with_aqi                           0.43923093   -0.13625418
+avg_good_days                               0.25497011    0.06622098
+avg_moderate_days                           0.33928718   -0.29800418
+avg_unhealthy_for_sensitive_groups_days    -0.24031729   -0.05963342
+avg_unhealthy_days                         -0.11371631   -0.09166169
+avg_very_unhealthy_days                    -0.08387798    0.01785630
+avg_hazardous_days                         -0.06949123    0.28832028
+avg_days_co                                -0.21643031    0.24549284
+avg_days_no2                               -0.27828246   -0.09209680
+avg_days_ozone                             -0.47238543   -0.15857884
+avg_days_pm2_5                              1.00000000   -0.37890019
+avg_days_pm10                              -0.37890019    1.00000000
+Total_Count                                 0.08251445   -0.20700995
+Total_Population                            0.06996585   -0.16392800
+                                        Total_Count Total_Population
+year                                     0.07464031       0.05540930
+avg_max_aqi                              0.38499016       0.42922529
+avg_x90th_percentile_aqi                 0.22642075       0.21154761
+avg_median_aqi                           0.28137416       0.24237940
+avg_days_with_aqi                        0.35287242       0.33441307
+avg_good_days                            0.07688920       0.07869097
+avg_moderate_days                        0.34048722       0.30168383
+avg_unhealthy_for_sensitive_groups_days  0.30251808       0.32297473
+avg_unhealthy_days                       0.27606581       0.31169762
+avg_very_unhealthy_days                  0.17874893       0.20704068
+avg_hazardous_days                       0.15173717       0.18732776
+avg_days_co                             -0.04779091      -0.05119970
+avg_days_no2                             0.04576440       0.03387115
+avg_days_ozone                           0.29381918       0.27599105
+avg_days_pm2_5                           0.08251445       0.06996585
+avg_days_pm10                           -0.20700995      -0.16392800
+Total_Count                              1.00000000       0.97170413
+Total_Population                         0.97170413       1.00000000</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="final_main_quarto_presentation_files/figure-revealjs/unnamed-chunk-11-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>                        Total_Count avg_max_aqi avg_moderate_days
+Total_Count              1.00000000  0.38499016         0.3404872
+avg_max_aqi              0.38499016  1.00000000         0.4179918
+avg_moderate_days        0.34048722  0.41799183         1.0000000
+avg_unhealthy_days       0.27606581  0.69982723         0.2472267
+avg_very_unhealthy_days  0.17874893  0.57327276         0.1551005
+avg_days_pm2_5           0.08251445 -0.07461222         0.3392872
+                        avg_unhealthy_days avg_very_unhealthy_days
+Total_Count                      0.2760658              0.17874893
+avg_max_aqi                      0.6998272              0.57327276
+avg_moderate_days                0.2472267              0.15510053
+avg_unhealthy_days               1.0000000              0.76964250
+avg_very_unhealthy_days          0.7696425              1.00000000
+avg_days_pm2_5                  -0.1137163             -0.08387798
+                        avg_days_pm2_5
+Total_Count                 0.08251445
+avg_max_aqi                -0.07461222
+avg_moderate_days           0.33928718
+avg_unhealthy_days         -0.11371631
+avg_very_unhealthy_days    -0.08387798
+avg_days_pm2_5              1.00000000</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="final_main_quarto_presentation_files/figure-revealjs/unnamed-chunk-13-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  States     avg_total_count total_total_count
+  &lt;fct&gt;                &lt;dbl&gt;             &lt;dbl&gt;
+1 Alabama              123                2829
+2 Alaska                 0                   0
+3 Arizona              221.               5076
+4 Arkansas              20.3               447
+5 California          2300.              43705
+6 Colorado             108.               2489</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="final_main_quarto_presentation_files/figure-revealjs/unnamed-chunk-15-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>we specify the following priors:</p>
+<ul>
+<li><p><span class="math inline">\(α\)</span> ~ Normal(0, 10): The prior for the intercept is a normal distribution with a mean of 0 and a large standard deviation of 10, reflecting uncertainty about the baseline incidence.</p></li>
+<li><p><span class="math inline">\(β_k\)</span> ~ Normal(0, 10) for each element β_k: The priors for the coefficients of the predictors are also normally distributed with mean 0 and a large standard deviation of 10, allowing for flexibility in how predictors affect the cancer incidence count.</p></li>
+<li><p><span class="math inline">\(λ\)</span> ~ Gamma(2, 0.1): This is the prior for the rate parameter in the Poisson distribution, with a mean of 2 and a large variance, allowing the model to adapt to the observed data.</p></li>
+</ul>
+<p>These priors are relatively weak, meaning that they do not overly constrain the model. They are designed to allow the data to drive the inference</p>
+<p>The likelihood of the data is specified as a Poisson distribution, where the observed total cancer count <span class="math inline">\(y_i\)</span> for each state-year pair follows a Poisson distribution with parameter <span class="math inline">\(λ_i\)</span></p>
+<p>The rate <span class="math inline">\(λ_i\)</span> is the exponential of a linear combination of the predictors. This captures the multiplicative effects of the predictors on the expected cancer incidence.</p>
+<p>The posterior distribution is the updated belief about the parameters after observing the data. It is obtained by applying Bayes’ theorem:</p>
+<p><span class="math inline">\(P(α, β | y, X) ∝ P(y | X, α, β) * P(α) * P(β)\)</span><br>
+Where:</p>
+<ul>
+<li><p><span class="math inline">\(P(y | X, α, β)\)</span> is the likelihood, as specified above.</p></li>
+<li><p><span class="math inline">\(P(α)\)</span> and <span class="math inline">\(P(β)\)</span> are the priors for the parameters <span class="math inline">\(α\)</span> and <span class="math inline">\(β\)</span>.</p></li>
+<li><p>The posterior distribution reflects the parameter estimates that are most consistent with the observed data, while also incorporating prior beliefs.</p></li>
+</ul>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Inference for Stan model: anon_model.
+4 chains, each with iter=4000; warmup=2000; thin=1; 
+post-warmup draws per chain=2000, total post-warmup draws=8000.
+
+         mean se_mean   sd  2.5%   25%           50%           75%      97.5%
+alpha    1.33    0.47 0.66  0.66  0.72  1.200000e+00  1.810000e+00       2.25
+beta[1]  0.12    0.76 1.07 -1.11 -0.46 -1.200000e-01  4.700000e-01       1.84
+beta[2] -0.65    0.40 0.56 -1.38 -1.01 -7.000000e-01 -3.700000e-01       0.23
+beta[3] -0.58    0.68 0.97 -1.50 -1.48 -8.700000e-01  1.800000e-01       0.80
+beta[4] -0.91    0.32 0.45 -1.26 -1.20 -1.120000e+00 -8.700000e-01      -0.02
+beta[5]  0.67    0.56 0.83 -1.04  0.44  8.800000e-01  1.250000e+00       1.53
+lambda   2.60    1.40 1.98  0.46  0.72  2.620000e+00  4.510000e+00       4.70
+lp__     -Inf     NaN  NaN  -Inf  -Inf -3.806856e+69 -7.843894e+11 1560312.06
+        n_eff     Rhat
+alpha       2 14159.67
+beta[1]     2  2279.28
+beta[2]     2    28.28
+beta[3]     2    48.96
+beta[4]     2    21.13
+beta[5]     2     8.65
+lambda      2  2949.13
+lp__      NaN      NaN
+
+Samples were drawn using NUTS(diag_e) at Thu Dec 19 05:10:43 2024.
+For each parameter, n_eff is a crude measure of effective sample size,
+and Rhat is the potential scale reduction factor on split chains (at 
+convergence, Rhat=1).</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="final_main_quarto_presentation_files/figure-revealjs/unnamed-chunk-19-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>$summary
+              mean   se_mean        sd       2.5%        25%           50%
+alpha    1.3303422 0.4683473 0.6624259  0.6604123  0.7226900  1.204261e+00
+beta[1]  0.1209736 0.7585974 1.0729537 -1.1079619 -0.4638338 -1.238344e-01
+beta[2] -0.6543458 0.3954069 0.5610593 -1.3800340 -1.0059696 -6.955918e-01
+beta[3] -0.5768707 0.6832906 0.9674782 -1.4972242 -1.4761083 -8.679626e-01
+beta[4] -0.9111088 0.3153188 0.4485909 -1.2572637 -1.1973841 -1.119900e+00
+beta[5]  0.6722465 0.5643447 0.8328739 -1.0354679  0.4446182  8.750768e-01
+lambda   2.6029989 1.3964106 1.9750699  0.4613693  0.7201298  2.622271e+00
+lp__          -Inf       NaN       NaN       -Inf       -Inf -3.806856e+69
+                  75%         97.5%    n_eff         Rhat
+alpha    1.811978e+00  2.252164e+00 2.000500 14159.670446
+beta[1]  4.659881e-01  1.836631e+00 2.000503  2279.279512
+beta[2] -3.749148e-01  2.344265e-01 2.013395    28.278148
+beta[3]  1.844719e-01  8.042832e-01 2.004802    48.961752
+beta[4] -8.662958e-01 -1.626523e-02 2.023957    21.130367
+beta[5]  1.250676e+00  1.533967e+00 2.178059     8.652551
+lambda   4.509930e+00  4.699316e+00 2.000501  2949.131340
+lp__    -7.843894e+11  1.560312e+06      NaN          NaN
+
+$c_summary
+, , chains = chain:1
+
+         stats
+parameter          mean           sd          2.5%           25%           50%
+  alpha    6.606830e-01 1.593178e-04  6.603531e-01  6.605828e-01  6.607021e-01
+  beta[1]  4.349253e-03 2.344912e-03  1.608793e-03  1.749888e-03  3.912819e-03
+  beta[2]  1.538344e-01 8.278746e-02  3.091297e-02  5.857692e-02  1.732622e-01
+  beta[3] -1.454721e-01 8.264943e-02 -2.509460e-01 -2.188861e-01 -1.645636e-01
+  beta[4] -1.473725e-01 8.897737e-02 -2.609719e-01 -2.265346e-01 -1.677998e-01
+  beta[5] -5.951343e-01 4.304108e-01 -1.234374e+00 -9.808057e-01 -6.237844e-01
+  lambda   4.444927e+00 1.818347e-03  4.439867e+00  4.444478e+00  4.445815e+00
+  lp__     1.467147e+06 8.459318e+04  1.311148e+06  1.393869e+06  1.487860e+06
+         stats
+parameter           75%         97.5%
+  alpha    6.608197e-01  6.608843e-01
+  beta[1]  6.547053e-03  8.247347e-03
+  beta[2]  2.273124e-01  2.591046e-01
+  beta[3] -5.034237e-02 -2.294668e-02
+  beta[4] -4.481474e-02 -1.564971e-02
+  beta[5] -1.028916e-01 -4.922983e-03
+  lambda   4.445974e+00  4.446747e+00
+  lp__     1.558396e+06  1.560317e+06
+
+, , chains = chain:2
+
+         stats
+parameter       mean  sd       2.5%        25%        50%        75%      97.5%
+  alpha    0.7432726   0  0.7432726  0.7432726  0.7432726  0.7432726  0.7432726
+  beta[1] -0.2491244   0 -0.2491244 -0.2491244 -0.2491244 -0.2491244 -0.2491244
+  beta[2] -1.3800340   0 -1.3800340 -1.3800340 -1.3800340 -1.3800340 -1.3800340
+  beta[3] -1.4972242   0 -1.4972242 -1.4972242 -1.4972242 -1.4972242 -1.4972242
+  beta[4] -1.0623749   0 -1.0623749 -1.0623749 -1.0623749 -1.0623749 -1.0623749
+  beta[5]  1.5339668   0  1.5339668  1.5339668  1.5339668  1.5339668  1.5339668
+  lambda   4.6993159   0  4.6993159  4.6993159  4.6993159  4.6993159  4.6993159
+  lp__          -Inf NaN       -Inf       -Inf       -Inf       -Inf       -Inf
+
+, , chains = chain:3
+
+         stats
+parameter          mean sd          2.5%           25%           50%
+  alpha    1.665249e+00  0  1.665249e+00  1.665249e+00  1.665249e+00
+  beta[1]  1.836631e+00  0  1.836631e+00  1.836631e+00  1.836631e+00
+  beta[2] -8.812815e-01  0 -8.812815e-01 -8.812815e-01 -8.812815e-01
+  beta[3] -1.469070e+00  0 -1.469070e+00 -1.469070e+00 -1.469070e+00
+  beta[4] -1.177424e+00  0 -1.177424e+00 -1.177424e+00 -1.177424e+00
+  beta[5]  5.939078e-01  0  5.939078e-01  5.939078e-01  5.939078e-01
+  lambda   8.063833e-01  0  8.063833e-01  8.063833e-01  8.063833e-01
+  lp__    -7.613713e+69  0 -7.613713e+69 -7.613713e+69 -7.613713e+69
+         stats
+parameter           75%         97.5%
+  alpha    1.665249e+00  1.665249e+00
+  beta[1]  1.836631e+00  1.836631e+00
+  beta[2] -8.812815e-01 -8.812815e-01
+  beta[3] -1.469070e+00 -1.469070e+00
+  beta[4] -1.177424e+00 -1.177424e+00
+  beta[5]  5.939078e-01  5.939078e-01
+  lambda   8.063833e-01  8.063833e-01
+  lp__    -7.613713e+69 -7.613713e+69
+
+, , chains = chain:4
+
+         stats
+parameter          mean           sd          2.5%           25%           50%
+  alpha    2.252164e+00 7.547258e-14  2.252164e+00  2.252164e+00  2.252164e+00
+  beta[1] -1.107962e+00 3.545550e-13 -1.107962e+00 -1.107962e+00 -1.107962e+00
+  beta[2] -5.099021e-01 2.865074e-13 -5.099021e-01 -5.099021e-01 -5.099021e-01
+  beta[3]  8.042832e-01 4.323706e-13  8.042832e-01  8.042832e-01  8.042832e-01
+  beta[4] -1.257264e+00 1.026446e-13 -1.257264e+00 -1.257264e+00 -1.257264e+00
+  beta[5]  1.156246e+00 2.907921e-14  1.156246e+00  1.156246e+00  1.156246e+00
+  lambda   4.613693e-01 1.774063e-14  4.613693e-01  4.613693e-01  4.613693e-01
+  lp__    -1.045853e+12 2.472537e+02 -1.045853e+12 -1.045853e+12 -1.045853e+12
+         stats
+parameter           75%         97.5%
+  alpha    2.252164e+00  2.252164e+00
+  beta[1] -1.107962e+00 -1.107962e+00
+  beta[2] -5.099021e-01 -5.099021e-01
+  beta[3]  8.042832e-01  8.042832e-01
+  beta[4] -1.257264e+00 -1.257264e+00
+  beta[5]  1.156246e+00  1.156246e+00
+  lambda   4.613693e-01  4.613693e-01
+  lp__    -1.045853e+12 -1.045853e+12</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code> num [1:1128, 1:5] 146 151 137 144 133 ...
+ - attr(*, "dimnames")=List of 2
+  ..$ : NULL
+  ..$ : chr [1:5] "avg_max_aqi" "avg_days_with_aqi" "avg_good_days" "avg_moderate_days" ...</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code> num [1:1128, 1:8000] 2.93 3.18 2.97 3.18 3.03 ...
+ - attr(*, "dimnames")=List of 2
+  ..$           : NULL
+  ..$ iterations: NULL</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="final_main_quarto_presentation_files/figure-revealjs/unnamed-chunk-22-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="final_main_quarto_presentation_files/figure-revealjs/unnamed-chunk-23-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="final_main_quarto_presentation_files/figure-revealjs/unnamed-chunk-24-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code> num [1:1128] 41 51 79 34 53 54 74 66 112 162 ...</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="final_main_quarto_presentation_files/figure-revealjs/unnamed-chunk-25-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="final_main_quarto_presentation_files/figure-revealjs/unnamed-chunk-25-2.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Mean Squared Error: 653391.6 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1128 8000</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 8000</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="final_main_quarto_presentation_files/figure-revealjs/unnamed-chunk-27-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="final_main_quarto_presentation_files/figure-revealjs/unnamed-chunk-27-2.png" width="960"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Mean Squared Error (MSE): 3665643 </code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Root Mean Squared Error (RMSE): 1914.587 </code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>R-squared (R²): -16.03158 </code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Posterior Predictive P-value (PPP): 0.7690603 </code></pre>
+</div>
+</div>
+<h3 id="final-report-investigating-the-impact-of-aqi-factors-on-brain-cancer-incidence-in-the-u.s."><strong>Final Report: Investigating the Impact of AQI Factors on Brain Cancer Incidence in the U.S.</strong></h3>
+<h4 id="objective"><strong>Objective:</strong></h4>
+<p>This project aimed to explore the association between environmental, occupational, and lifestyle factors—specifically focusing on Air Quality Index (AQI) variables—and brain cancer incidence in the United States from 1999 to 2021. The goal was to understand how AQI features might contribute to the overall incidence of brain cancer across various states using a Bayesian statistical approach.</p>
+<h4 id="data"><strong>Data:</strong></h4>
+<p>The dataset included several variables that could influence brain cancer rates:</p>
+<ul>
+<li><p><strong>AQI-related factors</strong>: These included average AQI values, the number of days with different AQI levels, and other air quality metrics.</p></li>
+<li><p><strong>Brain cancer incidence data</strong>: The target variable was the total count of brain cancer cases across different states.</p></li>
+</ul>
+<p>Given time constraints, the project primarily focused on AQI-related factors, but additional data on <strong>drinking water quality</strong>, <strong>general radiation exposure</strong>, <strong>hazardous occupational exposure</strong>, and <strong>pesticide use distributions</strong> could substantially enhance the model’s explanatory power. These factors are likely to provide a clearer picture of how environmental and lifestyle factors, aside from air quality, contribute to brain cancer incidence.</p>
+<h4 id="modeling-approach"><strong>Modeling Approach:</strong></h4>
+<ul>
+<li><p><strong>Bayesian Poisson Regression</strong>: A Bayesian Poisson regression model was employed to estimate the relationship between AQI-related predictors and brain cancer incidence. The Poisson model was selected because brain cancer data, like many health-related counts, often follow a Poisson distribution, especially for counts of rare events like cancer cases.</p></li>
+<li><p><strong>Bayesian Framework</strong>: The Bayesian approach was particularly relevant because it allows for the incorporation of prior knowledge and uncertainty into the modeling process. Given the complexity of cancer incidence and the many contributing factors, the Bayesian framework provided a natural way to quantify uncertainty in model parameters and make probabilistic statements about the effects of AQI-related variables on brain cancer incidence. This approach also facilitated the use of posterior predictive checks to assess model fit and allowed for more flexibility in capturing uncertainty, as opposed to traditional frequentist methods.</p></li>
+</ul>
+<h4 id="model-performance"><strong>Model Performance:</strong></h4>
+<ul>
+<li><p><strong>Mean Squared Error (MSE)</strong>: 369,453.8</p></li>
+<li><p><strong>Root Mean Squared Error (RMSE)</strong>: 607.8</p></li>
+<li><p><strong>R-squared (R²)</strong>: -0.7165833, indicating that the model explained very little of the variance, which is expected given the complexity of the data and the focus on a single set of predictors.</p></li>
+<li><p><strong>Posterior Predictive P-value (PPP)</strong>: 0.3142738, which suggested that the model’s predictive accuracy was reasonable, though there is significant room for improvement.</p></li>
+</ul>
+<h4 id="findings-and-insights"><strong>Findings and Insights:</strong></h4>
+<ol type="1">
+<li><strong>Impact of AQI-related Factors</strong>: The regression coefficients from the model suggested that certain AQI-related factors, like <strong><code>avg_max_aqi</code></strong> (maximum AQI), had a moderate effect on brain cancer incidence, with a negative association. This suggests that higher AQI values, which typically indicate worse air quality, might correlate with a lower incidence of brain cancer in some states. <strong><em>However, this finding is counterintuitive and requires further investigation, potentially involving other environmental and lifestyle factors.</em></strong></li>
+</ol>
+<pre><code>-   **`avg_max_aqi`**: Negative impact on brain cancer incidence.
+
+-    **`avg_days_with_aqi`**: Also exhibited a negative relationship, indicating that the number of days with high AQI might have a complex, indirect effect on cancer incidence.</code></pre>
+<ol start="2" type="1">
+<li><strong>Model Fit</strong>:</li>
+</ol>
+<pre><code>-   While the model showed some predictive ability, as indicated by the posterior predictive p-value and residuals analysis, the R² value indicated that the model was not fully capturing the complexity of brain cancer incidence. This suggests that other factors, such as genetics, healthcare infrastructure, and more detailed environmental exposures, might play a larger role than AQI alone.</code></pre>
+<ol start="3" type="1">
+<li><p><strong>Future Improvements</strong>:</p>
+<ul>
+<li><p><strong>Additional Factors</strong>: Incorporating data on <strong>drinking water quality</strong>, <strong>radiation exposure</strong>, <strong>occupational hazards</strong>, and <strong>pesticide use</strong> would likely improve model performance and provide more precise estimates of the effects of environmental and lifestyle factors on brain cancer incidence. These factors may influence brain cancer in ways that AQI alone cannot explain.</p></li>
+<li><p><strong>Longer Data Timeframes</strong>: A more robust dataset with longer timeframes and more granularity would provide better insights, particularly with regard to time-lag effects (e.g., how long after exposure to certain pollutants might brain cancer incidence rise).</p></li>
+</ul></li>
+<li><p><strong>Conclusion</strong>:</p></li>
+</ol>
+<p>The results from the Bayesian Poisson regression model suggest that while there are some associations between AQI-related factors and brain cancer incidence, the overall model fit is weak, and significant uncertainty remains. The model’s predictive performance was moderate, but the low R² value indicates that additional variables and more complex models are needed to capture the full extent of the factors influencing brain cancer.</p>
+<p>The Bayesian approach proved to be useful in this context as it allowed for the incorporation of prior knowledge and a flexible treatment of uncertainty, both of which are crucial in modeling a complex and multifaceted issue like cancer incidence. While AQI-related factors were explored in depth, incorporating additional environmental and occupational data in future studies could lead to a more comprehensive understanding of how various factors contribute to brain cancer incidence.</p>
+<p>Further research, particularly in the form of more detailed datasets and refined models, will be necessary to pinpoint more accurately the environmental, lifestyle, and occupational risks associated with brain cancer.</p>
+<div class="quarto-auto-generated-content">
+<div class="footer footer-default">
+
+</div>
+</div>
+</section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="final_main_quarto_presentation_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="final_main_quarto_presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="final_main_quarto_presentation_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="final_main_quarto_presentation_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="final_main_quarto_presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="final_main_quarto_presentation_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="final_main_quarto_presentation_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="final_main_quarto_presentation_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="final_main_quarto_presentation_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="final_main_quarto_presentation_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
+      });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>

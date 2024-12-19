@@ -1,0 +1,398 @@
+---
+title: "Data Consolidation and Visualization"
+format: 
+  pdf:
+    pdf-engine: xelatex
+    keep-tex: true
+    documentclass: article
+    fontsize: 12pt
+    code-block-width: 80
+    header-includes:
+      - \usepackage{setspace}
+      - \setstretch{1.0}
+      - \usepackage{geometry}
+      - \geometry{margin=0.6in}
+      - \usepackage{parskip}
+      - \setlength{\parskip}{0.3em}
+      - \setlength{\parindent}{0.1em}
+      - \usepackage{listings}
+      - \lstset{
+          breaklines=true, 
+          breakatwhitespace=true, 
+          basicstyle=\ttfamily\small,
+          columns=fullflexible}
+      - \usepackage{graphicx}
+      - \usepackage{longtable}
+      - \usepackage{caption}
+      - \captionsetup{width=\textwidth}
+  html:
+    prefer-html: true  
+execute:
+  env:
+    TEXLIVE_INSTALL_NO_UPDATE: "1"
+editor: visual
+---
+
+```{r, echo = FALSE}
+library(tidyverse)
+library(ggplot2)
+library(zoo)
+library(readr)
+library(stringr)
+library(forcats)
+library(dplyr)
+library(purrr)
+library(tidyr)
+
+```
+
+### AQI Data - Averaging and Consolidating
+
+```{r}
+aqi1 <- read.csv("annual_aqi_by_county_2006.csv")
+colnames(aqi1)
+# aqi1
+```
+
+```{r}
+library(dplyr)
+library(readr)
+library(janitor)
+library(tidyr)
+
+
+process_year_data <- function(year) {
+  if (year == 2020) {
+    return(NULL)  
+  }
+  
+  
+  file_name <- paste0("annual_aqi_by_county_", year, ".csv")
+  
+  
+  data <- read_csv(file_name, show_col_types = FALSE) %>%
+    clean_names()
+  
+  
+  required_columns <- c("max_aqi", "x90th_percentile_aqi", "median_aqi",
+                        "days_with_aqi", "good_days", 
+                        "moderate_days",
+                        "unhealthy_for_sensitive_groups_days",
+                        "unhealthy_days","very_unhealthy_days",
+                        "hazardous_days",
+                        "days_co", "days_no2", "days_ozone", 
+                        "days_pm2_5", "days_pm10")
+  
+  
+  missing_columns <- setdiff(required_columns, colnames(data))
+  if (length(missing_columns) > 0) {
+    warning("Missing columns in ", year, ": ", 
+            paste(missing_columns, collapse = ", "))
+    return(NULL)  
+  }
+  
+  state_avg_aqi <- data %>%
+    group_by(state) %>%
+    summarise(
+      avg_max_aqi = mean(max_aqi, 
+                         na.rm = TRUE),
+      avg_x90th_percentile_aqi = mean(x90th_percentile_aqi, 
+                                      na.rm = TRUE),
+      avg_median_aqi = mean(median_aqi, 
+                            na.rm = TRUE),
+      avg_days_with_aqi = mean(days_with_aqi, 
+                               na.rm = TRUE),
+      avg_good_days = mean(good_days, 
+                           na.rm = TRUE),
+      avg_moderate_days = mean(moderate_days, 
+                               na.rm = TRUE),
+      avg_unhealthy_for_sensitive_groups_days = mean
+      (unhealthy_for_sensitive_groups_days, na.rm = TRUE),
+      avg_unhealthy_days = mean(unhealthy_days, 
+                                na.rm = TRUE),
+      avg_very_unhealthy_days = mean(very_unhealthy_days, 
+                                     na.rm = TRUE),
+      avg_hazardous_days = mean(hazardous_days, 
+                                na.rm = TRUE),
+      avg_days_co = mean(days_co, 
+                         na.rm = TRUE),
+      avg_days_no2 = mean(days_no2, 
+                          na.rm = TRUE),
+      avg_days_ozone = mean(days_ozone, 
+                            na.rm = TRUE),
+      avg_days_pm2_5 = mean(days_pm2_5, 
+                            na.rm = TRUE),
+      avg_days_pm10 = mean(days_pm10, 
+                           na.rm = TRUE)
+    ) %>%
+    mutate(year = year)  
+  
+  return(state_avg_aqi)
+}
+
+# Process data for all years, excluding 2020
+years <- setdiff(1999:2021, 2020)
+
+all_years_data <- lapply(years, function(year) {
+  data <- process_year_data(year)
+  if (!is.null(data)) {
+    return(data)
+  }
+}) %>%
+  bind_rows()  
+
+# Create imputed 2020 data by averaging other years' data
+impute_2020_data <- all_years_data %>%
+  group_by(state) %>%
+  summarise(
+    avg_max_aqi = mean(avg_max_aqi, 
+                       na.rm = TRUE),
+    avg_x90th_percentile_aqi = mean(avg_x90th_percentile_aqi, 
+                                    na.rm = TRUE),
+    avg_median_aqi = mean(avg_median_aqi, 
+                          na.rm = TRUE),
+    avg_days_with_aqi = mean(avg_days_with_aqi, 
+                             na.rm = TRUE),
+    avg_good_days = mean(avg_good_days, 
+                         na.rm = TRUE),
+    avg_moderate_days = mean(avg_moderate_days, 
+                             na.rm = TRUE),
+    avg_unhealthy_for_sensitive_groups_days = mean
+    (avg_unhealthy_for_sensitive_groups_days, na.rm = TRUE),
+    avg_unhealthy_days = mean(avg_unhealthy_days, 
+                              na.rm = TRUE),
+    avg_very_unhealthy_days = mean(avg_very_unhealthy_days, 
+                                   na.rm = TRUE),
+    avg_hazardous_days = mean(avg_hazardous_days, 
+                              na.rm = TRUE),
+    avg_days_co = mean(avg_days_co, 
+                       na.rm = TRUE),
+    avg_days_no2 = mean(avg_days_no2, 
+                        na.rm = TRUE),
+    avg_days_ozone = mean(avg_days_ozone, 
+                          na.rm = TRUE),
+    avg_days_pm2_5 = mean(avg_days_pm2_5, 
+                          na.rm = TRUE),
+    avg_days_pm10 = mean(avg_days_pm10, 
+                         na.rm = TRUE)
+  ) %>%
+  mutate(year = 2020)  
+
+# Combine the original data 
+aqi_final_data <- bind_rows(all_years_data, impute_2020_data)
+
+write_csv(aqi_final_data, "state_avg_aqi_1999_2021_with_imputed_2020.csv")
+
+
+```
+
+```{r}
+ncol(aqi_final_data)
+summary(aqi_final_data)
+str(aqi_final_data)
+```
+
+### Loading the "Cancer Incidence" Data 
+
+```{r}
+# Load the data
+cancer_incidence <- read.csv("cancer_incidence.csv")
+
+# Convert 'Count' and 'Population' to numeric
+cancer_incidence$Count <- as.numeric(cancer_incidence$Count)
+cancer_incidence$Population <- as.numeric(cancer_incidence$Population)
+
+# Remove 'Crude.Rate' column
+cancer_incidence <- cancer_incidence %>%
+  select(-Crude.Rate)
+
+# Aggregate data by State, Year (across both sexes)
+cancer_aggregated <- cancer_incidence %>%
+  group_by(States, Year) %>%
+  summarise(
+    Total_Count = sum(Count, na.rm = TRUE), 
+    Total_Population = sum(Population, na.rm = TRUE)
+  )
+
+# View the resulting aggregated data
+head(cancer_aggregated)
+
+```
+
+### Ensuring Data Integrity and Processing the Next Data Set 
+
+```{r}
+
+aqi_data <- aqi_final_data
+can_in <- cancer_aggregated
+
+
+aqi_data$year <- as.integer(as.character(aqi_data$year))
+can_in$Year <- as.integer(as.character(can_in$Year))
+
+
+names(aqi_data)[names(aqi_data) == "state"] <- "States"  
+names(can_in)[names(can_in) == "States"] <- "States"   
+
+
+can_in_complete <- can_in %>%
+  mutate(
+    Total_Count = ifelse(is.na(Total_Count), 0, Total_Count),
+    Total_Population = ifelse
+    (is.na(Total_Population), 0, Total_Population)
+  )
+
+final_merged_data <- left_join(aqi_data, can_in_complete, 
+                               by = c("States", "year" = "Year"))
+
+head(final_merged_data)
+str(final_merged_data)
+write_csv(final_merged_data, "merged_aqi_cancer_incidence.csv")
+
+```
+
+Loading Environmental Hazard Data
+
+```{r}
+narrowr <- read.csv("narrowresult.csv")
+str(narrowr)
+```
+
+```{r}
+unique(narrowr$OrganizationFormalName)
+```
+
+```{r}
+
+# List of U.S. state names
+states <- c(
+  "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", 
+  "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho",
+  "Illinois", "Indiana","Iowa", "Kansas", "Kentucky", "Louisiana", "Maine",
+  "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi",
+  "Missouri", "Montana", "Nebraska","Nevada", "New Hampshire", "New Jersey",
+  "New Mexico", "New York", "North Carolina","North Dakota", "Ohio",
+  "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina",
+  "South Dakota", "Tennessee", "Texas", "Utah", "Vermont","Virginia",
+  "Washington", "West Virginia", "Wisconsin", "Wyoming"
+)
+
+# Regular expression pattern to match state names
+state_pattern <- str_c(states, collapse = "|")
+
+
+narrowr <- narrowr %>%
+  mutate(
+    # Handle blank or missing values first
+    OrganizationFormalName = ifelse(is.na(OrganizationFormalName) | 
+                                      OrganizationFormalName == "", "Unknown",
+                                    OrganizationFormalName),
+    # Extract the state name if it exists in the organization name
+    State = str_extract(OrganizationFormalName, state_pattern),
+    # Replace organization name with state name if a match is found
+    OrganizationFormalName = ifelse(!is.na(State), State, 
+                                    OrganizationFormalName)
+  )
+narrowr$state <- narrowr$OrganizationFormalName
+# View the updated dataset
+head(narrowr)
+colnames(narrowr)
+```
+
+```{r}
+str(narrowr$ActivityStartDate)
+str(narrowr$AnalysisStartDate)
+str(narrowr$AnalysisEndDate)
+```
+
+```{r}
+library(lubridate)
+library(dplyr)
+
+processed_dataset <- narrowr %>%
+  # Drop specified columns
+  select(-c(
+    OrganizationIdentifier, state, OrganizationFormalName, 
+    ResultDepthAltitudeReferencePointText, 
+    ResultSamplingPointName, 
+    ResultAnalyticalMethod.MethodName, 
+    ActivityIdentifier, USGSPCode, 
+    ResultAnalyticalMethod.MethodQualifierTypeName,
+    ResultDetectionConditionText,
+    MethodSpecificationName, ResultStatusIdentifier,
+    ResultSampleFractionText
+  )) %>%
+  
+   
+  mutate(
+     
+    ActivityStartDate = ifelse(ActivityStartDate == "" | 
+                                 is.na(ActivityStartDate), NA,
+                               ActivityStartDate),
+    AnalysisStartDate = ifelse(AnalysisStartDate == "" | 
+                                 is.na(AnalysisStartDate), NA,
+                               AnalysisStartDate),
+    AnalysisEndDate = ifelse(AnalysisEndDate == "" | 
+                               is.na(AnalysisEndDate), 
+                             NA, AnalysisEndDate),
+    
+    # Parse the dates with flexible parsing for character data
+    ActivityStartDate = parse_date_time
+    (ActivityStartDate, orders = c("dmy", "mdy", "ymd")),
+    AnalysisStartDate = parse_date_time
+    (AnalysisStartDate, orders = c("dmy", "mdy", "ymd")),
+    AnalysisEndDate = parse_date_time
+    (AnalysisEndDate, orders = c("dmy", "mdy", "ymd"))
+  ) %>%
+  
+  mutate(
+    AnalysisYear = case_when(
+      !is.na(AnalysisEndDate) ~ year(AnalysisEndDate),
+      !is.na(AnalysisStartDate) ~ year(AnalysisStartDate),
+      !is.na(ActivityStartDate) ~ year(ActivityStartDate),
+      TRUE ~ NA_real_
+    )
+  ) %>%
+  
+  # Drop rows where AnalysisYear is NA
+  filter(!is.na(AnalysisYear)) %>%
+  
+  # Drop original date columns
+  select(-c(ActivityStartDate, AnalysisStartDate, AnalysisEndDate))
+
+# View the processed dataset
+str(processed_dataset)
+```
+
+```{r}
+narrowrfilt <- processed_dataset %>%
+  filter(rowSums(is.na(.) | . == "") < (ncol(processed_dataset) / 2))
+
+# View the filtered dataset
+head(narrowrfilt)
+nrow(narrowrfilt)
+colnames(narrowrfilt)
+```
+
+```{r}
+colnames(final_merged_data)
+colnames(narrowrfilt)
+
+```
+
+```{r}
+final_merged_data <- final_merged_data %>%
+  
+  left_join(narrowrfilt, by = c("States" = "State", "year" = "AnalysisYear")) %>%
+  mutate(across(everything(), ~replace(., is.na(.), "")))
+
+# View the final merged dataset
+head(final_merged_data)
+colnames(final_merged_data)
+write_csv(final_merged_data, "final_dataset_consolidated.csv")
+```
+
+```{r}
+str(final_merged_data)
+
+```

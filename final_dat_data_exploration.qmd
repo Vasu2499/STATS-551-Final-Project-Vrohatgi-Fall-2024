@@ -1,0 +1,68 @@
+---
+title: "Untitled"
+format: pdf
+editor: visual
+---
+
+```{r}
+
+# Load necessary libraries
+library(ggplot2)
+library(dplyr)
+
+# List all .dat files in the directory
+dat_files <- list.files(pattern = "\\.dat$", full.names = TRUE)
+
+process_dat_file <- function(file_path) {
+  cat("Processing file:", file_path, "\n")
+  
+  # Try reading the file with flexible assumptions
+  data <- tryCatch(
+    {
+      # Attempt with space delimiter
+      read.delim(file_path, sep = "", header = TRUE, stringsAsFactors = FALSE)
+    },
+    error = function(e1) {
+      # Fallback: Try reading without headers
+      tryCatch(
+        {
+          read.delim(file_path, sep = "", header = FALSE, stringsAsFactors = FALSE)
+        },
+        error = function(e2) {
+          cat("Error reading file:", file_path, "\n", conditionMessage(e2), "\n")
+          return(NULL)
+        }
+      )
+    }
+  )
+  
+  # If reading failed, skip further steps
+  if (is.null(data)) return(NULL)
+  
+  # Summarize the data
+  cat("Summary of the data:\n")
+  print(summary(data))
+  
+  # Visualize the data (if it has at least two numeric columns)
+  numeric_cols <- sapply(data, is.numeric)
+  if (sum(numeric_cols) >= 2) {
+    plot_data <- data[, numeric_cols, drop = FALSE]
+    colnames <- names(plot_data)
+    
+    # Create a basic scatterplot for the first two numeric columns
+    plot <- ggplot(plot_data, aes_string(x = colnames[1], y = colnames[2])) +
+      geom_point() +
+      labs(title = paste("Scatterplot of", colnames[1], "vs", colnames[2]),
+           x = colnames[1],
+           y = colnames[2]) +
+      theme_minimal()
+    
+    print(plot)
+  } else {
+    cat("Not enough numeric columns for visualization.\n")
+  }
+}
+
+# Process each .dat file in the directory
+results <- lapply(dat_files, process_dat_file)
+```

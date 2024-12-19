@@ -1,0 +1,728 @@
+---
+title: "STATS 551 PROJECT"
+format: 
+  pdf:
+    pdf-engine: xelatex
+    keep-tex: true
+    documentclass: article
+    fontsize: 12pt
+    code-block-width: 80
+    header-includes:
+      - \usepackage{setspace}
+      - \setstretch{1.0}
+      - \usepackage{geometry}
+      - \geometry{margin=0.6in}
+      - \usepackage{parskip}
+      - \setlength{\parskip}{0.3em}
+      - \setlength{\parindent}{0.1em}
+      - \usepackage{listings}
+      - \lstset{
+          breaklines=true, 
+          breakatwhitespace=true, 
+          basicstyle=\ttfamily\small,
+          columns=fullflexible}
+      - \usepackage{graphicx}
+      - \usepackage{longtable}
+      - \usepackage{caption}
+      - \captionsetup{width=\textwidth}
+  html:
+    prefer-html: true  
+execute:
+  env:
+    TEXLIVE_INSTALL_NO_UPDATE: "1"
+editor: visual
+---
+
+#### Model Specification
+
+We aim to use a Poisson regression model with Bayesian inference. The total cancer incidence counts are modeled as Poisson-distributed random variables, with the log rate parameter being a linear function of several predictors. The predictors include environmental (AQI) and temporal (year) factors.
+
+```{r, echo=FALSE}
+
+# install.packages(c("tidyverse", "ggplot2", "zoo"))
+
+library(tidyverse)
+library(ggplot2)
+library(zoo)
+library(readr)
+library(stringr)
+library(forcats)
+library(dplyr)
+library(purrr)
+library(tidyr)
+
+```
+
+First, I wish to import the final, consolidated dataset which I have built out of several separate data sets. It requires some pre-processing, which we can do now, and before visualizing this data, we will visualize the state-wise and year-wise distributions of the incidence of cancer.
+
+```{r}
+raw_data <- read.csv("final_dataset_consolidated.csv")
+colnames(raw_data)
+ 
+cleaned_data <- raw_data %>%
+  mutate(across(
+    starts_with("avg_") | 
+    c("Total_Count", "Total_Population", "year"), 
+    ~ as.numeric(.)
+  )) %>%
+  filter(
+    !is.na(Total_Count) & Total_Count >= 0,
+    !is.na(Total_Population) & Total_Population > 0,
+    !is.na(year) & year >= 1999
+  ) %>%
+  # Check for outliers by identifying extreme values
+  filter(
+    avg_max_aqi <= 500,  # Cap the AQI values at reasonable levels (e.g., 500)
+    avg_days_with_aqi <= 365  # Cap days of AQI at 365, prevent unrealistic values
+  ) %>%
+  # Remove unnecessary columns with blank or redundant data
+  select(
+    -contains("CharacteristicName"),
+    -contains("ResultMeasure"),
+    -contains("ResultValueTypeName"),
+    -contains("PrecisionValue"),
+    -contains("DataQuality.BiasValue"),
+    -contains("ResultDepthHeightMeasure")
+  ) %>%
+  group_by(States, year) %>%
+  summarise(across(everything(), \(x) mean(x, na.rm = TRUE)))
+
+
+```
+
+```{r}
+# Summary of the dataset
+summary(cleaned_data)
+
+# Check the structure and column types
+str(cleaned_data)
+
+# Calculate summary statistics for numeric columns
+cleaned_data %>%
+  summarise(across(where(is.numeric), list(mean = ~mean(.x, na.rm = TRUE), 
+                                           median = ~median(.x, na.rm = TRUE), 
+                                           sd = ~sd(.x, na.rm = TRUE))))
+
+```
+
+```{r}
+# AQI trends over the years for each state
+ggplot(cleaned_data, aes(x = year, y = avg_max_aqi, color = States)) +
+  geom_line() +
+  theme_minimal() +
+  labs(title = "Average Max AQI Over Years by State", 
+       x = "Year", y = "Average Max AQI") +
+  theme_minimal() 
+
+
+ggsave(
+  filename = "detailed_aqi_plot.pdf",
+  device = "pdf",
+  width = 12,        
+  height = 8,        
+  units = "in"       
+)
+```
+
+```{r}
+# Average AQI by State
+state_avg_aqi <- cleaned_data %>%
+  group_by(States) %>%
+  summarise(avg_aqi = mean(avg_max_aqi, na.rm = TRUE)) %>%
+  arrange(desc(avg_aqi))
+
+ggplot(state_avg_aqi, aes(x = reorder(States, avg_aqi), y = avg_aqi)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  coord_flip() +
+  theme_minimal() +
+  labs(title = "Average AQI by State", x = "State", y = "Average AQI")
+
+ggsave(
+  filename = "AQI by state.pdf",
+  device = "pdf",
+  width = 12,        
+  height = 8,        
+  units = "in"       
+)
+```
+
+```{r}
+# Scatter plot of AQI vs. Total Population
+ggplot(cleaned_data, aes(x = Total_Population, y = avg_max_aqi)) +
+  geom_point(aes(color = States), alpha = 0.6) +
+  scale_x_continuous(labels = scales::comma) +
+  theme_minimal() +
+  labs(title = "Average AQI vs. Total Population", x = "Total Population", y = "Average AQI")
+
+ggsave(
+  filename = "AQI vs. Total Population.pdf",
+  device = "pdf",
+  width = 12,        
+  height = 8,        
+  units = "in"       
+)
+```
+
+```{r}
+# Histogram of the average maximum AQI
+ggplot(cleaned_data, aes(x = avg_max_aqi)) +
+  geom_histogram(bins = 30, fill = "dodgerblue", color = "black", alpha = 0.7) +
+  theme_minimal() +
+  labs(title = "Distribution of Average Max AQI", x = "Average Max AQI", y = "Frequency")
+ggsave(
+  filename = "average maximum AQI.pdf",
+  device = "pdf",
+  width = 12,        
+  height = 8,        
+  units = "in"       
+)
+```
+
+```{r}
+library(ggplot2)
+library(dplyr)
+
+# Split states into two groups
+state_groups <- cleaned_data %>%
+  mutate(group = ifelse(States %in% unique(States)[1:25], "Group 1", "Group 2"))
+
+# Function to create the plot for each group
+create_facet_plot <- function(data, title_suffix) {
+  ggplot(data, aes(x = year, y = avg_max_aqi, group = States)) +
+    geom_line(color = "steelblue", size = 0.8) +
+    facet_wrap(~ States, ncol = 5, nrow = 5, scales = "free_y") +
+    theme_minimal(base_size = 12) +
+    labs(
+      title = paste("State-Specific AQI Trends Over Years", title_suffix),
+      x = "Year", y = "Average Max AQI"
+    ) +
+    scale_y_continuous(
+      breaks = function(x) pretty(x, n = 3)
+    ) +
+    scale_x_continuous(
+      breaks = seq(
+        min(cleaned_data$year, na.rm = TRUE),
+        max(cleaned_data$year, na.rm = TRUE),
+        by = 5
+      )
+    ) +
+    theme(
+      strip.text = element_text(size = 10, face = "bold"),
+      axis.text.x = element_text(size = 10, angle = 30, hjust = 1),
+      axis.text.y = element_text(size = 8),
+      plot.title = element_text(size = 16, face = "bold"),
+      panel.spacing = unit(1.5, "lines"),
+      plot.margin = margin(10, 10, 10, 10)
+    )
+}
+
+# Generate plots for Group 1 and Group 2
+plot_group1 <- create_facet_plot(state_groups %>% filter(group == "Group 1"), "(Group 1)")
+plot_group2 <- create_facet_plot(state_groups %>% filter(group == "Group 2"), "(Group 2)")
+
+# Save both plots to a single PDF
+pdf("state_aqi_trends_split_adjusted.pdf", width = 18, height = 14)
+
+dev.off()
+
+
+```
+
+```{r}
+# Density plot of unhealthy days
+ggplot(cleaned_data, aes(x = avg_unhealthy_days)) +
+  geom_density(fill = "lightblue", color = "black", alpha = 0.7) +
+  theme_minimal() +
+  labs(title = "Density Plot of Unhealthy Days with AQI", 
+       x = "Unhealthy Days", y = "Density")
+ggsave(
+  filename = "Density plot of unhealthy days.pdf",
+  device = "pdf",
+  width = 12,        
+  height = 8,        
+  units = "in"       
+)
+```
+
+```{r}
+library(ggplot2)
+library(dplyr)
+
+# Sort states by median unhealthy days
+cleaned_data <- cleaned_data %>%
+  mutate(States = reorder(States, avg_unhealthy_days, median, na.rm = TRUE))
+
+# Create the boxplot with all 50 states
+ggplot(cleaned_data, aes(x = States, y = avg_unhealthy_days)) +
+  geom_boxplot(aes(fill = as.factor(cut(avg_unhealthy_days, breaks = 5))), 
+               outlier.color = "red", outlier.size = 1.2) +
+  scale_fill_manual(values = c("lightgreen", "darkgreen", "yellow", "orange", "red")) +
+  coord_flip() +
+  theme_minimal(base_size = 12) +
+  labs(
+    title = "Unhealthy AQI Days by State",
+    x = "State",
+    y = "Unhealthy Days",
+    fill = "Avg Unhealthy Days"
+  ) +
+  theme(
+    axis.text.y = element_text(size = 6, vjust = 1, hjust = 1),   
+    axis.text.x = element_text(size = 10, angle = 90, hjust = 1),  
+    axis.ticks.y = element_blank(),
+    axis.title.x = element_text(size = 8),
+    axis.title.y = element_text(size = 8),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0.5),
+    legend.position = "right",
+    legend.key.width = unit(1, "cm"),
+    legend.title = element_text(size = 10),
+    legend.text = element_text(size = 10),
+    plot.margin = margin(15, 15, 15, 30),  
+    scale_y_continuous(breaks = seq(0, max(cleaned_data$avg_unhealthy_days), by = 2))
+  )
+ggsave(
+  filename = "boxplot with all 50 states.pdf",
+  device = "pdf",
+  width = 12,        
+  height = 8,        
+  units = "in"       
+)
+```
+
+```{r}
+# Ensure that the data is ungrouped
+cleaned_data <- cleaned_data %>% ungroup()
+
+# Select only numeric columns
+numeric_data <- cleaned_data %>%
+  select(where(is.numeric))
+
+# Compute the correlation matrix
+cor_matrix <- cor(numeric_data, use = "complete.obs")
+
+# Print the correlation matrix
+print(cor_matrix)
+
+# Visualize the correlation matrix using a heatmap
+heatmap(cor_matrix, 
+        main = "Correlation Matrix", 
+        col = colorRampPalette(c("blue", "white", "red"))(100), 
+        scale = "none", 
+        margins = c(8, 8))
+
+ggsave(
+  filename = "correlation matrix.pdf",
+  device = "pdf",
+  width = 12,        
+  height = 8,        
+  units = "in"       
+)
+```
+
+```{r}
+# Selecting relevant numeric columns for correlation
+correlation_data <- cleaned_data %>%
+  select(Total_Count, avg_max_aqi, avg_moderate_days, avg_unhealthy_days, avg_very_unhealthy_days, avg_days_pm2_5)
+
+# Calculating correlation matrix for selected variables
+cor_matrix <- cor(correlation_data, use = "complete.obs")
+
+# Viewing the correlation matrix
+print(cor_matrix)
+
+
+```
+
+```{r}
+# Summing Total_Count across all states by year
+total_cancer_by_year <- cleaned_data %>%
+  group_by(year) %>%
+  summarise(total_cancer_incidence = sum(Total_Count, na.rm = TRUE), .groups = "drop")
+
+# Plotting cancer incidence over time
+ggplot(total_cancer_by_year, aes(x = year, y = total_cancer_incidence)) +
+  geom_line(color = "blue") +
+  geom_point(color = "red") +
+  labs(title = "Total Cancer Incidence Over Time (All States)", 
+       x = "Year", 
+       y = "Total Cancer Incidence") +
+  theme_minimal()
+
+ggsave(
+  filename = "cancer incidence over time.pdf",
+  device = "pdf",
+  width = 12,        
+  height = 8,        
+  units = "in"       
+)
+```
+
+```{r}
+# Summarizing Total_Count by State
+state_summary <- cleaned_data %>%
+  group_by(States) %>%
+  summarise(
+    avg_total_count = mean(Total_Count, na.rm = TRUE),
+    total_total_count = sum(Total_Count, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+# Viewing the summarized data
+head(state_summary)
+
+```
+
+```{r}
+# Calculating total cancer incidence and total population by state
+state_proportion <- cleaned_data %>%
+  group_by(States) %>%
+  summarise(
+    total_cancer = sum(Total_Count, na.rm = TRUE),
+    total_population = sum(Total_Population, na.rm = TRUE),
+    cancer_proportion = total_cancer / total_population,
+    .groups = "drop"
+  )
+
+# Plotting the cancer incidence proportion by state
+ggplot(state_proportion, aes(x = reorder(States, cancer_proportion), y = cancer_proportion)) +
+  geom_bar(stat = "identity", fill = "lightblue") +
+  coord_flip() +
+  labs(title = "Cancer Incidence as Proportion of Population by State", 
+       x = "State", 
+       y = "Cancer Incidence Proportion") +
+  theme_minimal()
+ggsave(
+  filename = "cancer incidence proportion.pdf",
+  device = "pdf",
+  width = 12,        
+  height = 8,        
+  units = "in"       
+)
+```
+
+we specify the following priors:
+
+-   $α$ \~ Normal(0, 10): The prior for the intercept is a normal distribution with a mean of 0 and a large standard deviation of 10, reflecting uncertainty about the baseline incidence.
+
+-   $β_k$ \~ Normal(0, 10) for each element β_k: The priors for the coefficients of the predictors are also normally distributed with mean 0 and a large standard deviation of 10, allowing for flexibility in how predictors affect the cancer incidence count.
+
+-   $λ$ \~ Gamma(2, 0.1): This is the prior for the rate parameter in the Poisson distribution, with a mean of 2 and a large variance, allowing the model to adapt to the observed data.
+
+These priors are relatively weak, meaning that they do not overly constrain the model. They are designed to allow the data to drive the inference
+
+```{r}
+
+# Define the predictors and response variable
+predictors <- c("avg_max_aqi", "avg_moderate_days", "avg_unhealthy_days", "avg_very_unhealthy_days", "avg_days_pm2_5")
+response <- "Total_Count"
+
+# Subset the data for predictors and response
+data_for_model <- cleaned_data %>%
+  select(States, year, all_of(predictors), response) %>%
+  na.omit()
+
+# Create a matrix for predictors (X) and a vector for the response (y)
+X <- as.matrix(data_for_model[, predictors])
+y <- data_for_model[, response]
+
+# Define the number of observations (N), time periods (T), and predictors (K)
+N <- nrow(X)
+T <- length(unique(data_for_model$year))
+K <- ncol(X)
+
+```
+
+The likelihood of the data is specified as a Poisson distribution, where the observed total cancer count $y_i$ for each state-year pair follows a Poisson distribution with parameter $λ_i$
+
+The rate $λ_i$ is the exponential of a linear combination of the predictors. This captures the multiplicative effects of the predictors on the expected cancer incidence.
+
+```{r}
+# Prepare the data list for STAN
+stan_data <- list(
+  N = N,
+  T = T,
+  K = K,
+  X = X,
+  y = y
+)
+
+```
+
+The posterior distribution is the updated belief about the parameters after observing the data. It is obtained by applying Bayes' theorem:
+
+$P(α, β | y, X) ∝ P(y | X, α, β) * P(α) * P(β)$\
+Where:
+
+-   $P(y | X, α, β)$ is the likelihood, as specified above.
+
+-   $P(α)$ and $P(β)$ are the priors for the parameters $α$ and $β$.
+
+-   The posterior distribution reflects the parameter estimates that are most consistent with the observed data, while also incorporating prior beliefs.
+
+```{r}
+library(rstan)
+
+rstan_options(auto_write = TRUE)
+options(mc.cores = parallel::detectCores())
+
+model <- stan_model("finalmodel.stan")
+
+y <- as.vector(cleaned_data$Total_Count)
+N <- length(y)
+
+state_levels <- unique(cleaned_data$States)
+state_index <- as.integer(factor(cleaned_data$States, levels = state_levels))
+
+year_index <- cleaned_data$year
+X <- cleaned_data[, c("avg_max_aqi", "avg_days_with_aqi", "avg_good_days", 
+                      "avg_moderate_days", "avg_unhealthy_days")]
+
+stan_data <- list(
+  N = N,
+  K = ncol(X),
+  y = y,
+  X = X,
+  state_index = state_index,
+  year_index = year_index,
+  S = length(state_levels)
+)
+
+fit <- sampling(model, data = stan_data, iter = 4000, chains = 4)
+
+print(fit)
+
+```
+
+```{r}
+samples <- extract(fit)
+
+pdf(file = "traceplot_fit.pdf", width = 8, height = 6)
+
+traceplot(fit)
+
+dev.off()
+
+```
+
+```{r}
+
+# Summarize the posterior
+summary(fit)
+
+
+```
+
+```{r}
+
+beta_sample <- samples$beta[1, ]
+
+# Convert tibble to a numeric matrix
+X_numeric <- as.matrix(X)
+
+# Ensure all columns are numeric
+X_numeric <- apply(X_numeric, 2, as.numeric)
+
+str(X_numeric)  
+y_pred <- X_numeric %*% beta_sample  
+
+
+# For the full posterior predictive computation
+y_pred_all <- apply(samples$beta, 1, function(beta_sample) {
+  X_numeric %*% beta_sample  # Prediction for each posterior sample
+})
+str(y_pred_all)
+
+```
+
+```{r}
+
+pdf(file = "1.pdf", width = 12, height = 8)
+
+# Plot the observed vs predicted values (for the first posterior sample)
+plot(y, y_pred_all[, 1], main="Observed vs Predicted", xlab="Observed", ylab="Predicted")
+abline(a=0, b=1, col="red")  # Add identity line
+dev.off()
+
+```
+
+```{r}
+pdf(file = "2.pdf", width = 12, height = 8)
+# Plot the histogram of the predictions for the first observation
+hist(y_pred_all[1, ], main="Posterior Predictive Distribution for Observation 1", xlab="Prediction")
+dev.off()
+
+```
+
+```{r}
+
+
+# Visualizing the posterior distributions for coefficients 
+posterior_plot <- as.data.frame(samples$beta) %>%
+  ggplot(aes(x = V1)) +
+  geom_density() +
+  labs(title = "Posterior Distribution of Beta1 (avg_max_aqi)", x = "Beta1", y = "Density") +
+  theme_minimal()
+
+print(posterior_plot)
+
+ggsave(
+  filename = "posterior distributions for coefficients.pdf",
+  device = "pdf",
+  width = 12,        
+  height = 8,        
+  units = "in"       
+)
+```
+
+```{r}
+# Predictions for all posterior samples
+y_pred_all <- apply(samples$beta, 1, function(beta_sample) {
+  X_numeric %*% beta_sample
+})
+y_obs <- cleaned_data$Total_Count
+
+str(y_obs)
+stopifnot(length(y_obs) == nrow(X))
+
+y_pred_mean <- rowMeans(y_pred_all)
+y_pred_lower <- apply(y_pred_all, 1, quantile, probs = 0.025)
+y_pred_upper <- apply(y_pred_all, 1, quantile, probs = 0.975)
+
+pdf(file = "3.pdf", width = 12, height = 8)
+
+plot(y_obs, y_pred_mean,
+     xlab = "Observed Total Count",
+     ylab = "Predicted Total Count",
+     main = "Posterior Predictive Check",
+     pch = 16, col = "blue")
+abline(0, 1, col = "red", lwd = 2)
+arrows(x0 = y_obs, y0 = y_pred_lower, x1 = y_obs, y1 = y_pred_upper, 
+       angle = 90, code = 3, length = 0.05, col = "gray")
+dev.off()
+
+residuals <- y_obs - y_pred_mean
+hist(residuals, main = "Residuals Distribution", xlab = "Residuals")
+
+```
+
+```{r}
+mse <- mean((y_obs - y_pred_mean)^2)
+cat("Mean Squared Error:", mse, "\n")
+
+```
+
+```{r}
+
+# Calculate posterior predictive values using alpha samples
+y_pred_all <- apply(samples$beta, 1, function(beta_sample) {
+  X_numeric %*% beta_sample
+})
+
+dim(y_pred_all)
+length(samples$alpha)
+
+# Correct element-wise multiplication with exp(samples$alpha)
+# Use matrix multiplication or broadcasting where needed
+y_pred_all <- sweep(y_pred_all, MARGIN = 2, STATS = exp(samples$alpha), FUN = "*")
+
+# Continue with posterior predictive checks and plots
+y_pred_mean <- rowMeans(y_pred_all)
+y_pred_lower <- apply(y_pred_all, 1, quantile, probs = 0.025)
+y_pred_upper <- apply(y_pred_all, 1, quantile, probs = 0.975)
+
+pdf(file = "4.pdf", width = 12, height = 8)
+
+# Plot observed vs predicted values with credible intervals
+plot(y_obs, y_pred_mean,
+     xlab = "Observed Total Count",
+     ylab = "Predicted Total Count",
+     main = "Posterior Predictive Check",
+     pch = 16, col = "blue")
+abline(0, 1, col = "red", lwd = 2)
+arrows(x0 = y_obs, y0 = y_pred_lower, x1 = y_obs, y1 = y_pred_upper, 
+       angle = 90, code = 3, length = 0.05, col = "gray")
+dev.off()
+
+# Residuals analysis
+residuals <- y_obs - y_pred_mean
+hist(residuals, main = "Residuals Distribution", xlab = "Residuals")
+
+# Model Evaluation
+mse <- mean(residuals^2)
+cat("Mean Squared Error (MSE):", mse, "\n")
+
+rmse <- sqrt(mse)
+cat("Root Mean Squared Error (RMSE):", rmse, "\n")
+
+sst <- sum((y_obs - mean(y_obs))^2)
+sse <- sum(residuals^2)
+r_squared <- 1 - (sse / sst)
+cat("R-squared (R²):", r_squared, "\n")
+
+# Posterior Predictive P-value (PPP)
+ppp <- mean(abs(y_pred_all - mean(y_pred_all)) >= abs(y_obs - mean(y_obs)))
+cat("Posterior Predictive P-value (PPP):", ppp, "\n")
+
+
+```
+
+### **Final Report: Investigating the Impact of AQI Factors on Brain Cancer Incidence in the U.S.**
+
+#### **Objective:**
+
+This project aimed to explore the association between environmental, occupational, and lifestyle factors—specifically focusing on Air Quality Index (AQI) variables—and brain cancer incidence in the United States from 1999 to 2021. The goal was to understand how AQI features might contribute to the overall incidence of brain cancer across various states using a Bayesian statistical approach.
+
+#### **Data:**
+
+The dataset included several variables that could influence brain cancer rates:
+
+-   **AQI-related factors**: These included average AQI values, the number of days with different AQI levels, and other air quality metrics.
+
+-   **Brain cancer incidence data**: The target variable was the total count of brain cancer cases across different states.
+
+Given time constraints, the project primarily focused on AQI-related factors, but additional data on **drinking water quality**, **general radiation exposure**, **hazardous occupational exposure**, and **pesticide use distributions** could substantially enhance the model’s explanatory power. These factors are likely to provide a clearer picture of how environmental and lifestyle factors, aside from air quality, contribute to brain cancer incidence.
+
+#### **Modeling Approach:**
+
+-   **Bayesian Poisson Regression**: A Bayesian Poisson regression model was employed to estimate the relationship between AQI-related predictors and brain cancer incidence. The Poisson model was selected because brain cancer data, like many health-related counts, often follow a Poisson distribution, especially for counts of rare events like cancer cases.
+
+-   **Bayesian Framework**: The Bayesian approach was particularly relevant because it allows for the incorporation of prior knowledge and uncertainty into the modeling process. Given the complexity of cancer incidence and the many contributing factors, the Bayesian framework provided a natural way to quantify uncertainty in model parameters and make probabilistic statements about the effects of AQI-related variables on brain cancer incidence. This approach also facilitated the use of posterior predictive checks to assess model fit and allowed for more flexibility in capturing uncertainty, as opposed to traditional frequentist methods.
+
+#### **Model Performance:**
+
+-   **Mean Squared Error (MSE)**: 369,453.8
+
+-   **Root Mean Squared Error (RMSE)**: 607.8
+
+-   **R-squared (R²)**: -0.7165833, indicating that the model explained very little of the variance, which is expected given the complexity of the data and the focus on a single set of predictors.
+
+-   **Posterior Predictive P-value (PPP)**: 0.3142738, which suggested that the model’s predictive accuracy was reasonable, though there is significant room for improvement.
+
+#### **Findings and Insights:**
+
+1.  **Impact of AQI-related Factors**: The regression coefficients from the model suggested that certain AQI-related factors, like **`avg_max_aqi`** (maximum AQI), had a moderate effect on brain cancer incidence, with a negative association. This suggests that higher AQI values, which typically indicate worse air quality, might correlate with a lower incidence of brain cancer in some states. ***However, this finding is counterintuitive and requires further investigation, potentially involving other environmental and lifestyle factors.***
+
+```         
+-   **`avg_max_aqi`**: Negative impact on brain cancer incidence.
+
+-    **`avg_days_with_aqi`**: Also exhibited a negative relationship, indicating that the number of days with high AQI might have a complex, indirect effect on cancer incidence.
+```
+
+2.  **Model Fit**:
+
+```         
+-   While the model showed some predictive ability, as indicated by the posterior predictive p-value and residuals analysis, the R² value indicated that the model was not fully capturing the complexity of brain cancer incidence. This suggests that other factors, such as genetics, healthcare infrastructure, and more detailed environmental exposures, might play a larger role than AQI alone.
+```
+
+3.  **Future Improvements**:
+
+    -   **Additional Factors**: Incorporating data on **drinking water quality**, **radiation exposure**, **occupational hazards**, and **pesticide use** would likely improve model performance and provide more precise estimates of the effects of environmental and lifestyle factors on brain cancer incidence. These factors may influence brain cancer in ways that AQI alone cannot explain.
+
+    -   **Longer Data Timeframes**: A more robust dataset with longer timeframes and more granularity would provide better insights, particularly with regard to time-lag effects (e.g., how long after exposure to certain pollutants might brain cancer incidence rise).
+
+4.  **Conclusion**:
+
+The results from the Bayesian Poisson regression model suggest that while there are some associations between AQI-related factors and brain cancer incidence, the overall model fit is weak, and significant uncertainty remains. The model’s predictive performance was moderate, but the low R² value indicates that additional variables and more complex models are needed to capture the full extent of the factors influencing brain cancer.
+
+The Bayesian approach proved to be useful in this context as it allowed for the incorporation of prior knowledge and a flexible treatment of uncertainty, both of which are crucial in modeling a complex and multifaceted issue like cancer incidence. While AQI-related factors were explored in depth, incorporating additional environmental and occupational data in future studies could lead to a more comprehensive understanding of how various factors contribute to brain cancer incidence.
+
+Further research, particularly in the form of more detailed datasets and refined models, will be necessary to pinpoint more accurately the environmental, lifestyle, and occupational risks associated with brain cancer.

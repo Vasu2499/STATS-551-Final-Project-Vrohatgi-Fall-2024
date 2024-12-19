@@ -1,0 +1,3236 @@
+State_County,State,FIPS,Freq
+AK_Aleutians East Borough,AK,2013,0
+AK_Aleutians West Census Area,AK,2016,1
+AK_Anchorage Municipality,AK,2020,3
+AK_Bethel Census Area,AK,2050,0
+AK_Bristol Bay Borough,AK,2060,0
+AK_Denali Borough,AK,2068,0
+AK_Dillingham Census Area,AK,2070,0
+AK_Fairbanks North Star Borough,AK,2090,6
+AK_Haines Borough,AK,2100,0
+AK_Hoonah-Angoon Census Area,AK,2105,0
+AK_Juneau City and Borough,AK,2110,0
+AK_Kenai Peninsula Borough,AK,2122,0
+AK_Ketchikan Gateway Borough,AK,2130,0
+AK_Kodiak Island Borough,AK,2150,0
+AK_Lake and Peninsula Borough,AK,2164,0
+AK_Matanuska-Susitna Borough,AK,2170,0
+AK_Nome Census Area,AK,2180,0
+AK_North Slope Borough,AK,2185,0
+AK_Northwest Arctic Borough,AK,2188,0
+AK_Petersburg Census Area,AK,2195,0
+AK_Prince of Wales-Hyder Census Area,AK,2198,0
+AK_Sitka City and Borough,AK,2220,0
+AK_Skagway Municipality,AK,2230,0
+AK_Southeast Fairbanks Census Area,AK,2240,4
+AK_Valdez-Cordova Census Area,AK,2261,0
+AK_Wade Hampton Census Area,AK,2270,0
+AK_Wrangell City and Borough,AK,2275,0
+AK_Yakutat City and Borough,AK,2282,0
+AK_Yukon-Koyukuk Census Area,AK,2290,2
+AL_Autauga,AL,1001,0
+AL_Baldwin,AL,1003,0
+AL_Barbour,AL,1005,0
+AL_Bibb,AL,1007,0
+AL_Blount,AL,1009,0
+AL_Bullock,AL,1011,0
+AL_Butler,AL,1013,0
+AL_Calhoun,AL,1015,0
+AL_Chambers,AL,1017,0
+AL_Cherokee,AL,1019,0
+AL_Chilton,AL,1021,0
+AL_Choctaw,AL,1023,0
+AL_Clarke,AL,1025,0
+AL_Clay,AL,1027,0
+AL_Cleburne,AL,1029,0
+AL_Coffee,AL,1031,0
+AL_Colbert,AL,1033,0
+AL_Conecuh,AL,1035,0
+AL_Coosa,AL,1037,0
+AL_Covington,AL,1039,0
+AL_Crenshaw,AL,1041,0
+AL_Cullman,AL,1043,0
+AL_Dale,AL,1045,0
+AL_Dallas,AL,1047,0
+AL_DeKalb,AL,1049,0
+AL_Elmore,AL,1051,0
+AL_Escambia,AL,1053,0
+AL_Etowah,AL,1055,0
+AL_Fayette,AL,1057,0
+AL_Franklin,AL,1059,0
+AL_Geneva,AL,1061,0
+AL_Greene,AL,1063,0
+AL_Hale,AL,1065,0
+AL_Henry,AL,1067,0
+AL_Houston,AL,1069,0
+AL_Jackson,AL,1071,0
+AL_Jefferson,AL,1073,0
+AL_Lamar,AL,1075,0
+AL_Lauderdale,AL,1077,0
+AL_Lawrence,AL,1079,0
+AL_Lee,AL,1081,0
+AL_Limestone,AL,1083,0
+AL_Lowndes,AL,1085,0
+AL_Macon,AL,1087,0
+AL_Madison,AL,1089,0
+AL_Marengo,AL,1091,0
+AL_Marion,AL,1093,0
+AL_Marshall,AL,1095,0
+AL_Mobile,AL,1097,0
+AL_Monroe,AL,1099,0
+AL_Montgomery,AL,1101,0
+AL_Morgan,AL,1103,0
+AL_Perry,AL,1105,0
+AL_Pickens,AL,1107,0
+AL_Pike,AL,1109,0
+AL_Randolph,AL,1111,0
+AL_Russell,AL,1113,0
+AL_Shelby,AL,1117,0
+AL_St. Clair,AL,1115,0
+AL_Sumter,AL,1119,0
+AL_Talladega,AL,1121,0
+AL_Tallapoosa,AL,1123,0
+AL_Tuscaloosa,AL,1125,0
+AL_Walker,AL,1127,0
+AL_Washington,AL,1129,0
+AL_Wilcox,AL,1131,0
+AL_Winston,AL,1133,0
+AR_Arkansas,AR,5001,0
+AR_Ashley,AR,5003,0
+AR_Baxter,AR,5005,0
+AR_Benton,AR,5007,5
+AR_Boone,AR,5009,0
+AR_Bradley,AR,5011,0
+AR_Calhoun,AR,5013,0
+AR_Carroll,AR,5015,0
+AR_Chicot,AR,5017,0
+AR_Clark,AR,5019,0
+AR_Clay,AR,5021,0
+AR_Cleburne,AR,5023,0
+AR_Cleveland,AR,5025,0
+AR_Columbia,AR,5027,0
+AR_Conway,AR,5029,0
+AR_Craighead,AR,5031,0
+AR_Crawford,AR,5033,0
+AR_Crittenden,AR,5035,0
+AR_Cross,AR,5037,0
+AR_Dallas,AR,5039,0
+AR_Desha,AR,5041,0
+AR_Drew,AR,5043,0
+AR_Faulkner,AR,5045,0
+AR_Franklin,AR,5047,0
+AR_Fulton,AR,5049,0
+AR_Garland,AR,5051,1
+AR_Grant,AR,5053,0
+AR_Greene,AR,5055,0
+AR_Hempstead,AR,5057,0
+AR_Hot Spring,AR,5059,0
+AR_Howard,AR,5061,0
+AR_Independence,AR,5063,0
+AR_Izard,AR,5065,0
+AR_Jackson,AR,5067,0
+AR_Jefferson,AR,5069,0
+AR_Johnson,AR,5071,0
+AR_Lafayette,AR,5073,0
+AR_Lawrence,AR,5075,0
+AR_Lee,AR,5077,0
+AR_Lincoln,AR,5079,0
+AR_Little River,AR,5081,0
+AR_Logan,AR,5083,0
+AR_Lonoke,AR,5085,0
+AR_Madison,AR,5087,0
+AR_Marion,AR,5089,0
+AR_Miller,AR,5091,0
+AR_Mississippi,AR,5093,0
+AR_Monroe,AR,5095,0
+AR_Montgomery,AR,5097,0
+AR_Nevada,AR,5099,0
+AR_Newton,AR,5101,0
+AR_Ouachita,AR,5103,0
+AR_Perry,AR,5105,0
+AR_Phillips,AR,5107,0
+AR_Pike,AR,5109,0
+AR_Poinsett,AR,5111,0
+AR_Polk,AR,5113,0
+AR_Pope,AR,5115,0
+AR_Prairie,AR,5117,0
+AR_Pulaski,AR,5119,0
+AR_Randolph,AR,5121,1
+AR_Saline,AR,5125,0
+AR_Scott,AR,5127,0
+AR_Searcy,AR,5129,0
+AR_Sebastian,AR,5131,0
+AR_Sevier,AR,5133,0
+AR_Sharp,AR,5135,0
+AR_St. Francis,AR,5123,0
+AR_Stone,AR,5137,0
+AR_Union,AR,5139,0
+AR_Van Buren,AR,5141,0
+AR_Washington,AR,5143,0
+AR_White,AR,5145,0
+AR_Woodruff,AR,5147,0
+AR_Yell,AR,5149,0
+AS_Eastern District,AS,60010,0
+AS_Manu'a District,AS,60020,0
+AS_Rose Island,AS,60030,0
+AS_Swains Island,AS,60040,0
+AS_Western District,AS,60050,0
+AZ_Apache,AZ,4001,1
+AZ_Cochise,AZ,4003,6
+AZ_Coconino,AZ,4005,0
+AZ_Gila,AZ,4007,10
+AZ_Graham,AZ,4009,2
+AZ_Greenlee,AZ,4011,1
+AZ_La Paz,AZ,4012,17
+AZ_Maricopa,AZ,4013,60
+AZ_Mohave,AZ,4015,6
+AZ_Navajo,AZ,4017,0
+AZ_Pima,AZ,4019,28
+AZ_Pinal,AZ,4021,116
+AZ_Santa Cruz,AZ,4023,2
+AZ_Yavapai,AZ,4025,29
+AZ_Yuma,AZ,4027,8
+CA_Alameda,CA,6001,0
+CA_Alpine,CA,6003,0
+CA_Amador,CA,6005,0
+CA_Butte,CA,6007,3
+CA_Calaveras,CA,6009,0
+CA_Colusa,CA,6011,0
+CA_Contra Costa,CA,6013,9
+CA_Del Norte,CA,6015,0
+CA_El Dorado,CA,6017,0
+CA_Fresno,CA,6019,84
+CA_Glenn,CA,6021,1
+CA_Humboldt,CA,6023,0
+CA_Imperial,CA,6025,0
+CA_Inyo,CA,6027,1
+CA_Kern,CA,6029,165
+CA_Kings,CA,6031,0
+CA_Lake,CA,6033,2
+CA_Lassen,CA,6035,1
+CA_Los Angeles,CA,6037,9
+CA_Madera,CA,6039,30
+CA_Marin,CA,6041,1
+CA_Mariposa,CA,6043,1
+CA_Mendocino,CA,6045,0
+CA_Merced,CA,6047,25
+CA_Modoc,CA,6049,0
+CA_Mono,CA,6051,0
+CA_Monterey,CA,6053,122
+CA_Napa,CA,6055,2
+CA_Nevada,CA,6057,0
+CA_Orange,CA,6059,0
+CA_Placer,CA,6061,3
+CA_Plumas,CA,6063,3
+CA_Riverside,CA,6065,25
+CA_Sacramento,CA,6067,2
+CA_San Benito,CA,6069,24
+CA_San Bernardino,CA,6071,20
+CA_San Diego,CA,6073,41
+CA_San Francisco,CA,6075,0
+CA_San Joaquin,CA,6077,57
+CA_San Luis Obispo,CA,6079,3
+CA_San Mateo,CA,6081,1
+CA_Santa Barbara,CA,6083,4
+CA_Santa Clara,CA,6085,25
+CA_Santa Cruz,CA,6087,0
+CA_Shasta,CA,6089,2
+CA_Sierra,CA,6091,0
+CA_Siskiyou,CA,6093,8
+CA_Solano,CA,6095,8
+CA_Sonoma,CA,6097,15
+CA_Stanislaus,CA,6099,55
+CA_Sutter,CA,6101,44
+CA_Tehama,CA,6103,3
+CA_Trinity,CA,6105,0
+CA_Tulare,CA,6107,555
+CA_Tuolumne,CA,6109,0
+CA_Ventura,CA,6111,3
+CA_Yolo,CA,6113,26
+CA_Yuba,CA,6115,0
+CO_Adams,CO,8001,7
+CO_Alamosa,CO,8003,0
+CO_Arapahoe,CO,8005,1
+CO_Archuleta,CO,8007,1
+CO_Baca,CO,8009,0
+CO_Bent,CO,8011,0
+CO_Boulder,CO,8013,1
+CO_Broomfield,CO,8014,0
+CO_Chaffee,CO,8015,4
+CO_Cheyenne,CO,8017,1
+CO_Clear Creek,CO,8019,1
+CO_Conejos,CO,8021,0
+CO_Costilla,CO,8023,0
+CO_Crowley,CO,8025,0
+CO_Custer,CO,8027,0
+CO_Delta,CO,8029,0
+CO_Denver,CO,8031,0
+CO_Dolores,CO,8033,0
+CO_Douglas,CO,8035,0
+CO_Eagle,CO,8037,0
+CO_El Paso,CO,8041,4
+CO_Elbert,CO,8039,0
+CO_Fremont,CO,8043,0
+CO_Garfield,CO,8045,7
+CO_Gilpin,CO,8047,2
+CO_Grand,CO,8049,5
+CO_Gunnison,CO,8051,0
+CO_Hinsdale,CO,8053,0
+CO_Huerfano,CO,8055,0
+CO_Jackson,CO,8057,0
+CO_Jefferson,CO,8059,2
+CO_Kiowa,CO,8061,4
+CO_Kit Carson,CO,8063,6
+CO_La Plata,CO,8067,0
+CO_Lake,CO,8065,3
+CO_Larimer,CO,8069,0
+CO_Las Animas,CO,8071,0
+CO_Lincoln,CO,8073,1
+CO_Logan,CO,8075,10
+CO_Mesa,CO,8077,0
+CO_Mineral,CO,8079,0
+CO_Moffat,CO,8081,0
+CO_Montezuma,CO,8083,0
+CO_Montrose,CO,8085,0
+CO_Morgan,CO,8087,8
+CO_Otero,CO,8089,0
+CO_Ouray,CO,8091,0
+CO_Park,CO,8093,6
+CO_Phillips,CO,8095,0
+CO_Pitkin,CO,8097,0
+CO_Prowers,CO,8099,0
+CO_Pueblo,CO,8101,0
+CO_Rio Blanco,CO,8103,2
+CO_Rio Grande,CO,8105,1
+CO_Routt,CO,8107,0
+CO_Saguache,CO,8109,0
+CO_San Juan,CO,8111,0
+CO_San Miguel,CO,8113,0
+CO_Sedgwick,CO,8115,3
+CO_Summit,CO,8117,0
+CO_Teller,CO,8119,4
+CO_Washington,CO,8121,4
+CO_Weld,CO,8123,19
+CO_Yuma,CO,8125,8
+CT_Fairfield,CT,9001,17
+CT_Hartford,CT,9003,6
+CT_Litchfield,CT,9005,11
+CT_Middlesex,CT,9007,3
+CT_New Haven,CT,9009,14
+CT_New London,CT,9011,23
+CT_Tolland,CT,9013,4
+CT_Windham,CT,9015,7
+DC_District of Columbia,DC,11001,0
+DE_Kent,DE,10001,36
+DE_New Castle,DE,10003,6
+DE_Sussex,DE,10005,242
+FL_Alachua,FL,12001,0
+FL_Baker,FL,12003,0
+FL_Bay,FL,12005,0
+FL_Bradford,FL,12007,1
+FL_Brevard,FL,12009,3
+FL_Broward,FL,12011,0
+FL_Calhoun,FL,12013,0
+FL_Charlotte,FL,12015,0
+FL_Citrus,FL,12017,2
+FL_Clay,FL,12019,0
+FL_Collier,FL,12021,0
+FL_Columbia,FL,12023,1
+FL_DeSoto,FL,12027,0
+FL_Dixie,FL,12029,0
+FL_Duval,FL,12031,0
+FL_Escambia,FL,12033,0
+FL_Flagler,FL,12035,0
+FL_Franklin,FL,12037,0
+FL_Gadsden,FL,12039,0
+FL_Gilchrist,FL,12041,0
+FL_Glades,FL,12043,0
+FL_Gulf,FL,12045,0
+FL_Hamilton,FL,12047,0
+FL_Hardee,FL,12049,2
+FL_Hendry,FL,12051,0
+FL_Hernando,FL,12053,0
+FL_Highlands,FL,12055,3
+FL_Hillsborough,FL,12057,43
+FL_Holmes,FL,12059,0
+FL_Indian River,FL,12061,0
+FL_Jackson,FL,12063,0
+FL_Jefferson,FL,12065,0
+FL_Lafayette,FL,12067,2
+FL_Lake,FL,12069,9
+FL_Lee,FL,12071,1
+FL_Leon,FL,12073,0
+FL_Levy,FL,12075,0
+FL_Liberty,FL,12077,0
+FL_Madison,FL,12079,0
+FL_Manatee,FL,12081,0
+FL_Marion,FL,12083,4
+FL_Martin,FL,12085,0
+FL_Miami-Dade,FL,12086,8
+FL_Monroe,FL,12087,0
+FL_Nassau,FL,12089,0
+FL_Okaloosa,FL,12091,0
+FL_Okeechobee,FL,12093,0
+FL_Orange,FL,12095,3
+FL_Osceola,FL,12097,0
+FL_Palm Beach,FL,12099,0
+FL_Pasco,FL,12101,12
+FL_Pinellas,FL,12103,0
+FL_Polk,FL,12105,8
+FL_Putnam,FL,12107,0
+FL_Santa Rosa,FL,12113,0
+FL_Sarasota,FL,12115,0
+FL_Seminole,FL,12117,0
+FL_St. Johns,FL,12109,0
+FL_St. Lucie,FL,12111,0
+FL_Sumter,FL,12119,0
+FL_Suwannee,FL,12121,1
+FL_Taylor,FL,12123,0
+FL_Union,FL,12125,0
+FL_Volusia,FL,12127,4
+FL_Wakulla,FL,12129,0
+FL_Walton,FL,12131,0
+FL_Washington,FL,12133,0
+GA_Appling,GA,13001,0
+GA_Atkinson,GA,13003,0
+GA_Bacon,GA,13005,0
+GA_Baker,GA,13007,0
+GA_Baldwin,GA,13009,0
+GA_Banks,GA,13011,0
+GA_Barrow,GA,13013,0
+GA_Bartow,GA,13015,0
+GA_Ben Hill,GA,13017,0
+GA_Berrien,GA,13019,0
+GA_Bibb,GA,13021,0
+GA_Bleckley,GA,13023,0
+GA_Brantley,GA,13025,0
+GA_Brooks,GA,13027,0
+GA_Bryan,GA,13029,0
+GA_Bulloch,GA,13031,0
+GA_Burke,GA,13033,0
+GA_Butts,GA,13035,0
+GA_Calhoun,GA,13037,0
+GA_Camden,GA,13039,0
+GA_Candler,GA,13043,0
+GA_Carroll,GA,13045,0
+GA_Catoosa,GA,13047,0
+GA_Charlton,GA,13049,0
+GA_Chatham,GA,13051,0
+GA_Chattahoochee,GA,13053,0
+GA_Chattooga,GA,13055,0
+GA_Cherokee,GA,13057,0
+GA_Clarke,GA,13059,0
+GA_Clay,GA,13061,0
+GA_Clayton,GA,13063,0
+GA_Clinch,GA,13065,0
+GA_Cobb,GA,13067,0
+GA_Coffee,GA,13069,0
+GA_Colquitt,GA,13071,0
+GA_Columbia,GA,13073,0
+GA_Cook,GA,13075,0
+GA_Coweta,GA,13077,0
+GA_Crawford,GA,13079,0
+GA_Crisp,GA,13081,0
+GA_Dade,GA,13083,0
+GA_Dawson,GA,13085,0
+GA_Decatur,GA,13087,0
+GA_DeKalb,GA,13089,0
+GA_Dodge,GA,13091,0
+GA_Dooly,GA,13093,0
+GA_Dougherty,GA,13095,0
+GA_Douglas,GA,13097,0
+GA_Early,GA,13099,0
+GA_Echols,GA,13101,0
+GA_Effingham,GA,13103,0
+GA_Elbert,GA,13105,0
+GA_Emanuel,GA,13107,0
+GA_Evans,GA,13109,0
+GA_Fannin,GA,13111,0
+GA_Fayette,GA,13113,0
+GA_Floyd,GA,13115,0
+GA_Forsyth,GA,13117,0
+GA_Franklin,GA,13119,0
+GA_Fulton,GA,13121,0
+GA_Gilmer,GA,13123,0
+GA_Glascock,GA,13125,0
+GA_Glynn,GA,13127,0
+GA_Gordon,GA,13129,0
+GA_Grady,GA,13131,0
+GA_Greene,GA,13133,0
+GA_Gwinnett,GA,13135,0
+GA_Habersham,GA,13137,0
+GA_Hall,GA,13139,0
+GA_Hancock,GA,13141,0
+GA_Haralson,GA,13143,0
+GA_Harris,GA,13145,0
+GA_Hart,GA,13147,0
+GA_Heard,GA,13149,0
+GA_Henry,GA,13151,0
+GA_Houston,GA,13153,0
+GA_Irwin,GA,13155,0
+GA_Jackson,GA,13157,1
+GA_Jasper,GA,13159,0
+GA_Jeff Davis,GA,13161,0
+GA_Jefferson,GA,13163,1
+GA_Jenkins,GA,13165,0
+GA_Johnson,GA,13167,0
+GA_Jones,GA,13169,0
+GA_Lamar,GA,13171,0
+GA_Lanier,GA,13173,0
+GA_Laurens,GA,13175,0
+GA_Lee,GA,13177,0
+GA_Liberty,GA,13179,0
+GA_Lincoln,GA,13181,0
+GA_Long,GA,13183,0
+GA_Lowndes,GA,13185,0
+GA_Lumpkin,GA,13187,0
+GA_Macon,GA,13193,3
+GA_Madison,GA,13195,0
+GA_Marion,GA,13197,0
+GA_McDuffie,GA,13189,0
+GA_McIntosh,GA,13191,0
+GA_Meriwether,GA,13199,0
+GA_Miller,GA,13201,0
+GA_Mitchell,GA,13205,2
+GA_Monroe,GA,13207,0
+GA_Montgomery,GA,13209,0
+GA_Morgan,GA,13211,0
+GA_Murray,GA,13213,0
+GA_Muscogee,GA,13215,0
+GA_Newton,GA,13217,0
+GA_Oconee,GA,13219,0
+GA_Oglethorpe,GA,13221,0
+GA_Paulding,GA,13223,0
+GA_Peach,GA,13225,0
+GA_Pickens,GA,13227,0
+GA_Pierce,GA,13229,0
+GA_Pike,GA,13231,0
+GA_Polk,GA,13233,0
+GA_Pulaski,GA,13235,0
+GA_Putnam,GA,13237,0
+GA_Quitman,GA,13239,0
+GA_Rabun,GA,13241,0
+GA_Randolph,GA,13243,1
+GA_Richmond,GA,13245,0
+GA_Rockdale,GA,13247,0
+GA_Schley,GA,13249,0
+GA_Screven,GA,13251,0
+GA_Seminole,GA,13253,0
+GA_Spalding,GA,13255,0
+GA_Stephens,GA,13257,0
+GA_Stewart,GA,13259,0
+GA_Sumter,GA,13261,0
+GA_Talbot,GA,13263,0
+GA_Taliaferro,GA,13265,0
+GA_Tattnall,GA,13267,0
+GA_Taylor,GA,13269,0
+GA_Telfair,GA,13271,0
+GA_Terrell,GA,13273,0
+GA_Thomas,GA,13275,0
+GA_Tift,GA,13277,0
+GA_Toombs,GA,13279,0
+GA_Towns,GA,13281,0
+GA_Treutlen,GA,13283,0
+GA_Troup,GA,13285,0
+GA_Turner,GA,13287,0
+GA_Twiggs,GA,13289,0
+GA_Union,GA,13291,0
+GA_Upson,GA,13293,0
+GA_Walker,GA,13295,0
+GA_Walton,GA,13297,0
+GA_Ware,GA,13299,0
+GA_Warren,GA,13301,0
+GA_Washington,GA,13303,0
+GA_Wayne,GA,13305,0
+GA_Webster,GA,13307,0
+GA_Wheeler,GA,13309,0
+GA_White,GA,13311,1
+GA_Whitfield,GA,13313,0
+GA_Wilcox,GA,13315,0
+GA_Wilkes,GA,13317,0
+GA_Wilkinson,GA,13319,0
+GA_Worth,GA,13321,0
+GU_Guam,GU,66010,0
+HI_Hawaii,HI,15001,0
+HI_Honolulu,HI,15003,0
+HI_Kalawao,HI,15005,0
+HI_Kauai,HI,15007,0
+HI_Maui,HI,15009,0
+IA_Adair,IA,19001,0
+IA_Adams,IA,19003,0
+IA_Allamakee,IA,19005,5
+IA_Appanoose,IA,19007,0
+IA_Audubon,IA,19009,0
+IA_Benton,IA,19011,1
+IA_Black Hawk,IA,19013,29
+IA_Boone,IA,19015,0
+IA_Bremer,IA,19017,21
+IA_Buchanan,IA,19019,6
+IA_Buena Vista,IA,19021,3
+IA_Butler,IA,19023,6
+IA_Calhoun,IA,19025,0
+IA_Carroll,IA,19027,2
+IA_Cass,IA,19029,7
+IA_Cedar,IA,19031,0
+IA_Cerro Gordo,IA,19033,2
+IA_Cherokee,IA,19035,0
+IA_Chickasaw,IA,19037,12
+IA_Clarke,IA,19039,0
+IA_Clay,IA,19041,5
+IA_Clayton,IA,19043,25
+IA_Clinton,IA,19045,17
+IA_Crawford,IA,19047,10
+IA_Dallas,IA,19049,0
+IA_Davis,IA,19051,0
+IA_Decatur,IA,19053,0
+IA_Delaware,IA,19055,23
+IA_Des Moines,IA,19057,0
+IA_Dickinson,IA,19059,0
+IA_Dubuque,IA,19061,17
+IA_Emmet,IA,19063,0
+IA_Fayette,IA,19065,16
+IA_Floyd,IA,19067,4
+IA_Franklin,IA,19069,3
+IA_Fremont,IA,19071,0
+IA_Greene,IA,19073,0
+IA_Grundy,IA,19075,0
+IA_Guthrie,IA,19077,1
+IA_Hamilton,IA,19079,0
+IA_Hancock,IA,19081,0
+IA_Hardin,IA,19083,2
+IA_Harrison,IA,19085,3
+IA_Henry,IA,19087,0
+IA_Howard,IA,19089,20
+IA_Humboldt,IA,19091,2
+IA_Ida,IA,19093,9
+IA_Iowa,IA,19095,0
+IA_Jackson,IA,19097,3
+IA_Jasper,IA,19099,1
+IA_Jefferson,IA,19101,0
+IA_Johnson,IA,19103,9
+IA_Jones,IA,19105,13
+IA_Keokuk,IA,19107,0
+IA_Kossuth,IA,19109,0
+IA_Lee,IA,19111,7
+IA_Linn,IA,19113,20
+IA_Louisa,IA,19115,4
+IA_Lucas,IA,19117,0
+IA_Lyon,IA,19119,16
+IA_Madison,IA,19121,0
+IA_Mahaska,IA,19123,0
+IA_Marion,IA,19125,0
+IA_Marshall,IA,19127,1
+IA_Mills,IA,19129,12
+IA_Mitchell,IA,19131,11
+IA_Monona,IA,19133,11
+IA_Monroe,IA,19135,0
+IA_Montgomery,IA,19137,0
+IA_Muscatine,IA,19139,11
+IA_O'Brien,IA,19141,2
+IA_Osceola,IA,19143,0
+IA_Page,IA,19145,9
+IA_Palo Alto,IA,19147,2
+IA_Plymouth,IA,19149,0
+IA_Pocahontas,IA,19151,3
+IA_Polk,IA,19153,0
+IA_Pottawattamie,IA,19155,5
+IA_Poweshiek,IA,19157,0
+IA_Ringgold,IA,19159,0
+IA_Sac,IA,19161,8
+IA_Scott,IA,19163,9
+IA_Shelby,IA,19165,0
+IA_Sioux,IA,19167,4
+IA_Story,IA,19169,0
+IA_Tama,IA,19171,0
+IA_Taylor,IA,19173,0
+IA_Union,IA,19175,0
+IA_Van Buren,IA,19177,0
+IA_Wapello,IA,19179,0
+IA_Warren,IA,19181,0
+IA_Washington,IA,19183,0
+IA_Wayne,IA,19185,0
+IA_Webster,IA,19187,0
+IA_Winnebago,IA,19189,0
+IA_Winneshiek,IA,19191,14
+IA_Woodbury,IA,19193,12
+IA_Worth,IA,19195,0
+IA_Wright,IA,19197,2
+ID_Ada,ID,16001,8
+ID_Adams,ID,16003,0
+ID_Bannock,ID,16005,6
+ID_Bear Lake,ID,16007,0
+ID_Benewah,ID,16009,0
+ID_Bingham,ID,16011,10
+ID_Blaine,ID,16013,0
+ID_Boise,ID,16015,2
+ID_Bonner,ID,16017,0
+ID_Bonneville,ID,16019,0
+ID_Boundary,ID,16021,0
+ID_Butte,ID,16023,0
+ID_Camas,ID,16025,0
+ID_Canyon,ID,16027,35
+ID_Caribou,ID,16029,1
+ID_Cassia,ID,16031,9
+ID_Clark,ID,16033,0
+ID_Clearwater,ID,16035,0
+ID_Custer,ID,16037,0
+ID_Elmore,ID,16039,5
+ID_Franklin,ID,16041,2
+ID_Fremont,ID,16043,5
+ID_Gem,ID,16045,0
+ID_Gooding,ID,16047,0
+ID_Idaho,ID,16049,0
+ID_Jefferson,ID,16051,0
+ID_Jerome,ID,16053,0
+ID_Kootenai,ID,16055,2
+ID_Latah,ID,16057,2
+ID_Lemhi,ID,16059,0
+ID_Lewis,ID,16061,0
+ID_Lincoln,ID,16063,1
+ID_Madison,ID,16065,3
+ID_Minidoka,ID,16067,0
+ID_Nez Perce,ID,16069,8
+ID_Oneida,ID,16071,0
+ID_Owyhee,ID,16073,6
+ID_Payette,ID,16075,5
+ID_Power,ID,16077,0
+ID_Shoshone,ID,16079,0
+ID_Teton,ID,16081,0
+ID_Twin Falls,ID,16083,4
+ID_Valley,ID,16085,0
+ID_Washington,ID,16087,7
+IL_Adams,IL,17001,6
+IL_Alexander,IL,17003,0
+IL_Bond,IL,17005,0
+IL_Boone,IL,17007,3
+IL_Brown,IL,17009,0
+IL_Bureau,IL,17011,1
+IL_Calhoun,IL,17013,0
+IL_Carroll,IL,17015,16
+IL_Cass,IL,17017,0
+IL_Champaign,IL,17019,0
+IL_Christian,IL,17021,0
+IL_Clark,IL,17023,0
+IL_Clay,IL,17025,0
+IL_Clinton,IL,17027,0
+IL_Coles,IL,17029,3
+IL_Cook,IL,17031,0
+IL_Crawford,IL,17033,2
+IL_Cumberland,IL,17035,0
+IL_De Witt,IL,17039,0
+IL_DeKalb,IL,17037,0
+IL_Douglas,IL,17041,0
+IL_DuPage,IL,17043,0
+IL_Edgar,IL,17045,1
+IL_Edwards,IL,17047,0
+IL_Effingham,IL,17049,0
+IL_Fayette,IL,17051,0
+IL_Ford,IL,17053,0
+IL_Franklin,IL,17055,0
+IL_Fulton,IL,17057,3
+IL_Gallatin,IL,17059,0
+IL_Greene,IL,17061,1
+IL_Grundy,IL,17063,0
+IL_Hamilton,IL,17065,0
+IL_Hancock,IL,17067,0
+IL_Hardin,IL,17069,0
+IL_Henderson,IL,17071,11
+IL_Henry,IL,17073,5
+IL_Iroquois,IL,17075,0
+IL_Jackson,IL,17077,0
+IL_Jasper,IL,17079,0
+IL_Jefferson,IL,17081,0
+IL_Jersey,IL,17083,0
+IL_Jo Daviess,IL,17085,1
+IL_Johnson,IL,17087,0
+IL_Kane,IL,17089,1
+IL_Kankakee,IL,17091,0
+IL_Kendall,IL,17093,1
+IL_Knox,IL,17095,0
+IL_Lake,IL,17097,0
+IL_LaSalle,IL,17099,4
+IL_Lawrence,IL,17101,16
+IL_Lee,IL,17103,8
+IL_Livingston,IL,17105,0
+IL_Logan,IL,17107,8
+IL_Macon,IL,17115,10
+IL_Macoupin,IL,17117,0
+IL_Madison,IL,17119,1
+IL_Marion,IL,17121,0
+IL_Marshall,IL,17123,11
+IL_Mason,IL,17125,27
+IL_Massac,IL,17127,0
+IL_McDonough,IL,17109,2
+IL_McHenry,IL,17111,6
+IL_McLean,IL,17113,0
+IL_Menard,IL,17129,0
+IL_Mercer,IL,17131,2
+IL_Monroe,IL,17133,5
+IL_Montgomery,IL,17135,0
+IL_Morgan,IL,17137,0
+IL_Moultrie,IL,17139,0
+IL_Ogle,IL,17141,7
+IL_Peoria,IL,17143,18
+IL_Perry,IL,17145,0
+IL_Piatt,IL,17147,0
+IL_Pike,IL,17149,2
+IL_Pope,IL,17151,0
+IL_Pulaski,IL,17153,0
+IL_Putnam,IL,17155,5
+IL_Randolph,IL,17157,0
+IL_Richland,IL,17159,0
+IL_Rock Island,IL,17161,4
+IL_Saline,IL,17165,0
+IL_Sangamon,IL,17167,0
+IL_Schuyler,IL,17169,0
+IL_Scott,IL,17171,0
+IL_Shelby,IL,17173,2
+IL_St. Clair,IL,17163,0
+IL_Stark,IL,17175,0
+IL_Stephenson,IL,17177,3
+IL_Tazewell,IL,17179,12
+IL_Union,IL,17181,0
+IL_Vermilion,IL,17183,13
+IL_Wabash,IL,17185,0
+IL_Warren,IL,17187,2
+IL_Washington,IL,17189,0
+IL_Wayne,IL,17191,0
+IL_White,IL,17193,0
+IL_Whiteside,IL,17195,20
+IL_Will,IL,17197,0
+IL_Williamson,IL,17199,0
+IL_Winnebago,IL,17201,25
+IL_Woodford,IL,17203,0
+IN_Adams,IN,18001,1
+IN_Allen,IN,18003,0
+IN_Bartholomew,IN,18005,28
+IN_Benton,IN,18007,0
+IN_Blackford,IN,18009,1
+IN_Boone,IN,18011,0
+IN_Brown,IN,18013,0
+IN_Carroll,IN,18015,0
+IN_Cass,IN,18017,4
+IN_Clark,IN,18019,0
+IN_Clay,IN,18021,0
+IN_Clinton,IN,18023,0
+IN_Crawford,IN,18025,0
+IN_Daviess,IN,18027,4
+IN_Dearborn,IN,18029,0
+IN_Decatur,IN,18031,1
+IN_DeKalb,IN,18033,0
+IN_Delaware,IN,18035,1
+IN_Dubois,IN,18037,0
+IN_Elkhart,IN,18039,65
+IN_Fayette,IN,18041,4
+IN_Floyd,IN,18043,0
+IN_Fountain,IN,18045,0
+IN_Franklin,IN,18047,0
+IN_Fulton,IN,18049,1
+IN_Gibson,IN,18051,6
+IN_Grant,IN,18053,0
+IN_Greene,IN,18055,0
+IN_Hamilton,IN,18057,1
+IN_Hancock,IN,18059,0
+IN_Harrison,IN,18061,0
+IN_Hendricks,IN,18063,1
+IN_Henry,IN,18065,3
+IN_Howard,IN,18067,1
+IN_Huntington,IN,18069,0
+IN_Jackson,IN,18071,1
+IN_Jasper,IN,18073,1
+IN_Jay,IN,18075,0
+IN_Jefferson,IN,18077,4
+IN_Jennings,IN,18079,0
+IN_Johnson,IN,18081,0
+IN_Knox,IN,18083,10
+IN_Kosciusko,IN,18085,24
+IN_LaGrange,IN,18087,96
+IN_Lake,IN,18089,1
+IN_LaPorte,IN,18091,54
+IN_Lawrence,IN,18093,0
+IN_Madison,IN,18095,0
+IN_Marion,IN,18097,1
+IN_Marshall,IN,18099,14
+IN_Martin,IN,18101,0
+IN_Miami,IN,18103,3
+IN_Monroe,IN,18105,0
+IN_Montgomery,IN,18107,0
+IN_Morgan,IN,18109,2
+IN_Newton,IN,18111,6
+IN_Noble,IN,18113,14
+IN_Ohio,IN,18115,0
+IN_Orange,IN,18117,0
+IN_Owen,IN,18119,0
+IN_Parke,IN,18121,12
+IN_Perry,IN,18123,0
+IN_Pike,IN,18125,0
+IN_Porter,IN,18127,0
+IN_Posey,IN,18129,3
+IN_Pulaski,IN,18131,2
+IN_Putnam,IN,18133,0
+IN_Randolph,IN,18135,1
+IN_Ripley,IN,18137,1
+IN_Rush,IN,18139,2
+IN_Scott,IN,18143,0
+IN_Shelby,IN,18145,3
+IN_Spencer,IN,18147,0
+IN_St. Joseph,IN,18141,48
+IN_Starke,IN,18149,1
+IN_Steuben,IN,18151,3
+IN_Sullivan,IN,18153,3
+IN_Switzerland,IN,18155,0
+IN_Tippecanoe,IN,18157,10
+IN_Tipton,IN,18159,0
+IN_Union,IN,18161,3
+IN_Vanderburgh,IN,18163,0
+IN_Vermillion,IN,18165,29
+IN_Vigo,IN,18167,7
+IN_Wabash,IN,18169,1
+IN_Warren,IN,18171,5
+IN_Warrick,IN,18173,0
+IN_Washington,IN,18175,0
+IN_Wayne,IN,18177,13
+IN_Wells,IN,18179,0
+IN_White,IN,18181,7
+IN_Whitley,IN,18183,0
+KS_Allen,KS,20001,0
+KS_Anderson,KS,20003,0
+KS_Atchison,KS,20005,0
+KS_Barber,KS,20007,0
+KS_Barton,KS,20009,0
+KS_Bourbon,KS,20011,0
+KS_Brown,KS,20013,47
+KS_Butler,KS,20015,0
+KS_Chase,KS,20017,0
+KS_Chautauqua,KS,20019,0
+KS_Cherokee,KS,20021,0
+KS_Cheyenne,KS,20023,0
+KS_Clark,KS,20025,0
+KS_Clay,KS,20027,14
+KS_Cloud,KS,20029,0
+KS_Coffey,KS,20031,0
+KS_Comanche,KS,20033,3
+KS_Cowley,KS,20035,0
+KS_Crawford,KS,20037,0
+KS_Decatur,KS,20039,8
+KS_Dickinson,KS,20041,1
+KS_Doniphan,KS,20043,7
+KS_Douglas,KS,20045,0
+KS_Edwards,KS,20047,5
+KS_Elk,KS,20049,0
+KS_Ellis,KS,20051,3
+KS_Ellsworth,KS,20053,3
+KS_Finney,KS,20055,6
+KS_Ford,KS,20057,10
+KS_Franklin,KS,20059,0
+KS_Geary,KS,20061,0
+KS_Gove,KS,20063,3
+KS_Graham,KS,20065,3
+KS_Grant,KS,20067,0
+KS_Gray,KS,20069,4
+KS_Greeley,KS,20071,2
+KS_Greenwood,KS,20073,0
+KS_Hamilton,KS,20075,0
+KS_Harper,KS,20077,24
+KS_Harvey,KS,20079,0
+KS_Haskell,KS,20081,5
+KS_Hodgeman,KS,20083,0
+KS_Jackson,KS,20085,0
+KS_Jefferson,KS,20087,9
+KS_Jewell,KS,20089,14
+KS_Johnson,KS,20091,0
+KS_Kearny,KS,20093,0
+KS_Kingman,KS,20095,24
+KS_Kiowa,KS,20097,13
+KS_Labette,KS,20099,0
+KS_Lane,KS,20101,2
+KS_Leavenworth,KS,20103,0
+KS_Lincoln,KS,20105,7
+KS_Linn,KS,20107,0
+KS_Logan,KS,20109,3
+KS_Lyon,KS,20111,0
+KS_Marion,KS,20115,1
+KS_Marshall,KS,20117,3
+KS_McPherson,KS,20113,1
+KS_Meade,KS,20119,2
+KS_Miami,KS,20121,0
+KS_Mitchell,KS,20123,1
+KS_Montgomery,KS,20125,0
+KS_Morris,KS,20127,7
+KS_Morton,KS,20129,0
+KS_Nemaha,KS,20131,0
+KS_Neosho,KS,20133,0
+KS_Ness,KS,20135,6
+KS_Norton,KS,20137,8
+KS_Osage,KS,20139,0
+KS_Osborne,KS,20141,19
+KS_Ottawa,KS,20143,2
+KS_Pawnee,KS,20145,5
+KS_Phillips,KS,20147,29
+KS_Pottawatomie,KS,20149,4
+KS_Pratt,KS,20151,4
+KS_Rawlins,KS,20153,3
+KS_Reno,KS,20155,40
+KS_Republic,KS,20157,8
+KS_Rice,KS,20159,12
+KS_Riley,KS,20161,7
+KS_Rooks,KS,20163,11
+KS_Rush,KS,20165,2
+KS_Russell,KS,20167,6
+KS_Saline,KS,20169,0
+KS_Scott,KS,20171,6
+KS_Sedgwick,KS,20173,25
+KS_Seward,KS,20175,0
+KS_Shawnee,KS,20177,1
+KS_Sheridan,KS,20179,0
+KS_Sherman,KS,20181,9
+KS_Smith,KS,20183,6
+KS_Stafford,KS,20185,4
+KS_Stanton,KS,20187,0
+KS_Stevens,KS,20189,0
+KS_Sumner,KS,20191,49
+KS_Thomas,KS,20193,13
+KS_Trego,KS,20195,0
+KS_Wabaunsee,KS,20197,2
+KS_Wallace,KS,20199,0
+KS_Washington,KS,20201,11
+KS_Wichita,KS,20203,5
+KS_Wilson,KS,20205,0
+KS_Woodson,KS,20207,0
+KS_Wyandotte,KS,20209,0
+KY_Adair,KY,21001,0
+KY_Allen,KY,21003,0
+KY_Anderson,KY,21005,0
+KY_Ballard,KY,21007,5
+KY_Barren,KY,21009,0
+KY_Bath,KY,21011,0
+KY_Bell,KY,21013,0
+KY_Boone,KY,21015,0
+KY_Bourbon,KY,21017,0
+KY_Boyd,KY,21019,0
+KY_Boyle,KY,21021,0
+KY_Bracken,KY,21023,0
+KY_Breathitt,KY,21025,0
+KY_Breckinridge,KY,21027,0
+KY_Bullitt,KY,21029,0
+KY_Butler,KY,21031,0
+KY_Caldwell,KY,21033,0
+KY_Calloway,KY,21035,0
+KY_Campbell,KY,21037,0
+KY_Carlisle,KY,21039,0
+KY_Carroll,KY,21041,0
+KY_Carter,KY,21043,0
+KY_Casey,KY,21045,0
+KY_Christian,KY,21047,0
+KY_Clark,KY,21049,0
+KY_Clay,KY,21051,0
+KY_Clinton,KY,21053,0
+KY_Crittenden,KY,21055,0
+KY_Cumberland,KY,21057,0
+KY_Daviess,KY,21059,0
+KY_Edmonson,KY,21061,0
+KY_Elliott,KY,21063,0
+KY_Estill,KY,21065,0
+KY_Fayette,KY,21067,0
+KY_Fleming,KY,21069,0
+KY_Floyd,KY,21071,0
+KY_Franklin,KY,21073,0
+KY_Fulton,KY,21075,0
+KY_Gallatin,KY,21077,0
+KY_Garrard,KY,21079,0
+KY_Grant,KY,21081,0
+KY_Graves,KY,21083,0
+KY_Grayson,KY,21085,0
+KY_Green,KY,21087,0
+KY_Greenup,KY,21089,0
+KY_Hancock,KY,21091,0
+KY_Hardin,KY,21093,0
+KY_Harlan,KY,21095,0
+KY_Harrison,KY,21097,0
+KY_Hart,KY,21099,0
+KY_Henderson,KY,21101,0
+KY_Henry,KY,21103,0
+KY_Hickman,KY,21105,0
+KY_Hopkins,KY,21107,0
+KY_Jackson,KY,21109,0
+KY_Jefferson,KY,21111,0
+KY_Jessamine,KY,21113,0
+KY_Johnson,KY,21115,0
+KY_Kenton,KY,21117,0
+KY_Knott,KY,21119,0
+KY_Knox,KY,21121,0
+KY_Larue,KY,21123,0
+KY_Laurel,KY,21125,0
+KY_Lawrence,KY,21127,0
+KY_Lee,KY,21129,0
+KY_Leslie,KY,21131,0
+KY_Letcher,KY,21133,0
+KY_Lewis,KY,21135,0
+KY_Lincoln,KY,21137,0
+KY_Livingston,KY,21139,0
+KY_Logan,KY,21141,0
+KY_Lyon,KY,21143,0
+KY_Madison,KY,21151,0
+KY_Magoffin,KY,21153,0
+KY_Marion,KY,21155,0
+KY_Marshall,KY,21157,0
+KY_Martin,KY,21159,0
+KY_Mason,KY,21161,0
+KY_McCracken,KY,21145,0
+KY_McCreary,KY,21147,0
+KY_McLean,KY,21149,0
+KY_Meade,KY,21163,0
+KY_Menifee,KY,21165,0
+KY_Mercer,KY,21167,0
+KY_Metcalfe,KY,21169,0
+KY_Monroe,KY,21171,0
+KY_Montgomery,KY,21173,0
+KY_Morgan,KY,21175,1
+KY_Muhlenberg,KY,21177,0
+KY_Nelson,KY,21179,0
+KY_Nicholas,KY,21181,0
+KY_Ohio,KY,21183,0
+KY_Oldham,KY,21185,0
+KY_Owen,KY,21187,0
+KY_Owsley,KY,21189,0
+KY_Pendleton,KY,21191,0
+KY_Perry,KY,21193,0
+KY_Pike,KY,21195,0
+KY_Powell,KY,21197,0
+KY_Pulaski,KY,21199,0
+KY_Robertson,KY,21201,0
+KY_Rockcastle,KY,21203,0
+KY_Rowan,KY,21205,0
+KY_Russell,KY,21207,0
+KY_Scott,KY,21209,0
+KY_Shelby,KY,21211,0
+KY_Simpson,KY,21213,0
+KY_Spencer,KY,21215,0
+KY_Taylor,KY,21217,0
+KY_Todd,KY,21219,0
+KY_Trigg,KY,21221,0
+KY_Trimble,KY,21223,0
+KY_Union,KY,21225,0
+KY_Warren,KY,21227,0
+KY_Washington,KY,21229,0
+KY_Wayne,KY,21231,0
+KY_Webster,KY,21233,0
+KY_Whitley,KY,21235,0
+KY_Wolfe,KY,21237,0
+KY_Woodford,KY,21239,0
+LA_Acadia,LA,22001,0
+LA_Allen,LA,22003,0
+LA_Ascension,LA,22005,0
+LA_Assumption,LA,22007,0
+LA_Avoyelles,LA,22009,0
+LA_Beauregard,LA,22011,0
+LA_Bienville,LA,22013,0
+LA_Bossier,LA,22015,0
+LA_Caddo,LA,22017,0
+LA_Calcasieu,LA,22019,0
+LA_Caldwell,LA,22021,0
+LA_Cameron,LA,22023,0
+LA_Catahoula,LA,22025,0
+LA_Claiborne,LA,22027,0
+LA_Concordia,LA,22029,0
+LA_De Soto,LA,22031,0
+LA_East Baton Rouge,LA,22033,0
+LA_East Carroll,LA,22035,0
+LA_East Feliciana,LA,22037,0
+LA_Evangeline,LA,22039,0
+LA_Franklin,LA,22041,0
+LA_Grant,LA,22043,0
+LA_Iberia,LA,22045,0
+LA_Iberville,LA,22047,0
+LA_Jackson,LA,22049,0
+LA_Jefferson,LA,22051,0
+LA_Jefferson Davis,LA,22053,0
+LA_La Salle,LA,22059,0
+LA_Lafayette,LA,22055,0
+LA_Lafourche,LA,22057,0
+LA_Lincoln,LA,22061,0
+LA_Livingston,LA,22063,0
+LA_Madison,LA,22065,0
+LA_Morehouse,LA,22067,0
+LA_Natchitoches,LA,22069,0
+LA_Orleans,LA,22071,0
+LA_Ouachita,LA,22073,0
+LA_Plaquemines,LA,22075,0
+LA_Pointe Coupee,LA,22077,0
+LA_Rapides,LA,22079,0
+LA_Red River,LA,22081,0
+LA_Richland,LA,22083,0
+LA_Sabine,LA,22085,0
+LA_St. Bernard,LA,22087,0
+LA_St. Charles,LA,22089,0
+LA_St. Helena,LA,22091,0
+LA_St. James,LA,22093,0
+LA_St. John the Baptist,LA,22095,0
+LA_St. Landry,LA,22097,0
+LA_St. Martin,LA,22099,0
+LA_St. Mary,LA,22101,0
+LA_St. Tammany,LA,22103,0
+LA_Tangipahoa,LA,22105,0
+LA_Tensas,LA,22107,0
+LA_Terrebonne,LA,22109,0
+LA_Union,LA,22111,0
+LA_Vermilion,LA,22113,0
+LA_Vernon,LA,22115,0
+LA_Washington,LA,22117,0
+LA_Webster,LA,22119,0
+LA_West Baton Rouge,LA,22121,0
+LA_West Carroll,LA,22123,0
+LA_West Feliciana,LA,22125,0
+LA_Winn,LA,22127,0
+MA_Barnstable,MA,25001,6
+MA_Berkshire,MA,25003,2
+MA_Bristol,MA,25005,1
+MA_Dukes,MA,25007,0
+MA_Essex,MA,25009,0
+MA_Franklin,MA,25011,1
+MA_Hampden,MA,25013,1
+MA_Hampshire,MA,25015,2
+MA_Middlesex,MA,25017,5
+MA_Nantucket,MA,25019,0
+MA_Norfolk,MA,25021,0
+MA_Plymouth,MA,25023,3
+MA_Suffolk,MA,25025,0
+MA_Worcester,MA,25027,9
+MD_Allegany,MD,24001,0
+MD_Anne Arundel,MD,24003,11
+MD_Baltimore,MD,24005,46
+MD_Baltimore city,MD,24510,0
+MD_Calvert,MD,24009,0
+MD_Caroline,MD,24011,6
+MD_Carroll,MD,24013,70
+MD_Cecil,MD,24015,11
+MD_Charles,MD,24017,1
+MD_Dorchester,MD,24019,2
+MD_Frederick,MD,24021,14
+MD_Garrett,MD,24023,0
+MD_Harford,MD,24025,34
+MD_Howard,MD,24027,12
+MD_Kent,MD,24029,2
+MD_Montgomery,MD,24031,8
+MD_Prince George's,MD,24033,0
+MD_Queen Anne's,MD,24035,10
+MD_Somerset,MD,24039,0
+MD_St. Mary's,MD,24037,0
+MD_Talbot,MD,24041,3
+MD_Washington,MD,24043,2
+MD_Wicomico,MD,24045,26
+MD_Worcester,MD,24047,11
+ME_Androscoggin,ME,23001,0
+ME_Aroostook,ME,23003,15
+ME_Cumberland,ME,23005,7
+ME_Franklin,ME,23007,0
+ME_Hancock,ME,23009,2
+ME_Kennebec,ME,23011,0
+ME_Knox,ME,23013,0
+ME_Lincoln,ME,23015,1
+ME_Oxford,ME,23017,0
+ME_Penobscot,ME,23019,7
+ME_Piscataquis,ME,23021,3
+ME_Sagadahoc,ME,23023,0
+ME_Somerset,ME,23025,4
+ME_Waldo,ME,23027,0
+ME_Washington,ME,23029,0
+ME_York,ME,23031,3
+MI_Alcona,MI,26001,0
+MI_Alger,MI,26003,1
+MI_Allegan,MI,26005,12
+MI_Alpena,MI,26007,3
+MI_Antrim,MI,26009,1
+MI_Arenac,MI,26011,0
+MI_Baraga,MI,26013,0
+MI_Barry,MI,26015,4
+MI_Bay,MI,26017,0
+MI_Benzie,MI,26019,1
+MI_Berrien,MI,26021,3
+MI_Branch,MI,26023,11
+MI_Calhoun,MI,26025,3
+MI_Cass,MI,26027,7
+MI_Charlevoix,MI,26029,4
+MI_Cheboygan,MI,26031,0
+MI_Chippewa,MI,26033,0
+MI_Clare,MI,26035,1
+MI_Clinton,MI,26037,0
+MI_Crawford,MI,26039,0
+MI_Delta,MI,26041,0
+MI_Dickinson,MI,26043,1
+MI_Eaton,MI,26045,0
+MI_Emmet,MI,26047,4
+MI_Genesee,MI,26049,0
+MI_Gladwin,MI,26051,0
+MI_Gogebic,MI,26053,0
+MI_Grand Traverse,MI,26055,0
+MI_Gratiot,MI,26057,0
+MI_Hillsdale,MI,26059,6
+MI_Houghton,MI,26061,0
+MI_Huron,MI,26063,0
+MI_Ingham,MI,26065,0
+MI_Ionia,MI,26067,9
+MI_Iosco,MI,26069,5
+MI_Iron,MI,26071,1
+MI_Isabella,MI,26073,2
+MI_Jackson,MI,26075,0
+MI_Kalamazoo,MI,26077,10
+MI_Kalkaska,MI,26079,1
+MI_Kent,MI,26081,19
+MI_Keweenaw,MI,26083,0
+MI_Lake,MI,26085,0
+MI_Lapeer,MI,26087,0
+MI_Leelanau,MI,26089,2
+MI_Lenawee,MI,26091,2
+MI_Livingston,MI,26093,1
+MI_Luce,MI,26095,1
+MI_Mackinac,MI,26097,0
+MI_Macomb,MI,26099,0
+MI_Manistee,MI,26101,2
+MI_Marquette,MI,26103,0
+MI_Mason,MI,26105,4
+MI_Mecosta,MI,26107,3
+MI_Menominee,MI,26109,1
+MI_Midland,MI,26111,0
+MI_Missaukee,MI,26113,3
+MI_Monroe,MI,26115,0
+MI_Montcalm,MI,26117,6
+MI_Montmorency,MI,26119,0
+MI_Muskegon,MI,26121,7
+MI_Newaygo,MI,26123,2
+MI_Oakland,MI,26125,5
+MI_Oceana,MI,26127,8
+MI_Ogemaw,MI,26129,0
+MI_Ontonagon,MI,26131,0
+MI_Osceola,MI,26133,1
+MI_Oscoda,MI,26135,1
+MI_Otsego,MI,26137,3
+MI_Ottawa,MI,26139,12
+MI_Presque Isle,MI,26141,0
+MI_Roscommon,MI,26143,1
+MI_Saginaw,MI,26145,0
+MI_Sanilac,MI,26151,0
+MI_Schoolcraft,MI,26153,0
+MI_Shiawassee,MI,26155,0
+MI_St. Clair,MI,26147,0
+MI_St. Joseph,MI,26149,24
+MI_Tuscola,MI,26157,1
+MI_Van Buren,MI,26159,1
+MI_Washtenaw,MI,26161,0
+MI_Wayne,MI,26163,0
+MI_Wexford,MI,26165,1
+MN_Aitkin,MN,27001,0
+MN_Anoka,MN,27003,1
+MN_Becker,MN,27005,9
+MN_Beltrami,MN,27007,1
+MN_Benton,MN,27009,8
+MN_Big Stone,MN,27011,3
+MN_Blue Earth,MN,27013,0
+MN_Brown,MN,27015,1
+MN_Carlton,MN,27017,1
+MN_Carver,MN,27019,1
+MN_Cass,MN,27021,4
+MN_Chippewa,MN,27023,3
+MN_Chisago,MN,27025,1
+MN_Clay,MN,27027,0
+MN_Clearwater,MN,27029,0
+MN_Cook,MN,27031,0
+MN_Cottonwood,MN,27033,0
+MN_Crow Wing,MN,27035,14
+MN_Dakota,MN,27037,27
+MN_Dodge,MN,27039,0
+MN_Douglas,MN,27041,6
+MN_Faribault,MN,27043,0
+MN_Fillmore,MN,27045,13
+MN_Freeborn,MN,27047,0
+MN_Goodhue,MN,27049,6
+MN_Grant,MN,27051,0
+MN_Hennepin,MN,27053,0
+MN_Houston,MN,27055,2
+MN_Hubbard,MN,27057,20
+MN_Isanti,MN,27059,4
+MN_Itasca,MN,27061,0
+MN_Jackson,MN,27063,3
+MN_Kanabec,MN,27065,1
+MN_Kandiyohi,MN,27067,2
+MN_Kittson,MN,27069,0
+MN_Koochiching,MN,27071,0
+MN_Lac qui Parle,MN,27073,0
+MN_Lake,MN,27075,2
+MN_Lake of the Woods,MN,27077,1
+MN_Le Sueur,MN,27079,0
+MN_Lincoln,MN,27081,3
+MN_Lyon,MN,27083,1
+MN_Mahnomen,MN,27087,0
+MN_Marshall,MN,27089,0
+MN_Martin,MN,27091,0
+MN_McLeod,MN,27085,0
+MN_Meeker,MN,27093,0
+MN_Mille Lacs,MN,27095,3
+MN_Morrison,MN,27097,11
+MN_Mower,MN,27099,1
+MN_Murray,MN,27101,1
+MN_Nicollet,MN,27103,0
+MN_Nobles,MN,27105,4
+MN_Norman,MN,27107,3
+MN_Olmsted,MN,27109,4
+MN_Otter Tail,MN,27111,29
+MN_Pennington,MN,27113,0
+MN_Pine,MN,27115,2
+MN_Pipestone,MN,27117,2
+MN_Polk,MN,27119,0
+MN_Pope,MN,27121,1
+MN_Ramsey,MN,27123,0
+MN_Red Lake,MN,27125,0
+MN_Redwood,MN,27127,3
+MN_Renville,MN,27129,0
+MN_Rice,MN,27131,2
+MN_Rock,MN,27133,3
+MN_Roseau,MN,27135,1
+MN_Scott,MN,27139,2
+MN_Sherburne,MN,27141,15
+MN_Sibley,MN,27143,0
+MN_St. Louis,MN,27137,3
+MN_Stearns,MN,27145,43
+MN_Steele,MN,27147,0
+MN_Stevens,MN,27149,0
+MN_Swift,MN,27151,1
+MN_Todd,MN,27153,10
+MN_Traverse,MN,27155,1
+MN_Wabasha,MN,27157,4
+MN_Wadena,MN,27159,5
+MN_Waseca,MN,27161,0
+MN_Washington,MN,27163,9
+MN_Watonwan,MN,27165,1
+MN_Wilkin,MN,27167,0
+MN_Winona,MN,27169,8
+MN_Wright,MN,27171,4
+MN_Yellow Medicine,MN,27173,0
+MO_Adair,MO,29001,0
+MO_Andrew,MO,29003,0
+MO_Atchison,MO,29005,0
+MO_Audrain,MO,29007,0
+MO_Barry,MO,29009,1
+MO_Barton,MO,29011,0
+MO_Bates,MO,29013,0
+MO_Benton,MO,29015,0
+MO_Bollinger,MO,29017,0
+MO_Boone,MO,29019,0
+MO_Buchanan,MO,29021,0
+MO_Butler,MO,29023,0
+MO_Caldwell,MO,29025,0
+MO_Callaway,MO,29027,0
+MO_Camden,MO,29029,1
+MO_Cape Girardeau,MO,29031,0
+MO_Carroll,MO,29033,0
+MO_Carter,MO,29035,0
+MO_Cass,MO,29037,0
+MO_Cedar,MO,29039,0
+MO_Chariton,MO,29041,0
+MO_Christian,MO,29043,0
+MO_Clark,MO,29045,0
+MO_Clay,MO,29047,0
+MO_Clinton,MO,29049,0
+MO_Cole,MO,29051,0
+MO_Cooper,MO,29053,0
+MO_Crawford,MO,29055,0
+MO_Dade,MO,29057,0
+MO_Dallas,MO,29059,1
+MO_Daviess,MO,29061,0
+MO_DeKalb,MO,29063,0
+MO_Dent,MO,29065,0
+MO_Douglas,MO,29067,0
+MO_Dunklin,MO,29069,0
+MO_Franklin,MO,29071,0
+MO_Gasconade,MO,29073,0
+MO_Gentry,MO,29075,0
+MO_Greene,MO,29077,0
+MO_Grundy,MO,29079,0
+MO_Harrison,MO,29081,0
+MO_Henry,MO,29083,0
+MO_Hickory,MO,29085,0
+MO_Holt,MO,29087,1
+MO_Howard,MO,29089,0
+MO_Howell,MO,29091,0
+MO_Iron,MO,29093,0
+MO_Jackson,MO,29095,0
+MO_Jasper,MO,29097,0
+MO_Jefferson,MO,29099,0
+MO_Johnson,MO,29101,0
+MO_Knox,MO,29103,0
+MO_Laclede,MO,29105,0
+MO_Lafayette,MO,29107,0
+MO_Lawrence,MO,29109,0
+MO_Lewis,MO,29111,0
+MO_Lincoln,MO,29113,0
+MO_Linn,MO,29115,0
+MO_Livingston,MO,29117,0
+MO_Macon,MO,29121,0
+MO_Madison,MO,29123,0
+MO_Maries,MO,29125,0
+MO_Marion,MO,29127,0
+MO_McDonald,MO,29119,0
+MO_Mercer,MO,29129,0
+MO_Miller,MO,29131,0
+MO_Mississippi,MO,29133,0
+MO_Moniteau,MO,29135,0
+MO_Monroe,MO,29137,0
+MO_Montgomery,MO,29139,0
+MO_Morgan,MO,29141,0
+MO_New Madrid,MO,29143,1
+MO_Newton,MO,29145,0
+MO_Nodaway,MO,29147,0
+MO_Oregon,MO,29149,0
+MO_Osage,MO,29151,0
+MO_Ozark,MO,29153,0
+MO_Pemiscot,MO,29155,0
+MO_Perry,MO,29157,4
+MO_Pettis,MO,29159,0
+MO_Phelps,MO,29161,0
+MO_Pike,MO,29163,0
+MO_Platte,MO,29165,0
+MO_Polk,MO,29167,0
+MO_Pulaski,MO,29169,0
+MO_Putnam,MO,29171,0
+MO_Ralls,MO,29173,0
+MO_Randolph,MO,29175,0
+MO_Ray,MO,29177,0
+MO_Reynolds,MO,29179,0
+MO_Ripley,MO,29181,1
+MO_Saline,MO,29195,0
+MO_Schuyler,MO,29197,0
+MO_Scotland,MO,29199,0
+MO_Scott,MO,29201,0
+MO_Shannon,MO,29203,0
+MO_Shelby,MO,29205,0
+MO_St. Charles,MO,29183,0
+MO_St. Clair,MO,29185,0
+MO_St. Francois,MO,29187,0
+MO_St. Louis,MO,29189,0
+MO_St. Louis city,MO,29510,0
+MO_Ste. Genevieve,MO,29186,0
+MO_Stoddard,MO,29207,0
+MO_Stone,MO,29209,2
+MO_Sullivan,MO,29211,0
+MO_Taney,MO,29213,0
+MO_Texas,MO,29215,0
+MO_Vernon,MO,29217,0
+MO_Warren,MO,29219,0
+MO_Washington,MO,29221,0
+MO_Wayne,MO,29223,0
+MO_Webster,MO,29225,0
+MO_Worth,MO,29227,0
+MO_Wright,MO,29229,0
+MP_Northern Islands Municipality,MP,69085,0
+MP_Rota Municipality,MP,69100,0
+MP_Saipan Municipality,MP,69110,0
+MP_Tinian Municipality,MP,69120,0
+MS_Adams,MS,28001,0
+MS_Alcorn,MS,28003,0
+MS_Amite,MS,28005,0
+MS_Attala,MS,28007,0
+MS_Benton,MS,28009,0
+MS_Bolivar,MS,28011,0
+MS_Calhoun,MS,28013,0
+MS_Carroll,MS,28015,0
+MS_Chickasaw,MS,28017,0
+MS_Choctaw,MS,28019,0
+MS_Claiborne,MS,28021,0
+MS_Clarke,MS,28023,0
+MS_Clay,MS,28025,0
+MS_Coahoma,MS,28027,0
+MS_Copiah,MS,28029,0
+MS_Covington,MS,28031,0
+MS_DeSoto,MS,28033,0
+MS_Forrest,MS,28035,0
+MS_Franklin,MS,28037,0
+MS_George,MS,28039,0
+MS_Greene,MS,28041,0
+MS_Grenada,MS,28043,0
+MS_Hancock,MS,28045,0
+MS_Harrison,MS,28047,0
+MS_Hinds,MS,28049,0
+MS_Holmes,MS,28051,0
+MS_Humphreys,MS,28053,0
+MS_Issaquena,MS,28055,0
+MS_Itawamba,MS,28057,0
+MS_Jackson,MS,28059,0
+MS_Jasper,MS,28061,0
+MS_Jefferson,MS,28063,0
+MS_Jefferson Davis,MS,28065,0
+MS_Jones,MS,28067,0
+MS_Kemper,MS,28069,0
+MS_Lafayette,MS,28071,0
+MS_Lamar,MS,28073,0
+MS_Lauderdale,MS,28075,0
+MS_Lawrence,MS,28077,0
+MS_Leake,MS,28079,0
+MS_Lee,MS,28081,0
+MS_Leflore,MS,28083,0
+MS_Lincoln,MS,28085,0
+MS_Lowndes,MS,28087,0
+MS_Madison,MS,28089,0
+MS_Marion,MS,28091,0
+MS_Marshall,MS,28093,0
+MS_Monroe,MS,28095,0
+MS_Montgomery,MS,28097,0
+MS_Neshoba,MS,28099,0
+MS_Newton,MS,28101,0
+MS_Noxubee,MS,28103,0
+MS_Oktibbeha,MS,28105,0
+MS_Panola,MS,28107,0
+MS_Pearl River,MS,28109,0
+MS_Perry,MS,28111,0
+MS_Pike,MS,28113,0
+MS_Pontotoc,MS,28115,0
+MS_Prentiss,MS,28117,0
+MS_Quitman,MS,28119,0
+MS_Rankin,MS,28121,0
+MS_Scott,MS,28123,0
+MS_Sharkey,MS,28125,0
+MS_Simpson,MS,28127,0
+MS_Smith,MS,28129,0
+MS_Stone,MS,28131,0
+MS_Sunflower,MS,28133,0
+MS_Tallahatchie,MS,28135,0
+MS_Tate,MS,28137,0
+MS_Tippah,MS,28139,0
+MS_Tishomingo,MS,28141,0
+MS_Tunica,MS,28143,0
+MS_Union,MS,28145,0
+MS_Walthall,MS,28147,0
+MS_Warren,MS,28149,0
+MS_Washington,MS,28151,0
+MS_Wayne,MS,28153,0
+MS_Webster,MS,28155,0
+MS_Wilkinson,MS,28157,0
+MS_Winston,MS,28159,0
+MS_Yalobusha,MS,28161,0
+MS_Yazoo,MS,28163,0
+MT_Beaverhead,MT,30001,1
+MT_Big Horn,MT,30003,4
+MT_Blaine,MT,30005,10
+MT_Broadwater,MT,30007,3
+MT_Carbon,MT,30009,0
+MT_Carter,MT,30011,0
+MT_Cascade,MT,30013,6
+MT_Chouteau,MT,30015,0
+MT_Custer,MT,30017,0
+MT_Daniels,MT,30019,11
+MT_Dawson,MT,30021,0
+MT_Deer Lodge,MT,30023,0
+MT_Fallon,MT,30025,0
+MT_Fergus,MT,30027,23
+MT_Flathead,MT,30029,6
+MT_Gallatin,MT,30031,1
+MT_Garfield,MT,30033,0
+MT_Glacier,MT,30035,3
+MT_Golden Valley,MT,30037,0
+MT_Granite,MT,30039,2
+MT_Hill,MT,30041,0
+MT_Jefferson,MT,30043,6
+MT_Judith Basin,MT,30045,8
+MT_Lake,MT,30047,5
+MT_Lewis and Clark,MT,30049,10
+MT_Liberty,MT,30051,0
+MT_Lincoln,MT,30053,0
+MT_Madison,MT,30057,0
+MT_McCone,MT,30055,0
+MT_Meagher,MT,30059,1
+MT_Mineral,MT,30061,0
+MT_Missoula,MT,30063,3
+MT_Musselshell,MT,30065,0
+MT_Park,MT,30067,0
+MT_Petroleum,MT,30069,0
+MT_Phillips,MT,30071,0
+MT_Pondera,MT,30073,3
+MT_Powder River,MT,30075,0
+MT_Powell,MT,30077,0
+MT_Prairie,MT,30079,0
+MT_Ravalli,MT,30081,7
+MT_Richland,MT,30083,4
+MT_Roosevelt,MT,30085,0
+MT_Rosebud,MT,30087,0
+MT_Sanders,MT,30089,0
+MT_Sheridan,MT,30091,0
+MT_Silver Bow,MT,30093,1
+MT_Stillwater,MT,30095,10
+MT_Sweet Grass,MT,30097,0
+MT_Teton,MT,30099,5
+MT_Toole,MT,30101,0
+MT_Treasure,MT,30103,0
+MT_Valley,MT,30105,5
+MT_Wheatland,MT,30107,0
+MT_Wibaux,MT,30109,0
+MT_Yellowstone,MT,30111,24
+NC_Alamance,NC,37001,0
+NC_Alexander,NC,37003,0
+NC_Alleghany,NC,37005,3
+NC_Anson,NC,37007,0
+NC_Ashe,NC,37009,2
+NC_Avery,NC,37011,3
+NC_Beaufort,NC,37013,0
+NC_Bertie,NC,37015,0
+NC_Bladen,NC,37017,7
+NC_Brunswick,NC,37019,0
+NC_Buncombe,NC,37021,3
+NC_Burke,NC,37023,0
+NC_Cabarrus,NC,37025,1
+NC_Caldwell,NC,37027,2
+NC_Camden,NC,37029,0
+NC_Carteret,NC,37031,0
+NC_Caswell,NC,37033,0
+NC_Catawba,NC,37035,1
+NC_Chatham,NC,37037,0
+NC_Cherokee,NC,37039,0
+NC_Chowan,NC,37041,0
+NC_Clay,NC,37043,0
+NC_Cleveland,NC,37045,0
+NC_Columbus,NC,37047,0
+NC_Craven,NC,37049,0
+NC_Cumberland,NC,37051,15
+NC_Currituck,NC,37053,1
+NC_Dare,NC,37055,2
+NC_Davidson,NC,37057,0
+NC_Davie,NC,37059,1
+NC_Duplin,NC,37061,0
+NC_Durham,NC,37063,0
+NC_Edgecombe,NC,37065,1
+NC_Forsyth,NC,37067,1
+NC_Franklin,NC,37069,7
+NC_Gaston,NC,37071,19
+NC_Gates,NC,37073,0
+NC_Graham,NC,37075,0
+NC_Granville,NC,37077,0
+NC_Greene,NC,37079,0
+NC_Guilford,NC,37081,9
+NC_Halifax,NC,37083,0
+NC_Harnett,NC,37085,0
+NC_Haywood,NC,37087,0
+NC_Henderson,NC,37089,2
+NC_Hertford,NC,37091,0
+NC_Hoke,NC,37093,0
+NC_Hyde,NC,37095,0
+NC_Iredell,NC,37097,6
+NC_Jackson,NC,37099,0
+NC_Johnston,NC,37101,3
+NC_Jones,NC,37103,0
+NC_Lee,NC,37105,0
+NC_Lenoir,NC,37107,0
+NC_Lincoln,NC,37109,0
+NC_Macon,NC,37113,0
+NC_Madison,NC,37115,1
+NC_Martin,NC,37117,0
+NC_McDowell,NC,37111,1
+NC_Mecklenburg,NC,37119,1
+NC_Mitchell,NC,37121,0
+NC_Montgomery,NC,37123,1
+NC_Moore,NC,37125,4
+NC_Nash,NC,37127,5
+NC_New Hanover,NC,37129,0
+NC_Northampton,NC,37131,0
+NC_Onslow,NC,37133,0
+NC_Orange,NC,37135,4
+NC_Pamlico,NC,37137,0
+NC_Pasquotank,NC,37139,0
+NC_Pender,NC,37141,0
+NC_Perquimans,NC,37143,0
+NC_Person,NC,37145,1
+NC_Pitt,NC,37147,0
+NC_Polk,NC,37149,0
+NC_Randolph,NC,37151,8
+NC_Richmond,NC,37153,2
+NC_Robeson,NC,37155,2
+NC_Rockingham,NC,37157,1
+NC_Rowan,NC,37159,2
+NC_Rutherford,NC,37161,2
+NC_Sampson,NC,37163,20
+NC_Scotland,NC,37165,0
+NC_Stanly,NC,37167,0
+NC_Stokes,NC,37169,1
+NC_Surry,NC,37171,1
+NC_Swain,NC,37173,0
+NC_Transylvania,NC,37175,2
+NC_Tyrrell,NC,37177,0
+NC_Union,NC,37179,0
+NC_Vance,NC,37181,1
+NC_Wake,NC,37183,14
+NC_Warren,NC,37185,0
+NC_Washington,NC,37187,0
+NC_Watauga,NC,37189,3
+NC_Wayne,NC,37191,1
+NC_Wilkes,NC,37193,1
+NC_Wilson,NC,37195,12
+NC_Yadkin,NC,37197,2
+NC_Yancey,NC,37199,0
+ND_Adams,ND,38001,0
+ND_Barnes,ND,38003,2
+ND_Benson,ND,38005,0
+ND_Billings,ND,38007,0
+ND_Bottineau,ND,38009,2
+ND_Bowman,ND,38011,0
+ND_Burke,ND,38013,1
+ND_Burleigh,ND,38015,0
+ND_Cass,ND,38017,0
+ND_Cavalier,ND,38019,0
+ND_Dickey,ND,38021,0
+ND_Divide,ND,38023,0
+ND_Dunn,ND,38025,0
+ND_Eddy,ND,38027,0
+ND_Emmons,ND,38029,0
+ND_Foster,ND,38031,0
+ND_Golden Valley,ND,38033,0
+ND_Grand Forks,ND,38035,0
+ND_Grant,ND,38037,0
+ND_Griggs,ND,38039,0
+ND_Hettinger,ND,38041,0
+ND_Kidder,ND,38043,0
+ND_LaMoure,ND,38045,0
+ND_Logan,ND,38047,0
+ND_McHenry,ND,38049,5
+ND_McIntosh,ND,38051,1
+ND_McKenzie,ND,38053,1
+ND_McLean,ND,38055,0
+ND_Mercer,ND,38057,0
+ND_Morton,ND,38059,0
+ND_Mountrail,ND,38061,0
+ND_Nelson,ND,38063,0
+ND_Oliver,ND,38065,0
+ND_Pembina,ND,38067,0
+ND_Pierce,ND,38069,0
+ND_Ramsey,ND,38071,0
+ND_Ransom,ND,38073,0
+ND_Renville,ND,38075,0
+ND_Richland,ND,38077,0
+ND_Rolette,ND,38079,0
+ND_Sargent,ND,38081,0
+ND_Sheridan,ND,38083,0
+ND_Sioux,ND,38085,0
+ND_Slope,ND,38087,0
+ND_Stark,ND,38089,0
+ND_Steele,ND,38091,0
+ND_Stutsman,ND,38093,0
+ND_Towner,ND,38095,0
+ND_Traill,ND,38097,0
+ND_Walsh,ND,38099,0
+ND_Ward,ND,38101,1
+ND_Wells,ND,38103,0
+ND_Williams,ND,38105,0
+NE_Adams,NE,31001,21
+NE_Antelope,NE,31003,35
+NE_Arthur,NE,31005,0
+NE_Banner,NE,31007,2
+NE_Blaine,NE,31009,0
+NE_Boone,NE,31011,0
+NE_Box Butte,NE,31013,2
+NE_Boyd,NE,31015,0
+NE_Brown,NE,31017,0
+NE_Buffalo,NE,31019,17
+NE_Burt,NE,31021,1
+NE_Butler,NE,31023,4
+NE_Cass,NE,31025,10
+NE_Cedar,NE,31027,16
+NE_Chase,NE,31029,0
+NE_Cherry,NE,31031,2
+NE_Cheyenne,NE,31033,0
+NE_Clay,NE,31035,24
+NE_Colfax,NE,31037,19
+NE_Cuming,NE,31039,3
+NE_Custer,NE,31041,2
+NE_Dakota,NE,31043,0
+NE_Dawes,NE,31045,18
+NE_Dawson,NE,31047,2
+NE_Deuel,NE,31049,4
+NE_Dixon,NE,31051,5
+NE_Dodge,NE,31053,17
+NE_Douglas,NE,31055,0
+NE_Dundy,NE,31057,3
+NE_Fillmore,NE,31059,5
+NE_Franklin,NE,31061,16
+NE_Frontier,NE,31063,1
+NE_Furnas,NE,31065,2
+NE_Gage,NE,31067,5
+NE_Garden,NE,31069,5
+NE_Garfield,NE,31071,0
+NE_Gosper,NE,31073,6
+NE_Grant,NE,31075,3
+NE_Greeley,NE,31077,0
+NE_Hall,NE,31079,52
+NE_Hamilton,NE,31081,30
+NE_Harlan,NE,31083,20
+NE_Hayes,NE,31085,0
+NE_Hitchcock,NE,31087,11
+NE_Holt,NE,31089,11
+NE_Hooker,NE,31091,0
+NE_Howard,NE,31093,0
+NE_Jefferson,NE,31095,8
+NE_Johnson,NE,31097,0
+NE_Kearney,NE,31099,9
+NE_Keith,NE,31101,16
+NE_Keya Paha,NE,31103,3
+NE_Kimball,NE,31105,0
+NE_Knox,NE,31107,12
+NE_Lancaster,NE,31109,19
+NE_Lincoln,NE,31111,1
+NE_Logan,NE,31113,0
+NE_Loup,NE,31115,0
+NE_Madison,NE,31119,27
+NE_McPherson,NE,31117,0
+NE_Merrick,NE,31121,4
+NE_Morrill,NE,31123,18
+NE_Nance,NE,31125,0
+NE_Nemaha,NE,31127,1
+NE_Nuckolls,NE,31129,7
+NE_Otoe,NE,31131,0
+NE_Pawnee,NE,31133,0
+NE_Perkins,NE,31135,2
+NE_Phelps,NE,31137,11
+NE_Pierce,NE,31139,25
+NE_Platte,NE,31141,35
+NE_Polk,NE,31143,14
+NE_Red Willow,NE,31145,20
+NE_Richardson,NE,31147,29
+NE_Rock,NE,31149,0
+NE_Saline,NE,31151,7
+NE_Sarpy,NE,31153,9
+NE_Saunders,NE,31155,21
+NE_Scotts Bluff,NE,31157,23
+NE_Seward,NE,31159,37
+NE_Sheridan,NE,31161,1
+NE_Sherman,NE,31163,1
+NE_Sioux,NE,31165,3
+NE_Stanton,NE,31167,1
+NE_Thayer,NE,31169,8
+NE_Thomas,NE,31171,0
+NE_Thurston,NE,31173,5
+NE_Valley,NE,31175,0
+NE_Washington,NE,31177,0
+NE_Wayne,NE,31179,2
+NE_Webster,NE,31181,6
+NE_Wheeler,NE,31183,0
+NE_York,NE,31185,69
+NH_Belknap,NH,33001,0
+NH_Carroll,NH,33003,13
+NH_Cheshire,NH,33005,1
+NH_Coos,NH,33007,0
+NH_Grafton,NH,33009,8
+NH_Hillsborough,NH,33011,5
+NH_Merrimack,NH,33013,1
+NH_Rockingham,NH,33015,25
+NH_Strafford,NH,33017,0
+NH_Sullivan,NH,33019,1
+NJ_Atlantic,NJ,34001,22
+NJ_Bergen,NJ,34003,0
+NJ_Burlington,NJ,34005,7
+NJ_Camden,NJ,34007,14
+NJ_Cape May,NJ,34009,8
+NJ_Cumberland,NJ,34011,86
+NJ_Essex,NJ,34013,0
+NJ_Gloucester,NJ,34015,32
+NJ_Hudson,NJ,34017,0
+NJ_Hunterdon,NJ,34019,8
+NJ_Mercer,NJ,34021,6
+NJ_Middlesex,NJ,34023,5
+NJ_Monmouth,NJ,34025,0
+NJ_Morris,NJ,34027,11
+NJ_Ocean,NJ,34029,2
+NJ_Passaic,NJ,34031,3
+NJ_Salem,NJ,34033,44
+NJ_Somerset,NJ,34035,0
+NJ_Sussex,NJ,34037,30
+NJ_Union,NJ,34039,0
+NJ_Warren,NJ,34041,29
+NM_Bernalillo,NM,35001,20
+NM_Catron,NM,35003,0
+NM_Chaves,NM,35005,0
+NM_Cibola,NM,35006,1
+NM_Colfax,NM,35007,0
+NM_Curry,NM,35009,4
+NM_De Baca,NM,35011,0
+NM_Dona Ana,NM,35013,3
+NM_Eddy,NM,35015,2
+NM_Grant,NM,35017,0
+NM_Guadalupe,NM,35019,2
+NM_Harding,NM,35021,0
+NM_Hidalgo,NM,35023,0
+NM_Lea,NM,35025,4
+NM_Lincoln,NM,35027,2
+NM_Los Alamos,NM,35028,0
+NM_Luna,NM,35029,1
+NM_McKinley,NM,35031,0
+NM_Mora,NM,35033,1
+NM_Otero,NM,35035,0
+NM_Quay,NM,35037,0
+NM_Rio Arriba,NM,35039,5
+NM_Roosevelt,NM,35041,1
+NM_San Juan,NM,35045,0
+NM_San Miguel,NM,35047,1
+NM_Sandoval,NM,35043,0
+NM_Santa Fe,NM,35049,8
+NM_Sierra,NM,35051,0
+NM_Socorro,NM,35053,0
+NM_Taos,NM,35055,1
+NM_Torrance,NM,35057,15
+NM_Union,NM,35059,0
+NM_Valencia,NM,35061,0
+NV_Carson City,NV,32510,0
+NV_Churchill,NV,32001,2
+NV_Clark,NV,32003,2
+NV_Douglas,NV,32005,0
+NV_Elko,NV,32007,0
+NV_Esmeralda,NV,32009,0
+NV_Eureka,NV,32011,1
+NV_Humboldt,NV,32013,5
+NV_Lander,NV,32015,0
+NV_Lincoln,NV,32017,5
+NV_Lyon,NV,32019,1
+NV_Mineral,NV,32021,0
+NV_Nye,NV,32023,5
+NV_Pershing,NV,32027,0
+NV_Storey,NV,32029,0
+NV_Washoe,NV,32031,4
+NV_White Pine,NV,32033,0
+NY_Albany,NY,36001,0
+NY_Allegany,NY,36003,0
+NY_Bronx,NY,36005,0
+NY_Broome,NY,36007,1
+NY_Cattaraugus,NY,36009,2
+NY_Cayuga,NY,36011,1
+NY_Chautauqua,NY,36013,1
+NY_Chemung,NY,36015,2
+NY_Chenango,NY,36017,0
+NY_Clinton,NY,36019,0
+NY_Columbia,NY,36021,0
+NY_Cortland,NY,36023,7
+NY_Delaware,NY,36025,1
+NY_Dutchess,NY,36027,15
+NY_Erie,NY,36029,1
+NY_Essex,NY,36031,0
+NY_Franklin,NY,36033,2
+NY_Fulton,NY,36035,0
+NY_Genesee,NY,36037,1
+NY_Greene,NY,36039,0
+NY_Hamilton,NY,36041,0
+NY_Herkimer,NY,36043,0
+NY_Jefferson,NY,36045,8
+NY_Kings,NY,36047,0
+NY_Lewis,NY,36049,1
+NY_Livingston,NY,36051,4
+NY_Madison,NY,36053,4
+NY_Monroe,NY,36055,0
+NY_Montgomery,NY,36057,1
+NY_Nassau,NY,36059,0
+NY_New York,NY,36061,0
+NY_Niagara,NY,36063,0
+NY_Oneida,NY,36065,2
+NY_Onondaga,NY,36067,1
+NY_Ontario,NY,36069,0
+NY_Orange,NY,36071,0
+NY_Orleans,NY,36073,0
+NY_Oswego,NY,36075,0
+NY_Otsego,NY,36077,3
+NY_Putnam,NY,36079,14
+NY_Queens,NY,36081,0
+NY_Rensselaer,NY,36083,0
+NY_Richmond,NY,36085,0
+NY_Rockland,NY,36087,1
+NY_Saratoga,NY,36091,10
+NY_Schenectady,NY,36093,0
+NY_Schoharie,NY,36095,9
+NY_Schuyler,NY,36097,0
+NY_Seneca,NY,36099,2
+NY_St. Lawrence,NY,36089,1
+NY_Steuben,NY,36101,7
+NY_Suffolk,NY,36103,10
+NY_Sullivan,NY,36105,0
+NY_Tioga,NY,36107,0
+NY_Tompkins,NY,36109,0
+NY_Ulster,NY,36111,0
+NY_Warren,NY,36113,0
+NY_Washington,NY,36115,3
+NY_Wayne,NY,36117,3
+NY_Westchester,NY,36119,5
+NY_Wyoming,NY,36121,7
+NY_Yates,NY,36123,2
+OH_Adams,OH,39001,0
+OH_Allen,OH,39003,0
+OH_Ashland,OH,39005,0
+OH_Ashtabula,OH,39007,0
+OH_Athens,OH,39009,0
+OH_Auglaize,OH,39011,1
+OH_Belmont,OH,39013,0
+OH_Brown,OH,39015,0
+OH_Butler,OH,39017,0
+OH_Carroll,OH,39019,0
+OH_Champaign,OH,39021,12
+OH_Clark,OH,39023,14
+OH_Clermont,OH,39025,0
+OH_Clinton,OH,39027,0
+OH_Columbiana,OH,39029,0
+OH_Coshocton,OH,39031,9
+OH_Crawford,OH,39033,0
+OH_Cuyahoga,OH,39035,0
+OH_Darke,OH,39037,0
+OH_Defiance,OH,39039,0
+OH_Delaware,OH,39041,0
+OH_Erie,OH,39043,2
+OH_Fairfield,OH,39045,3
+OH_Fayette,OH,39047,0
+OH_Franklin,OH,39049,1
+OH_Fulton,OH,39051,0
+OH_Gallia,OH,39053,0
+OH_Geauga,OH,39055,5
+OH_Greene,OH,39057,3
+OH_Guernsey,OH,39059,0
+OH_Hamilton,OH,39061,2
+OH_Hancock,OH,39063,0
+OH_Hardin,OH,39065,0
+OH_Harrison,OH,39067,0
+OH_Henry,OH,39069,0
+OH_Highland,OH,39071,0
+OH_Hocking,OH,39073,1
+OH_Holmes,OH,39075,0
+OH_Huron,OH,39077,0
+OH_Jackson,OH,39079,0
+OH_Jefferson,OH,39081,1
+OH_Knox,OH,39083,4
+OH_Lake,OH,39085,0
+OH_Lawrence,OH,39087,0
+OH_Licking,OH,39089,0
+OH_Logan,OH,39091,0
+OH_Lorain,OH,39093,0
+OH_Lucas,OH,39095,1
+OH_Madison,OH,39097,0
+OH_Mahoning,OH,39099,0
+OH_Marion,OH,39101,0
+OH_Medina,OH,39103,0
+OH_Meigs,OH,39105,1
+OH_Mercer,OH,39107,0
+OH_Miami,OH,39109,20
+OH_Monroe,OH,39111,0
+OH_Montgomery,OH,39113,3
+OH_Morgan,OH,39115,0
+OH_Morrow,OH,39117,0
+OH_Muskingum,OH,39119,4
+OH_Noble,OH,39121,0
+OH_Ottawa,OH,39123,0
+OH_Paulding,OH,39125,0
+OH_Perry,OH,39127,1
+OH_Pickaway,OH,39129,0
+OH_Pike,OH,39131,0
+OH_Portage,OH,39133,0
+OH_Preble,OH,39135,0
+OH_Putnam,OH,39137,0
+OH_Richland,OH,39139,4
+OH_Ross,OH,39141,3
+OH_Sandusky,OH,39143,0
+OH_Scioto,OH,39145,0
+OH_Seneca,OH,39147,2
+OH_Shelby,OH,39149,0
+OH_Stark,OH,39151,1
+OH_Summit,OH,39153,1
+OH_Trumbull,OH,39155,0
+OH_Tuscarawas,OH,39157,0
+OH_Union,OH,39159,0
+OH_Van Wert,OH,39161,0
+OH_Vinton,OH,39163,0
+OH_Warren,OH,39165,6
+OH_Washington,OH,39167,6
+OH_Wayne,OH,39169,5
+OH_Williams,OH,39171,0
+OH_Wood,OH,39173,3
+OH_Wyandot,OH,39175,6
+OK_Adair,OK,40001,0
+OK_Alfalfa,OK,40003,58
+OK_Atoka,OK,40005,0
+OK_Beaver,OK,40007,2
+OK_Beckham,OK,40009,23
+OK_Blaine,OK,40011,59
+OK_Bryan,OK,40013,0
+OK_Caddo,OK,40015,29
+OK_Canadian,OK,40017,27
+OK_Carter,OK,40019,0
+OK_Cherokee,OK,40021,1
+OK_Choctaw,OK,40023,0
+OK_Cimarron,OK,40025,1
+OK_Cleveland,OK,40027,10
+OK_Coal,OK,40029,0
+OK_Comanche,OK,40031,1
+OK_Cotton,OK,40033,13
+OK_Craig,OK,40035,0
+OK_Creek,OK,40037,0
+OK_Custer,OK,40039,10
+OK_Delaware,OK,40041,0
+OK_Dewey,OK,40043,13
+OK_Ellis,OK,40045,6
+OK_Garfield,OK,40047,32
+OK_Garvin,OK,40049,0
+OK_Grady,OK,40051,11
+OK_Grant,OK,40053,16
+OK_Greer,OK,40055,37
+OK_Harmon,OK,40057,27
+OK_Harper,OK,40059,3
+OK_Haskell,OK,40061,0
+OK_Hughes,OK,40063,0
+OK_Jackson,OK,40065,6
+OK_Jefferson,OK,40067,0
+OK_Johnston,OK,40069,0
+OK_Kay,OK,40071,1
+OK_Kingfisher,OK,40073,70
+OK_Kiowa,OK,40075,10
+OK_Latimer,OK,40077,0
+OK_Le Flore,OK,40079,0
+OK_Lincoln,OK,40081,3
+OK_Logan,OK,40083,24
+OK_Love,OK,40085,0
+OK_Major,OK,40093,30
+OK_Marshall,OK,40095,1
+OK_Mayes,OK,40097,0
+OK_McClain,OK,40087,4
+OK_McCurtain,OK,40089,0
+OK_McIntosh,OK,40091,0
+OK_Murray,OK,40099,0
+OK_Muskogee,OK,40101,0
+OK_Noble,OK,40103,0
+OK_Nowata,OK,40105,0
+OK_Okfuskee,OK,40107,0
+OK_Oklahoma,OK,40109,3
+OK_Okmulgee,OK,40111,0
+OK_Osage,OK,40113,25
+OK_Ottawa,OK,40115,0
+OK_Pawnee,OK,40117,0
+OK_Payne,OK,40119,12
+OK_Pittsburg,OK,40121,0
+OK_Pontotoc,OK,40123,0
+OK_Pottawatomie,OK,40125,3
+OK_Pushmataha,OK,40127,0
+OK_Roger Mills,OK,40129,3
+OK_Rogers,OK,40131,0
+OK_Seminole,OK,40133,0
+OK_Sequoyah,OK,40135,0
+OK_Stephens,OK,40137,3
+OK_Texas,OK,40139,1
+OK_Tillman,OK,40141,6
+OK_Tulsa,OK,40143,0
+OK_Wagoner,OK,40145,0
+OK_Washington,OK,40147,0
+OK_Washita,OK,40149,10
+OK_Woods,OK,40151,11
+OK_Woodward,OK,40153,17
+OR_Baker,OR,41001,0
+OR_Benton,OR,41003,5
+OR_Clackamas,OR,41005,5
+OR_Clatsop,OR,41007,0
+OR_Columbia,OR,41009,2
+OR_Coos,OR,41011,3
+OR_Crook,OR,41013,2
+OR_Curry,OR,41015,0
+OR_Deschutes,OR,41017,1
+OR_Douglas,OR,41019,0
+OR_Gilliam,OR,41021,0
+OR_Grant,OR,41023,0
+OR_Harney,OR,41025,5
+OR_Hood River,OR,41027,0
+OR_Jackson,OR,41029,0
+OR_Jefferson,OR,41031,2
+OR_Josephine,OR,41033,1
+OR_Klamath,OR,41035,7
+OR_Lake,OR,41037,0
+OR_Lane,OR,41039,7
+OR_Lincoln,OR,41041,0
+OR_Linn,OR,41043,3
+OR_Malheur,OR,41045,15
+OR_Marion,OR,41047,10
+OR_Morrow,OR,41049,3
+OR_Multnomah,OR,41051,0
+OR_Polk,OR,41053,5
+OR_Sherman,OR,41055,1
+OR_Tillamook,OR,41057,0
+OR_Umatilla,OR,41059,35
+OR_Union,OR,41061,1
+OR_Wallowa,OR,41063,0
+OR_Wasco,OR,41065,4
+OR_Washington,OR,41067,2
+OR_Wheeler,OR,41069,0
+OR_Yamhill,OR,41071,0
+PA_Adams,PA,42001,32
+PA_Allegheny,PA,42003,1
+PA_Armstrong,PA,42005,3
+PA_Beaver,PA,42007,3
+PA_Bedford,PA,42009,26
+PA_Berks,PA,42011,68
+PA_Blair,PA,42013,6
+PA_Bradford,PA,42015,2
+PA_Bucks,PA,42017,15
+PA_Butler,PA,42019,7
+PA_Cambria,PA,42021,2
+PA_Cameron,PA,42023,0
+PA_Carbon,PA,42025,0
+PA_Centre,PA,42027,3
+PA_Chester,PA,42029,167
+PA_Clarion,PA,42031,1
+PA_Clearfield,PA,42033,1
+PA_Clinton,PA,42035,5
+PA_Columbia,PA,42037,3
+PA_Crawford,PA,42039,7
+PA_Cumberland,PA,42041,6
+PA_Dauphin,PA,42043,11
+PA_Delaware,PA,42045,12
+PA_Elk,PA,42047,0
+PA_Erie,PA,42049,15
+PA_Fayette,PA,42051,0
+PA_Forest,PA,42053,0
+PA_Franklin,PA,42055,47
+PA_Fulton,PA,42057,0
+PA_Greene,PA,42059,0
+PA_Huntingdon,PA,42061,3
+PA_Indiana,PA,42063,8
+PA_Jefferson,PA,42065,1
+PA_Juniata,PA,42067,1
+PA_Lackawanna,PA,42069,0
+PA_Lancaster,PA,42071,560
+PA_Lawrence,PA,42073,1
+PA_Lebanon,PA,42075,43
+PA_Lehigh,PA,42077,53
+PA_Luzerne,PA,42079,5
+PA_Lycoming,PA,42081,5
+PA_McKean,PA,42083,0
+PA_Mercer,PA,42085,2
+PA_Mifflin,PA,42087,1
+PA_Monroe,PA,42089,9
+PA_Montgomery,PA,42091,8
+PA_Montour,PA,42093,0
+PA_Northampton,PA,42095,64
+PA_Northumberland,PA,42097,1
+PA_Perry,PA,42099,7
+PA_Philadelphia,PA,42101,0
+PA_Pike,PA,42103,0
+PA_Potter,PA,42105,1
+PA_Schuylkill,PA,42107,15
+PA_Snyder,PA,42109,2
+PA_Somerset,PA,42111,0
+PA_Sullivan,PA,42113,2
+PA_Susquehanna,PA,42115,0
+PA_Tioga,PA,42117,7
+PA_Union,PA,42119,37
+PA_Venango,PA,42121,0
+PA_Warren,PA,42123,0
+PA_Washington,PA,42125,2
+PA_Wayne,PA,42127,4
+PA_Westmoreland,PA,42129,2
+PA_Wyoming,PA,42131,2
+PA_York,PA,42133,106
+PR_Adjuntas Municipio,PR,72001,0
+PR_Aguada Municipio,PR,72003,0
+PR_Aguadilla Municipio,PR,72005,0
+PR_Aguas Buenas Municipio,PR,72007,0
+PR_Aibonito Municipio,PR,72009,0
+PR_Anasco Municipio,PR,72011,0
+PR_Arecibo Municipio,PR,72013,0
+PR_Arroyo Municipio,PR,72015,0
+PR_Barceloneta Municipio,PR,72017,0
+PR_Barranquitas Municipio,PR,72019,0
+PR_Bayamon Municipio,PR,72021,0
+PR_Cabo Rojo Municipio,PR,72023,0
+PR_Caguas Municipio,PR,72025,0
+PR_Camuy Municipio,PR,72027,0
+PR_Canovanas Municipio,PR,72029,0
+PR_Carolina Municipio,PR,72031,0
+PR_Catano Municipio,PR,72033,0
+PR_Cayey Municipio,PR,72035,0
+PR_Ceiba Municipio,PR,72037,0
+PR_Ciales Municipio,PR,72039,0
+PR_Cidra Municipio,PR,72041,0
+PR_Coamo Municipio,PR,72043,0
+PR_Comerio Municipio,PR,72045,0
+PR_Corozal Municipio,PR,72047,0
+PR_Culebra Municipio,PR,72049,0
+PR_Dorado Municipio,PR,72051,0
+PR_Fajardo Municipio,PR,72053,0
+PR_Florida Municipio,PR,72054,0
+PR_Guanica Municipio,PR,72055,0
+PR_Guayama Municipio,PR,72057,0
+PR_Guayanilla Municipio,PR,72059,0
+PR_Guaynabo Municipio,PR,72061,0
+PR_Gurabo Municipio,PR,72063,0
+PR_Hatillo Municipio,PR,72065,0
+PR_Hormigueros Municipio,PR,72067,0
+PR_Humacao Municipio,PR,72069,0
+PR_Isabela Municipio,PR,72071,0
+PR_Jayuya Municipio,PR,72073,0
+PR_Juana Diaz Municipio,PR,72075,0
+PR_Juncos Municipio,PR,72077,0
+PR_Lajas Municipio,PR,72079,0
+PR_Lares Municipio,PR,72081,0
+PR_Las Marias Municipio,PR,72083,0
+PR_Las Piedras Municipio,PR,72085,0
+PR_Loiza Municipio,PR,72087,0
+PR_Luquillo Municipio,PR,72089,0
+PR_Manati Municipio,PR,72091,0
+PR_Maricao Municipio,PR,72093,0
+PR_Maunabo Municipio,PR,72095,0
+PR_Mayaguez Municipio,PR,72097,0
+PR_Moca Municipio,PR,72099,0
+PR_Morovis Municipio,PR,72101,0
+PR_Naguabo Municipio,PR,72103,0
+PR_Naranjito Municipio,PR,72105,0
+PR_Orocovis Municipio,PR,72107,0
+PR_Patillas Municipio,PR,72109,0
+PR_Penuelas Municipio,PR,72111,0
+PR_Ponce Municipio,PR,72113,0
+PR_Quebradillas Municipio,PR,72115,0
+PR_Rincon Municipio,PR,72117,0
+PR_Rio Grande Municipio,PR,72119,0
+PR_Sabana Grande Municipio,PR,72121,0
+PR_Salinas Municipio,PR,72123,0
+PR_San German Municipio,PR,72125,0
+PR_San Juan Municipio,PR,72127,0
+PR_San Lorenzo Municipio,PR,72129,0
+PR_San Sebastian Municipio,PR,72131,0
+PR_Santa Isabel Municipio,PR,72133,0
+PR_Toa Alta Municipio,PR,72135,0
+PR_Toa Baja Municipio,PR,72137,0
+PR_Trujillo Alto Municipio,PR,72139,0
+PR_Utuado Municipio,PR,72141,0
+PR_Vega Alta Municipio,PR,72143,0
+PR_Vega Baja Municipio,PR,72145,0
+PR_Vieques Municipio,PR,72147,0
+PR_Villalba Municipio,PR,72149,0
+PR_Yabucoa Municipio,PR,72151,0
+PR_Yauco Municipio,PR,72153,0
+RI_Bristol,RI,44001,0
+RI_Kent,RI,44003,4
+RI_Newport,RI,44005,5
+RI_Providence,RI,44007,1
+RI_Washington,RI,44009,15
+SC_Abbeville,SC,45001,0
+SC_Aiken,SC,45003,1
+SC_Allendale,SC,45005,0
+SC_Anderson,SC,45007,0
+SC_Bamberg,SC,45009,0
+SC_Barnwell,SC,45011,0
+SC_Beaufort,SC,45013,0
+SC_Berkeley,SC,45015,0
+SC_Calhoun,SC,45017,0
+SC_Charleston,SC,45019,0
+SC_Cherokee,SC,45021,0
+SC_Chester,SC,45023,0
+SC_Chesterfield,SC,45025,0
+SC_Clarendon,SC,45027,0
+SC_Colleton,SC,45029,0
+SC_Darlington,SC,45031,0
+SC_Dillon,SC,45033,0
+SC_Dorchester,SC,45035,0
+SC_Edgefield,SC,45037,0
+SC_Fairfield,SC,45039,0
+SC_Florence,SC,45041,1
+SC_Georgetown,SC,45043,0
+SC_Greenville,SC,45045,0
+SC_Greenwood,SC,45047,0
+SC_Hampton,SC,45049,0
+SC_Horry,SC,45051,0
+SC_Jasper,SC,45053,0
+SC_Kershaw,SC,45055,0
+SC_Lancaster,SC,45057,0
+SC_Laurens,SC,45059,4
+SC_Lee,SC,45061,0
+SC_Lexington,SC,45063,1
+SC_Marion,SC,45067,0
+SC_Marlboro,SC,45069,0
+SC_McCormick,SC,45065,0
+SC_Newberry,SC,45071,0
+SC_Oconee,SC,45073,0
+SC_Orangeburg,SC,45075,0
+SC_Pickens,SC,45077,0
+SC_Richland,SC,45079,0
+SC_Saluda,SC,45081,0
+SC_Spartanburg,SC,45083,0
+SC_Sumter,SC,45085,3
+SC_Union,SC,45087,0
+SC_Williamsburg,SC,45089,0
+SC_York,SC,45091,5
+SD_Aurora,SD,46003,0
+SD_Beadle,SD,46005,0
+SD_Bennett,SD,46007,3
+SD_Bon Homme,SD,46009,0
+SD_Brookings,SD,46011,2
+SD_Brown,SD,46013,0
+SD_Brule,SD,46015,0
+SD_Buffalo,SD,46017,0
+SD_Butte,SD,46019,0
+SD_Campbell,SD,46021,0
+SD_Charles Mix,SD,46023,0
+SD_Clark,SD,46025,0
+SD_Clay,SD,46027,0
+SD_Codington,SD,46029,3
+SD_Corson,SD,46031,0
+SD_Custer,SD,46033,2
+SD_Davison,SD,46035,0
+SD_Day,SD,46037,0
+SD_Deuel,SD,46039,0
+SD_Dewey,SD,46041,0
+SD_Douglas,SD,46043,0
+SD_Edmunds,SD,46045,0
+SD_Fall River,SD,46047,3
+SD_Faulk,SD,46049,0
+SD_Grant,SD,46051,0
+SD_Gregory,SD,46053,5
+SD_Haakon,SD,46055,0
+SD_Hamlin,SD,46057,6
+SD_Hand,SD,46059,0
+SD_Hanson,SD,46061,0
+SD_Harding,SD,46063,0
+SD_Hughes,SD,46065,0
+SD_Hutchinson,SD,46067,0
+SD_Hyde,SD,46069,0
+SD_Jackson,SD,46071,0
+SD_Jerauld,SD,46073,0
+SD_Jones,SD,46075,0
+SD_Kingsbury,SD,46077,0
+SD_Lake,SD,46079,1
+SD_Lawrence,SD,46081,8
+SD_Lincoln,SD,46083,0
+SD_Lyman,SD,46085,0
+SD_Marshall,SD,46091,2
+SD_McCook,SD,46087,0
+SD_McPherson,SD,46089,0
+SD_Meade,SD,46093,5
+SD_Mellette,SD,46095,0
+SD_Miner,SD,46097,0
+SD_Minnehaha,SD,46099,9
+SD_Moody,SD,46101,1
+SD_Pennington,SD,46103,6
+SD_Perkins,SD,46105,0
+SD_Potter,SD,46107,0
+SD_Roberts,SD,46109,0
+SD_Sanborn,SD,46111,0
+SD_Shannon,SD,46113,0
+SD_Spink,SD,46115,0
+SD_Stanley,SD,46117,0
+SD_Sully,SD,46119,0
+SD_Todd,SD,46121,0
+SD_Tripp,SD,46123,0
+SD_Turner,SD,46125,0
+SD_Union,SD,46127,0
+SD_Walworth,SD,46129,0
+SD_Yankton,SD,46135,0
+SD_Ziebach,SD,46137,0
+TN_Anderson,TN,47001,0
+TN_Bedford,TN,47003,0
+TN_Benton,TN,47005,0
+TN_Bledsoe,TN,47007,0
+TN_Blount,TN,47009,0
+TN_Bradley,TN,47011,0
+TN_Campbell,TN,47013,0
+TN_Cannon,TN,47015,0
+TN_Carroll,TN,47017,0
+TN_Carter,TN,47019,0
+TN_Cheatham,TN,47021,0
+TN_Chester,TN,47023,0
+TN_Claiborne,TN,47025,0
+TN_Clay,TN,47027,0
+TN_Cocke,TN,47029,0
+TN_Coffee,TN,47031,0
+TN_Crockett,TN,47033,0
+TN_Cumberland,TN,47035,0
+TN_Davidson,TN,47037,0
+TN_Decatur,TN,47039,0
+TN_DeKalb,TN,47041,0
+TN_Dickson,TN,47043,0
+TN_Dyer,TN,47045,0
+TN_Fayette,TN,47047,0
+TN_Fentress,TN,47049,0
+TN_Franklin,TN,47051,0
+TN_Gibson,TN,47053,0
+TN_Giles,TN,47055,0
+TN_Grainger,TN,47057,0
+TN_Greene,TN,47059,0
+TN_Grundy,TN,47061,0
+TN_Hamblen,TN,47063,0
+TN_Hamilton,TN,47065,0
+TN_Hancock,TN,47067,0
+TN_Hardeman,TN,47069,0
+TN_Hardin,TN,47071,0
+TN_Hawkins,TN,47073,0
+TN_Haywood,TN,47075,0
+TN_Henderson,TN,47077,0
+TN_Henry,TN,47079,0
+TN_Hickman,TN,47081,0
+TN_Houston,TN,47083,0
+TN_Humphreys,TN,47085,0
+TN_Jackson,TN,47087,0
+TN_Jefferson,TN,47089,0
+TN_Johnson,TN,47091,0
+TN_Knox,TN,47093,0
+TN_Lake,TN,47095,0
+TN_Lauderdale,TN,47097,0
+TN_Lawrence,TN,47099,0
+TN_Lewis,TN,47101,0
+TN_Lincoln,TN,47103,0
+TN_Loudon,TN,47105,0
+TN_Macon,TN,47111,0
+TN_Madison,TN,47113,0
+TN_Marion,TN,47115,0
+TN_Marshall,TN,47117,0
+TN_Maury,TN,47119,0
+TN_McMinn,TN,47107,0
+TN_McNairy,TN,47109,0
+TN_Meigs,TN,47121,0
+TN_Monroe,TN,47123,1
+TN_Montgomery,TN,47125,0
+TN_Moore,TN,47127,0
+TN_Morgan,TN,47129,0
+TN_Obion,TN,47131,0
+TN_Overton,TN,47133,0
+TN_Perry,TN,47135,0
+TN_Pickett,TN,47137,0
+TN_Polk,TN,47139,0
+TN_Putnam,TN,47141,0
+TN_Rhea,TN,47143,0
+TN_Roane,TN,47145,0
+TN_Robertson,TN,47147,0
+TN_Rutherford,TN,47149,0
+TN_Scott,TN,47151,0
+TN_Sequatchie,TN,47153,0
+TN_Sevier,TN,47155,0
+TN_Shelby,TN,47157,0
+TN_Smith,TN,47159,0
+TN_Stewart,TN,47161,0
+TN_Sullivan,TN,47163,0
+TN_Sumner,TN,47165,0
+TN_Tipton,TN,47167,0
+TN_Trousdale,TN,47169,0
+TN_Unicoi,TN,47171,0
+TN_Union,TN,47173,0
+TN_Van Buren,TN,47175,0
+TN_Warren,TN,47177,0
+TN_Washington,TN,47179,0
+TN_Wayne,TN,47181,0
+TN_Weakley,TN,47183,1
+TN_White,TN,47185,0
+TN_Williamson,TN,47187,0
+TN_Wilson,TN,47189,0
+TX_Anderson,TX,48001,0
+TX_Andrews,TX,48003,0
+TX_Angelina,TX,48005,0
+TX_Aransas,TX,48007,0
+TX_Archer,TX,48009,0
+TX_Armstrong,TX,48011,0
+TX_Atascosa,TX,48013,0
+TX_Austin,TX,48015,0
+TX_Bailey,TX,48017,7
+TX_Bandera,TX,48019,0
+TX_Bastrop,TX,48021,0
+TX_Baylor,TX,48023,8
+TX_Bee,TX,48025,0
+TX_Bell,TX,48027,0
+TX_Bexar,TX,48029,3
+TX_Blanco,TX,48031,0
+TX_Borden,TX,48033,0
+TX_Bosque,TX,48035,0
+TX_Bowie,TX,48037,0
+TX_Brazoria,TX,48039,0
+TX_Brazos,TX,48041,0
+TX_Brewster,TX,48043,0
+TX_Briscoe,TX,48045,23
+TX_Brooks,TX,48047,0
+TX_Brown,TX,48049,0
+TX_Burleson,TX,48051,0
+TX_Burnet,TX,48053,2
+TX_Caldwell,TX,48055,8
+TX_Calhoun,TX,48057,0
+TX_Callahan,TX,48059,0
+TX_Cameron,TX,48061,0
+TX_Camp,TX,48063,0
+TX_Carson,TX,48065,0
+TX_Cass,TX,48067,0
+TX_Castro,TX,48069,0
+TX_Chambers,TX,48071,0
+TX_Cherokee,TX,48073,0
+TX_Childress,TX,48075,0
+TX_Clay,TX,48077,0
+TX_Cochran,TX,48079,2
+TX_Coke,TX,48081,0
+TX_Coleman,TX,48083,0
+TX_Collin,TX,48085,0
+TX_Collingsworth,TX,48087,44
+TX_Colorado,TX,48089,5
+TX_Comal,TX,48091,1
+TX_Comanche,TX,48093,0
+TX_Concho,TX,48095,22
+TX_Cooke,TX,48097,0
+TX_Coryell,TX,48099,0
+TX_Cottle,TX,48101,1
+TX_Crane,TX,48103,0
+TX_Crockett,TX,48105,0
+TX_Crosby,TX,48107,0
+TX_Culberson,TX,48109,0
+TX_Dallam,TX,48111,1
+TX_Dallas,TX,48113,0
+TX_Dawson,TX,48115,25
+TX_Deaf Smith,TX,48117,1
+TX_Delta,TX,48119,0
+TX_Denton,TX,48121,0
+TX_DeWitt,TX,48123,5
+TX_Dickens,TX,48125,0
+TX_Dimmit,TX,48127,0
+TX_Donley,TX,48129,0
+TX_Duval,TX,48131,2
+TX_Eastland,TX,48133,7
+TX_Ector,TX,48135,39
+TX_Edwards,TX,48137,0
+TX_El Paso,TX,48141,0
+TX_Ellis,TX,48139,0
+TX_Erath,TX,48143,0
+TX_Falls,TX,48145,1
+TX_Fannin,TX,48147,0
+TX_Fayette,TX,48149,0
+TX_Fisher,TX,48151,0
+TX_Floyd,TX,48153,0
+TX_Foard,TX,48155,0
+TX_Fort Bend,TX,48157,0
+TX_Franklin,TX,48159,0
+TX_Freestone,TX,48161,0
+TX_Frio,TX,48163,0
+TX_Gaines,TX,48165,14
+TX_Galveston,TX,48167,0
+TX_Garza,TX,48169,9
+TX_Gillespie,TX,48171,2
+TX_Glasscock,TX,48173,15
+TX_Goliad,TX,48175,1
+TX_Gonzales,TX,48177,0
+TX_Gray,TX,48179,1
+TX_Grayson,TX,48181,0
+TX_Gregg,TX,48183,0
+TX_Grimes,TX,48185,0
+TX_Guadalupe,TX,48187,2
+TX_Hale,TX,48189,3
+TX_Hall,TX,48191,31
+TX_Hamilton,TX,48193,0
+TX_Hansford,TX,48195,0
+TX_Hardeman,TX,48197,0
+TX_Hardin,TX,48199,0
+TX_Harris,TX,48201,1
+TX_Harrison,TX,48203,0
+TX_Hartley,TX,48205,0
+TX_Haskell,TX,48207,20
+TX_Hays,TX,48209,0
+TX_Hemphill,TX,48211,0
+TX_Henderson,TX,48213,0
+TX_Hidalgo,TX,48215,32
+TX_Hill,TX,48217,0
+TX_Hockley,TX,48219,24
+TX_Hood,TX,48221,3
+TX_Hopkins,TX,48223,0
+TX_Houston,TX,48225,0
+TX_Howard,TX,48227,10
+TX_Hudspeth,TX,48229,0
+TX_Hunt,TX,48231,0
+TX_Hutchinson,TX,48233,0
+TX_Irion,TX,48235,0
+TX_Jack,TX,48237,0
+TX_Jackson,TX,48239,0
+TX_Jasper,TX,48241,0
+TX_Jeff Davis,TX,48243,11
+TX_Jefferson,TX,48245,0
+TX_Jim Hogg,TX,48247,0
+TX_Jim Wells,TX,48249,0
+TX_Johnson,TX,48251,0
+TX_Jones,TX,48253,0
+TX_Karnes,TX,48255,4
+TX_Kaufman,TX,48257,0
+TX_Kendall,TX,48259,0
+TX_Kenedy,TX,48261,0
+TX_Kent,TX,48263,0
+TX_Kerr,TX,48265,1
+TX_Kimble,TX,48267,0
+TX_King,TX,48269,16
+TX_Kinney,TX,48271,0
+TX_Kleberg,TX,48273,0
+TX_Knox,TX,48275,21
+TX_La Salle,TX,48283,0
+TX_Lamar,TX,48277,0
+TX_Lamb,TX,48279,13
+TX_Lampasas,TX,48281,0
+TX_Lavaca,TX,48285,0
+TX_Lee,TX,48287,0
+TX_Leon,TX,48289,0
+TX_Liberty,TX,48291,0
+TX_Limestone,TX,48293,0
+TX_Lipscomb,TX,48295,0
+TX_Live Oak,TX,48297,0
+TX_Llano,TX,48299,32
+TX_Loving,TX,48301,0
+TX_Lubbock,TX,48303,200
+TX_Lynn,TX,48305,18
+TX_Madison,TX,48313,0
+TX_Marion,TX,48315,0
+TX_Martin,TX,48317,30
+TX_Mason,TX,48319,0
+TX_Matagorda,TX,48321,0
+TX_Maverick,TX,48323,0
+TX_McCulloch,TX,48307,3
+TX_McLennan,TX,48309,0
+TX_McMullen,TX,48311,0
+TX_Medina,TX,48325,0
+TX_Menard,TX,48327,0
+TX_Midland,TX,48329,193
+TX_Milam,TX,48331,0
+TX_Mills,TX,48333,9
+TX_Mitchell,TX,48335,0
+TX_Montague,TX,48337,1
+TX_Montgomery,TX,48339,0
+TX_Moore,TX,48341,0
+TX_Morris,TX,48343,0
+TX_Motley,TX,48345,19
+TX_Nacogdoches,TX,48347,0
+TX_Navarro,TX,48349,0
+TX_Newton,TX,48351,0
+TX_Nolan,TX,48353,20
+TX_Nueces,TX,48355,0
+TX_Ochiltree,TX,48357,0
+TX_Oldham,TX,48359,0
+TX_Orange,TX,48361,0
+TX_Palo Pinto,TX,48363,0
+TX_Panola,TX,48365,0
+TX_Parker,TX,48367,1
+TX_Parmer,TX,48369,1
+TX_Pecos,TX,48371,0
+TX_Polk,TX,48373,0
+TX_Potter,TX,48375,0
+TX_Presidio,TX,48377,0
+TX_Rains,TX,48379,0
+TX_Randall,TX,48381,4
+TX_Reagan,TX,48383,0
+TX_Real,TX,48385,0
+TX_Red River,TX,48387,0
+TX_Reeves,TX,48389,0
+TX_Refugio,TX,48391,0
+TX_Roberts,TX,48393,0
+TX_Robertson,TX,48395,0
+TX_Rockwall,TX,48397,0
+TX_Runnels,TX,48399,0
+TX_Rusk,TX,48401,0
+TX_Sabine,TX,48403,0
+TX_San Augustine,TX,48405,0
+TX_San Jacinto,TX,48407,0
+TX_San Patricio,TX,48409,0
+TX_San Saba,TX,48411,0
+TX_Schleicher,TX,48413,0
+TX_Scurry,TX,48415,2
+TX_Shackelford,TX,48417,0
+TX_Shelby,TX,48419,0
+TX_Sherman,TX,48421,0
+TX_Smith,TX,48423,0
+TX_Somervell,TX,48425,0
+TX_Starr,TX,48427,9
+TX_Stephens,TX,48429,0
+TX_Sterling,TX,48431,0
+TX_Stonewall,TX,48433,0
+TX_Sutton,TX,48435,0
+TX_Swisher,TX,48437,0
+TX_Tarrant,TX,48439,0
+TX_Taylor,TX,48441,0
+TX_Terrell,TX,48443,0
+TX_Terry,TX,48445,6
+TX_Throckmorton,TX,48447,0
+TX_Titus,TX,48449,0
+TX_Tom Green,TX,48451,6
+TX_Travis,TX,48453,0
+TX_Trinity,TX,48455,0
+TX_Tyler,TX,48457,0
+TX_Upshur,TX,48459,0
+TX_Upton,TX,48461,0
+TX_Uvalde,TX,48463,7
+TX_Val Verde,TX,48465,23
+TX_Van Zandt,TX,48467,0
+TX_Victoria,TX,48469,0
+TX_Walker,TX,48471,0
+TX_Waller,TX,48473,0
+TX_Ward,TX,48475,0
+TX_Washington,TX,48477,0
+TX_Webb,TX,48479,1
+TX_Wharton,TX,48481,1
+TX_Wheeler,TX,48483,18
+TX_Wichita,TX,48485,0
+TX_Wilbarger,TX,48487,106
+TX_Willacy,TX,48489,0
+TX_Williamson,TX,48491,0
+TX_Wilson,TX,48493,0
+TX_Winkler,TX,48495,0
+TX_Wise,TX,48497,0
+TX_Wood,TX,48499,0
+TX_Yoakum,TX,48501,3
+TX_Young,TX,48503,0
+TX_Zapata,TX,48505,0
+TX_Zavala,TX,48507,1
+UM_Midway Islands,UM,74300,0
+UT_Beaver,UT,49001,0
+UT_Box Elder,UT,49003,2
+UT_Cache,UT,49005,0
+UT_Carbon,UT,49007,0
+UT_Daggett,UT,49009,0
+UT_Davis,UT,49011,0
+UT_Duchesne,UT,49013,0
+UT_Emery,UT,49015,0
+UT_Garfield,UT,49017,0
+UT_Grand,UT,49019,0
+UT_Iron,UT,49021,0
+UT_Juab,UT,49023,0
+UT_Kane,UT,49025,0
+UT_Millard,UT,49027,0
+UT_Morgan,UT,49029,0
+UT_Piute,UT,49031,0
+UT_Rich,UT,49033,0
+UT_Salt Lake,UT,49035,0
+UT_San Juan,UT,49037,0
+UT_Sanpete,UT,49039,0
+UT_Sevier,UT,49041,0
+UT_Summit,UT,49043,0
+UT_Tooele,UT,49045,0
+UT_Uintah,UT,49047,0
+UT_Utah,UT,49049,0
+UT_Wasatch,UT,49051,0
+UT_Washington,UT,49053,0
+UT_Wayne,UT,49055,0
+UT_Weber,UT,49057,0
+VA_Accomack,VA,51001,1
+VA_Albemarle,VA,51003,2
+VA_Alexandria city,VA,51510,0
+VA_Alleghany,VA,51005,0
+VA_Amelia,VA,51007,0
+VA_Amherst,VA,51009,0
+VA_Appomattox,VA,51011,0
+VA_Arlington,VA,51013,0
+VA_Augusta,VA,51015,0
+VA_Bath,VA,51017,0
+VA_Bedford,VA,51019,1
+VA_Bedford city,VA,51515,0
+VA_Bland,VA,51021,0
+VA_Botetourt,VA,51023,0
+VA_Bristol city,VA,51520,0
+VA_Brunswick,VA,51025,1
+VA_Buchanan,VA,51027,0
+VA_Buckingham,VA,51029,0
+VA_Buena Vista city,VA,51530,0
+VA_Campbell,VA,51031,2
+VA_Caroline,VA,51033,0
+VA_Carroll,VA,51035,0
+VA_Charles City,VA,51036,0
+VA_Charlotte,VA,51037,0
+VA_Charlottesville city,VA,51540,0
+VA_Chesapeake city,VA,51550,0
+VA_Chesterfield,VA,51041,0
+VA_Clarke,VA,51043,0
+VA_Colonial Heights city,VA,51570,0
+VA_Covington city,VA,51580,0
+VA_Craig,VA,51045,0
+VA_Culpeper,VA,51047,1
+VA_Cumberland,VA,51049,0
+VA_Danville city,VA,51590,0
+VA_Dickenson,VA,51051,0
+VA_Dinwiddie,VA,51053,0
+VA_Emporia city,VA,51595,0
+VA_Essex,VA,51057,0
+VA_Fairfax,VA,51059,0
+VA_Fairfax city,VA,51600,0
+VA_Falls Church city,VA,51610,0
+VA_Fauquier,VA,51061,0
+VA_Floyd,VA,51063,0
+VA_Fluvanna,VA,51065,0
+VA_Franklin,VA,51067,2
+VA_Franklin city,VA,51620,0
+VA_Frederick,VA,51069,0
+VA_Fredericksburg city,VA,51630,0
+VA_Galax city,VA,51640,0
+VA_Giles,VA,51071,0
+VA_Gloucester,VA,51073,0
+VA_Goochland,VA,51075,0
+VA_Grayson,VA,51077,1
+VA_Greene,VA,51079,0
+VA_Greensville,VA,51081,0
+VA_Halifax,VA,51083,0
+VA_Hampton city,VA,51650,0
+VA_Hanover,VA,51085,0
+VA_Harrisonburg city,VA,51660,0
+VA_Henrico,VA,51087,0
+VA_Henry,VA,51089,4
+VA_Highland,VA,51091,0
+VA_Hopewell city,VA,51670,0
+VA_Isle of Wight,VA,51093,0
+VA_James City,VA,51095,0
+VA_King and Queen,VA,51097,0
+VA_King George,VA,51099,0
+VA_King William,VA,51101,0
+VA_Lancaster,VA,51103,0
+VA_Lee,VA,51105,0
+VA_Lexington city,VA,51678,0
+VA_Loudoun,VA,51107,0
+VA_Louisa,VA,51109,0
+VA_Lunenburg,VA,51111,0
+VA_Lynchburg city,VA,51680,0
+VA_Madison,VA,51113,1
+VA_Manassas city,VA,51683,0
+VA_Manassas Park city,VA,51685,0
+VA_Martinsville city,VA,51690,0
+VA_Mathews,VA,51115,0
+VA_Mecklenburg,VA,51117,1
+VA_Middlesex,VA,51119,0
+VA_Montgomery,VA,51121,0
+VA_Nelson,VA,51125,1
+VA_New Kent,VA,51127,0
+VA_Newport News city,VA,51700,0
+VA_Norfolk city,VA,51710,0
+VA_Northampton,VA,51131,0
+VA_Northumberland,VA,51133,0
+VA_Norton city,VA,51720,0
+VA_Nottoway,VA,51135,5
+VA_Orange,VA,51137,0
+VA_Page,VA,51139,1
+VA_Patrick,VA,51141,0
+VA_Petersburg city,VA,51730,0
+VA_Pittsylvania,VA,51143,0
+VA_Poquoson city,VA,51735,0
+VA_Portsmouth city,VA,51740,0
+VA_Powhatan,VA,51145,0
+VA_Prince Edward,VA,51147,0
+VA_Prince George,VA,51149,0
+VA_Prince William,VA,51153,0
+VA_Pulaski,VA,51155,0
+VA_Radford city,VA,51750,0
+VA_Rappahannock,VA,51157,0
+VA_Richmond,VA,51159,0
+VA_Richmond city,VA,51760,0
+VA_Roanoke,VA,51161,1
+VA_Roanoke city,VA,51770,0
+VA_Rockbridge,VA,51163,0
+VA_Rockingham,VA,51165,0
+VA_Russell,VA,51167,0
+VA_Salem city,VA,51775,0
+VA_Scott,VA,51169,0
+VA_Shenandoah,VA,51171,0
+VA_Smyth,VA,51173,0
+VA_Southampton,VA,51175,0
+VA_Spotsylvania,VA,51177,0
+VA_Stafford,VA,51179,0
+VA_Staunton city,VA,51790,0
+VA_Suffolk city,VA,51800,0
+VA_Surry,VA,51181,0
+VA_Sussex,VA,51183,0
+VA_Tazewell,VA,51185,0
+VA_Virginia Beach city,VA,51810,0
+VA_Warren,VA,51187,0
+VA_Washington,VA,51191,0
+VA_Waynesboro city,VA,51820,0
+VA_Westmoreland,VA,51193,0
+VA_Williamsburg city,VA,51830,0
+VA_Winchester city,VA,51840,0
+VA_Wise,VA,51195,0
+VA_Wythe,VA,51197,0
+VA_York,VA,51199,0
+VI_St. Croix Island,VI,78010,0
+VI_St. John Island,VI,78020,0
+VI_St. Thomas Island,VI,78030,0
+VT_Addison,VT,50001,0
+VT_Bennington,VT,50003,0
+VT_Caledonia,VT,50005,2
+VT_Chittenden,VT,50007,0
+VT_Essex,VT,50009,0
+VT_Franklin,VT,50011,1
+VT_Grand Isle,VT,50013,0
+VT_Lamoille,VT,50015,0
+VT_Orange,VT,50017,0
+VT_Orleans,VT,50019,0
+VT_Rutland,VT,50021,1
+VT_Washington,VT,50023,0
+VT_Windham,VT,50025,0
+VT_Windsor,VT,50027,1
+WA_Adams,WA,53001,9
+WA_Asotin,WA,53003,0
+WA_Benton,WA,53005,63
+WA_Chelan,WA,53007,4
+WA_Clallam,WA,53009,1
+WA_Clark,WA,53011,0
+WA_Columbia,WA,53013,0
+WA_Cowlitz,WA,53015,0
+WA_Douglas,WA,53017,37
+WA_Ferry,WA,53019,8
+WA_Franklin,WA,53021,45
+WA_Garfield,WA,53023,0
+WA_Grant,WA,53025,55
+WA_Grays Harbor,WA,53027,0
+WA_Island,WA,53029,7
+WA_Jefferson,WA,53031,0
+WA_King,WA,53033,0
+WA_Kitsap,WA,53035,0
+WA_Kittitas,WA,53037,0
+WA_Klickitat,WA,53039,11
+WA_Lewis,WA,53041,0
+WA_Lincoln,WA,53043,12
+WA_Mason,WA,53045,0
+WA_Okanogan,WA,53047,7
+WA_Pacific,WA,53049,0
+WA_Pend Oreille,WA,53051,0
+WA_Pierce,WA,53053,8
+WA_San Juan,WA,53055,0
+WA_Skagit,WA,53057,0
+WA_Skamania,WA,53059,0
+WA_Snohomish,WA,53061,0
+WA_Spokane,WA,53063,10
+WA_Stevens,WA,53065,6
+WA_Thurston,WA,53067,0
+WA_Wahkiakum,WA,53069,0
+WA_Walla Walla,WA,53071,86
+WA_Whatcom,WA,53073,96
+WA_Whitman,WA,53075,11
+WA_Yakima,WA,53077,16
+WI_Adams,WI,55001,15
+WI_Ashland,WI,55003,2
+WI_Barron,WI,55005,25
+WI_Bayfield,WI,55007,0
+WI_Brown,WI,55009,1
+WI_Buffalo,WI,55011,6
+WI_Burnett,WI,55013,0
+WI_Calumet,WI,55015,4
+WI_Chippewa,WI,55017,29
+WI_Clark,WI,55019,2
+WI_Columbia,WI,55021,31
+WI_Crawford,WI,55023,1
+WI_Dane,WI,55025,44
+WI_Dodge,WI,55027,19
+WI_Door,WI,55029,12
+WI_Douglas,WI,55031,0
+WI_Dunn,WI,55033,13
+WI_Eau Claire,WI,55035,12
+WI_Florence,WI,55037,4
+WI_Fond du Lac,WI,55039,14
+WI_Forest,WI,55041,1
+WI_Grant,WI,55043,4
+WI_Green,WI,55045,4
+WI_Green Lake,WI,55047,4
+WI_Iowa,WI,55049,4
+WI_Iron,WI,55051,4
+WI_Jackson,WI,55053,14
+WI_Jefferson,WI,55055,12
+WI_Juneau,WI,55057,10
+WI_Kenosha,WI,55059,2
+WI_Kewaunee,WI,55061,0
+WI_La Crosse,WI,55063,26
+WI_Lafayette,WI,55065,4
+WI_Langlade,WI,55067,4
+WI_Lincoln,WI,55069,4
+WI_Manitowoc,WI,55071,7
+WI_Marathon,WI,55073,31
+WI_Marinette,WI,55075,13
+WI_Marquette,WI,55077,9
+WI_Menominee,WI,55078,0
+WI_Milwaukee,WI,55079,0
+WI_Monroe,WI,55081,14
+WI_Oconto,WI,55083,4
+WI_Oneida,WI,55085,20
+WI_Outagamie,WI,55087,1
+WI_Ozaukee,WI,55089,0
+WI_Pepin,WI,55091,4
+WI_Pierce,WI,55093,16
+WI_Polk,WI,55095,2
+WI_Portage,WI,55097,62
+WI_Price,WI,55099,0
+WI_Racine,WI,55101,6
+WI_Richland,WI,55103,1
+WI_Rock,WI,55105,57
+WI_Rusk,WI,55107,2
+WI_Sauk,WI,55111,16
+WI_Sawyer,WI,55113,0
+WI_Shawano,WI,55115,14
+WI_Sheboygan,WI,55117,0
+WI_St. Croix,WI,55109,18
+WI_Taylor,WI,55119,0
+WI_Trempealeau,WI,55121,6
+WI_Vernon,WI,55123,1
+WI_Vilas,WI,55125,23
+WI_Walworth,WI,55127,26
+WI_Washburn,WI,55129,1
+WI_Washington,WI,55131,9
+WI_Waukesha,WI,55133,25
+WI_Waupaca,WI,55135,20
+WI_Waushara,WI,55137,14
+WI_Winnebago,WI,55139,5
+WI_Wood,WI,55141,11
+WV_Barbour,WV,54001,0
+WV_Berkeley,WV,54003,5
+WV_Boone,WV,54005,0
+WV_Braxton,WV,54007,0
+WV_Brooke,WV,54009,0
+WV_Cabell,WV,54011,0
+WV_Calhoun,WV,54013,0
+WV_Clay,WV,54015,0
+WV_Doddridge,WV,54017,0
+WV_Fayette,WV,54019,0
+WV_Gilmer,WV,54021,0
+WV_Grant,WV,54023,0
+WV_Greenbrier,WV,54025,0
+WV_Hampshire,WV,54027,0
+WV_Hancock,WV,54029,0
+WV_Hardy,WV,54031,0
+WV_Harrison,WV,54033,0
+WV_Jackson,WV,54035,0
+WV_Jefferson,WV,54037,13
+WV_Kanawha,WV,54039,0
+WV_Lewis,WV,54041,0
+WV_Lincoln,WV,54043,0
+WV_Logan,WV,54045,0
+WV_Marion,WV,54049,0
+WV_Marshall,WV,54051,0
+WV_Mason,WV,54053,1
+WV_McDowell,WV,54047,0
+WV_Mercer,WV,54055,0
+WV_Mineral,WV,54057,0
+WV_Mingo,WV,54059,2
+WV_Monongalia,WV,54061,0
+WV_Monroe,WV,54063,0
+WV_Morgan,WV,54065,0
+WV_Nicholas,WV,54067,0
+WV_Ohio,WV,54069,0
+WV_Pendleton,WV,54071,0
+WV_Pleasants,WV,54073,0
+WV_Pocahontas,WV,54075,0
+WV_Preston,WV,54077,0
+WV_Putnam,WV,54079,0
+WV_Raleigh,WV,54081,0
+WV_Randolph,WV,54083,0
+WV_Ritchie,WV,54085,0
+WV_Roane,WV,54087,0
+WV_Summers,WV,54089,0
+WV_Taylor,WV,54091,0
+WV_Tucker,WV,54093,0
+WV_Tyler,WV,54095,0
+WV_Upshur,WV,54097,0
+WV_Wayne,WV,54099,0
+WV_Webster,WV,54101,0
+WV_Wetzel,WV,54103,0
+WV_Wirt,WV,54105,0
+WV_Wood,WV,54107,0
+WV_Wyoming,WV,54109,0
+WY_Albany,WY,56001,0
+WY_Big Horn,WY,56003,0
+WY_Campbell,WY,56005,0
+WY_Carbon,WY,56007,0
+WY_Converse,WY,56009,0
+WY_Crook,WY,56011,0
+WY_Fremont,WY,56013,0
+WY_Goshen,WY,56015,5
+WY_Hot Springs,WY,56017,0
+WY_Johnson,WY,56019,0
+WY_Laramie,WY,56021,3
+WY_Lincoln,WY,56023,0
+WY_Natrona,WY,56025,1
+WY_Niobrara,WY,56027,0
+WY_Park,WY,56029,0
+WY_Platte,WY,56031,0
+WY_Sheridan,WY,56033,0
+WY_Sublette,WY,56035,0
+WY_Sweetwater,WY,56037,0
+WY_Teton,WY,56039,2
+WY_Uinta,WY,56041,0
+WY_Washakie,WY,56043,0
+WY_Weston,WY,56045,0
